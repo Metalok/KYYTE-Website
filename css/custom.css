@@ -1,0 +1,104 @@
+.footer-container {
+  background-color: #1a1a1a;
+  height: 73px;
+}
+.footer-social-links {
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 20px 10px 20px 20px;
+}
+.footer-social-links li {
+  list-style-type: none;
+  display: inline;
+  padding-left: 20px;
+  justify-content: space-evenly;
+}
+.footer-social-links li a {
+  text-decoration: none;
+  justify-content: space-evenly;
+  font-family: "D-DIN Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 138% */
+
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.footer-container-2 {
+  background-color: #000000;
+  height: 70px;
+}
+.customer-section {
+  background-color: #1661be;
+  width: 100%;
+  height: 500px;
+}
+.customer-heading h1 {
+  font-family: "D-DIN Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42.5px;
+  line-height: 50%;
+  /* or 72px */
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+}
+.customer-heading p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.customer-inner-section {
+  background-color: #1661be;
+}
+.partners-text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  /* fff */
+
+  color: #ffffff;
+}
+.our-partner-head {
+  font-family: "D-DIN Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72.5px;
+  line-height: 100%;
+  /* or 72px */
+
+  text-transform: uppercase;
+
+  color: #ffffff !important;
+  color: #000;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  font-family: "DIN Condensed Bold" !important;
+  font-size: 80px !important;
+  line-height: 100% !important;
+  font-weight: 600;
+  margin-bottom: 0;
+  font-weight: 900;
+}
+.background-red-ser{
+  background-color: #F04040 !important;
+}
+.empty{
+  width:100%;
+  height:100px
+}
