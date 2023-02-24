@@ -1,0 +1,565 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* ------------------------------------------------------------------------------------------------------------>seciton 1       */
+  
+  @font-face {
+    font-family: "DIN Condensed Bold";
+    font-style: normal;
+    font-weight: 400;
+    src: local("../fonts/din/DIN Condensed Bold"),
+        url(../fonts/din/DINCondensed-Bold.woff) format("woff");
+  }
+  
+  .digital-section {
+    background-color: #e7f2ff;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .digital-heading {
+    font-family: "DIN Condensed Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5vw;
+    line-height: 110%;
+    text-transform: uppercase;
+  
+    color: #f99400;
+    position: absolute;
+    top:50%;
+    left: 2%;
+    transform: translateY(-64%);
+  }
+  .digital-img-section {
+    display: flex;
+    justify-content: end;
+  }
+  
+  .digital-img-section img {
+    width: 70%;
+    height: 100%;
+    z-index: 2;
+  
+  }
+  
+  .gitital-circuit{
+      position:absolute;
+      top:47%;
+      opacity: .2;
+      width: 89%;
+      height: 83%;
+  }
+
+  .gitital-circuit2{
+      position: absolute;
+      top: -39%;
+      right: -9%;
+      opacity: .2;
+      width: 72%;
+      height: 83%;
+      transform: rotate(180deg);
+  }
+  /*--------------------------------------------------------------------------------------------------------------------> section 2      */
+  
+  .aboutus-section {
+    margin: 18px 0px;
+    height: 230px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-haeding {
+    font-family: "DIN Condensed Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 27px;
+    /* identical to box height, or 52% */
+  
+    text-align: center;
+  
+    /* Yellow */
+  
+    color: #f99400;
+  }
+  
+  .about-content-section {
+    max-width: 579px;
+  }
+  
+  .about-para {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    /* or 159% */
+  
+    text-align: center;
+  
+    color: #333333;
+    margin-top: 22px;
+  }
+  
+  /*------------------------------------------------------------------------------------------------------> services-section 3      */
+  
+  .our-services-section {
+    position: relative;
+    padding: 40px 0px;
+    background-color: #1661be;
+    min-height: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .services-heading {
+    font-family: "DIN Condensed Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 27px;
+    /* identical to box height, or 52% */
+  
+    text-align: center;
+  
+    /* Yellow */
+  
+    color: #f99400;
+  }
+  
+  .services-para {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    /* or 159% */
+    text-align: center;
+    color: #ffffff;
+    max-width: 670px;
+    margin: 30px auto;
+    /* border:2px solid red; */
+  }
+  
+  .our-services-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .our-services-child {
+    width: 238px;
+    height: 238px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+  }
+  
+  .our-services-child h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    /* or 19px */
+    text-align: center;
+    /* Yellow */
+    color: #f99400;
+  }
+  
+  .circuit-img {
+    position: absolute;
+    top: -234px;
+    opacity: 0.24;
+    left: 0;
+  }
+  @media (max-width: 1300px) {
+    .our-services-parent {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media(max-width:450px){
+      .services-heading {
+          font-size: 35px;
+      }
+  }
+  /*-------------------------------------------------------------------------------------------------------> why kyyte   4      */
+  
+.why-kyyte-section {
+    padding: 70px 0px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .why-kyyte-parent {
+    max-width: 912px;
+    margin: auto;
+  }
+  .why-kyyte-child2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .why-kyyte-sub {
+    width: 220px;
+    height: 100px;
+    border-top: 10px solid #f99400;
+    background-color: #e6e6e6;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
+    padding: 11px 12px;
+  }
+  .why-kyyte-header {
+    text-align: center;
+    font-family: "DIN Condensed Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 27px;
+    /* identical to box height, or 52% */
+    text-transform: uppercase;
+    /* Yellow */
+    color: #f99400;
+  }
+  
+  .why-kyyte-para {
+    padding: 20px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    /* or 159% */
+    text-align: center;
+    /* black */
+    color: #000000;
+  }
+  
+  .why-kyyte-sub p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    /* or 19px */
+    text-align: center;
+    /* Blue */
+    color: #1661be;
+  }
+  .why-circuit {
+    position: absolute;
+    right: 0;
+    transform: rotate(180deg);
+    bottom: -169px;
+    opacity: 0.2;
+  }
+  
+  @media (max-width: 820px) {
+    .why-kyyte-parent {
+      max-width: 500px;
+    }
+  
+    .why-kyyte-child2 {
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .why-kyyte-header {
+      font-size: 35px;
+    }
+  }
+  
+  /*-------------------------------------------------------------------------------------------------------> why kyyte   5     */
+
+  .innovation-section-parent{
+      display: flex;
+      justify-content: center;
+  }
+  .innovation-child{
+   background-image: url("../images/banner/innovation-backimg.png");
+      position:relative;
+      width: 33.33%;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      /* justify-content: center; */
+      gap:50px;
+      padding-left:40px;
+  }
+  .innovation-sub{
+      /* width:328px; */
+      display: flex;
+      /* align-items: center; */
+      justify-content: center;
+      flex-direction: column;
+      gap:40px;
+  }
+  .innovation-sub h2{
+    font-family: "DIN Condensed Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 60px;
+  /* identical to box height, or 136% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  /* Yellow */
+  color: #F99400;
+  }
+  .innovation-sub h1{
+      font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  /* identical to box height, or 160% */
+  color: #FFFFFF;
+  
+  }
+  .innovation-sub p{
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 27px;
+      /* or 159% */
+      color: #FFFFFF;
+  }
+  
+  @media(max-width:950px){
+      .innovation-section-parent{
+          flex-direction: column;
+          align-items: center;
+      }
+      .innovation-child{
+          width:318px;
+          height: 400px;
+      }
+  
+      .innovation-sub h2{
+          font-size: 26px;
+         line-height: 32px;
+      }
+  
+      .innovation-sub p{
+          padding-right:10px;
+      }
+  }
+
+/*-------------------------------------------------------------------------------------------------------> why kyyte   5     */
+
+.innovation-section-parent {
+    display: flex;
+    justify-content: center;
+  }
+  .innovation-child {
+    background-image: url("../images/banner/innovation-backimg.png");
+  
+    position: relative;
+  
+    width: 33.33%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 50px;
+    padding-left: 40px;
+  }
+  .innovation-sub {
+    width:328px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .innovation-sub h2 {
+    font-family: "DIN Condensed Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 60px;
+    /* identical to box height, or 136% */
+  
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  
+    /* Yellow */
+  
+    color: #f99400;
+  }
+  .innovation-sub h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    /* identical to box height, or 160% */
+  
+    color: #ffffff;
+  }
+  
+  .innovation-sub p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    /* or 159% */
+  
+    color: #ffffff;
+  }
+  
+  .innovation-sub1{
+    gap:57px;
+  }
+  
+  @media (max-width: 950px) {
+    .innovation-section-parent {
+      flex-direction: column;
+      align-items: center;
+    }
+    .innovation-child {
+      width: 318px;
+      height: 400px;
+    }
+  
+    .innovation-sub h2 {
+      font-size: 26px;
+      line-height: 32px;
+    }
+  
+    .innovation-sub p {
+      padding-right: 10px;
+    }
+  
+    .innovation-sub {
+      gap: 4px;
+    }
+  }
+  
+  /*-------------------------------------------------------------------------------------------------------> why kyyte   6     */
+  .domains-section{
+    background-color: #0a4b9b;
+    padding:50px 0px;
+  }
+  
+  
+  
+  .domain-heading{
+    font-family: "DIN Condensed Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 47px;
+  /* identical to box height, or 64% */
+  
+  text-align: center;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  padding:70px 0px;
+  }
+  
+  
+  .domain-center-img img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  .domain-all-imgs{
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  
+  /*-------------------------------------------------------------------------------------------------------> why kyyte   7     */
+  
+  .ceo-section {
+    background-color: #1661be;
+    padding:70px 0px;
+  }
+  
+  .ceo-img img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .ceo-heading {
+    font-family: "DIN Condensed Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 27px;
+    /* identical to box height, or 52% */
+  
+    text-align: center;
+  
+    /* Yellow */
+  
+    color: #f99400;
+  }
+  
+  
+  .ily-heading{
+    font-family: "DIN Condensed Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 120%;
+  /* identical to box height, or 53px */
+  
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  }
+  
+  
+  
+  .infotech-heading{
+    font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+  
+  
+  color: #FFFFFF;
+  }
+  
+  .ceo-para{
+    font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  
+  
+  color: #FFFFFF;
+  }
+  
+  

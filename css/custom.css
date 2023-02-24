@@ -16,9 +16,9 @@
 .footer-social-links li a {
   text-decoration: none;
   justify-content: space-evenly;
-  font-family: "D-DIN Condensed";
+  
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 16px;
   line-height: 22px;
   /* identical to box height, or 138% */

@@ -28,51 +28,102 @@
 	<![endif]-->
 	
 	<!-- STYLESHEETS -->
-	
+	<link rel="stylesheet" type="text/css" href="css/footer.css" />
+	<link rel="stylesheet" type="text/css" href="css/test.css" />
 	<link rel="stylesheet" type="text/css" href="css/plugins.css">
-	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 	<link rel="stylesheet" type="text/css" href="css/templete.css">
 	<link class="skin" rel="stylesheet" type="text/css" href="css/skin/skin-1.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+	<title></title>
+	<style>
+			/* The side navigation menu */
+		.sidenav {
+			height: 100%;
+			width: 0; 
+			position: fixed;
+			z-index: 1; 
+			top: 0;
+			background-color:  #E7F2FF;;
+			overflow-x: hidden; 
+			padding-top: 60px; 
+			transition: 0.5s; 
+		}
+
+		/* The navigation menu links */
+		.sidenav a {
+			padding: 8px 8px 8px 32px;
+			text-decoration: none;
+			font-size: 20px;
+			color: #1661BE;;
+			display: block;
+			transition: 0.3s
+		}
+
+		/* When you mouse over the navigation links, change their color */
+		.sidenav a:hover, .offcanvas a:focus{
+			color: #f1f1f1;
+		}
+
+		/* Position and style the close button (top right corner) */
+		.sidenav .closebtn {
+			position: absolute;
+			top: 0;
+			right: 25px;
+			font-size: 36px;
+			margin-left: 50px;
+		}
+
+		/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+		#main {
+			transition: margin-left .5s;
+			padding: 20px;
+		}
+		.sidenav {
+			right: 0;
+		}
+		/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+		@media screen and (max-height: 450px) {
+			.sidenav {padding-top: 15px;}
+			.sidenav a {font-size: 18px;}
+		}
+		.sidenav {
+			right: 0;
+		}
+	</style>
 </head>
 <body id="bg" class="footer-fixed">
 <div class="page-wraper">
 <div id="loading-area"></div>
     <!-- header -->
-    <header class="header">
-		<div class="container-header">
-			<div class="row-header">
-				<div class="logo">
-					<img src="./images/icon/logo.png"/>
-				</div>
-				<div class="nav-toggle">
-					<span></span>
-				</div>
-			</div>
-		</div>
-	</header>
-	<!-- header end -->
-	
-	<!-- nav start -->
-	<div class="nav-overlay"></div>
-	<nav class="nav">
-		<div class="head">
-		<strong>Menu</strong>
-		<div class="close">&times;</div>
-	</div>
-		<ul>
-			<li><a href="home.html">home</a></li>
-			<li><a href="about.html">about</a></li>
-			<li><a href="services.html">services</a></li>
-			<li><a href="career.html"> career</a></li>
-			<li><a href="ourpartners.html">partners</a></li>
-			<li><a href="customers.html">customers</a></li>
-			<li><a href="contact.html">contact</a></li>
-		</ul>
-	</nav>
-	<!-- nav end -->
+    <header>
+        <div class="nav-section">
+          <div class="logo-section">
+            <img src="./images/icon/logo.png" alt="" />
+            <!-- <h1>FILMABLE</h1> -->
+          </div>
+          <div class="links">
+            <ul class="menu-links">
+            
+          </ul>
+          </div>
+          
+              <img src="./images/icon/burger-menu.png" onclick="openNav()" alt=""   />
+              <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="home.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="services.html">SERVICES</a>
+                <a href="industries.html">INDUSTRIES & FUNCTIONAL AREAS</a>
+                <a href="ourpartners.html">PARTNERS</a>
+                <a href="customers.html">CUSTOMERS</a>
+                <a href="career.html">CAREER</a>
+                <a href="#">CONTACT US</a>
+              </div>
+          
+        </div>
+      </header>
 		<!-- header END -->
 	<!-- carousel start here  -->
 	
@@ -110,8 +161,7 @@
                 <div class="dlab-bnr-inr-entry text-black text-left">
                     <h1 class="wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">Our Key</h1>
 					<h1 class="wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s"> Differentiators</h1>
-					<p class="wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="1s">
-						.</p>
+					
                 </div>
             </div>
         </div>
@@ -147,27 +197,27 @@
 			</div>
 			<!-- About Info End -->
 			<!-- Team -->
-			<div class="section-full content-inner-1">
-				<div class="container">
+			<div class="section-full content-inner-1  mt-5">
+				<div class="container ">
 					<div class="section-full  p-sm-t40">
-						<div class="container">
+						<div class="container ">
 							 <div class="row"> 
 								<div class="col-lg-4 col-md-6 m-b40 m-sm-b30 wow bounceInUp" data-wow-delay="0.5s" data-wow-duration="3s">
 									<div class="info-box text-black">
-										<h3 class="title">Leadership</h3>
+										<h3 class="title">LEADERSHIP</h3>
 										<p>Proven collective experience of 150+ years in digital and business transformations delivering effective and timely solutions by simplifying and solving business critical needs</p>
 									</div>
 								</div>
 								<div class="col-lg-4 col-md-6 m-b40 m-sm-b30 wow bounceInUp" data-wow-delay="0.8s" data-wow-duration="3s">
 									<div class="info-box text-black">
-										<h3 class="title">Vision - The What</h3>
+										<h3 class="title">VISION - THE WHAT</h3>
 										<p>To Amplify the untapped potential of ERP investments by 
 											leveraging thought leadership, deep industry experience, and delivery excellence.</p>
 									</div>
 								</div>
 								<div class="col-lg-4 col-md-6 m-b0 wow bounceInUp" data-wow-delay="1s" data-wow-duration="3s">
 									<div class="info-box text-black">
-										<h3 class="title">Mission - The How</h3>
+										<h3 class="title">MISSION - THE HOW</h3>
 										<p>By providing best-in-class advisory, practical innovation that bridge the gap between product capabilities and specific
 											 industry needs,
 											 delivery excellence through purposeful accelerators.</p>
@@ -274,89 +324,7 @@
 					</div>
 				</div>
 			</div>
-			<!-- Team End -->
-			<!-- Our Services -->
-			<!-- <div class="section-full content-inner-1">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-4">
-							<div class="section-head wow fadeInLeft" data-wow-delay="0.8s" data-wow-duration="2s">
-								<h2 class="title">OUR VALUES SHAPE THE WAY WE WORK</h2>
-							</div>
-						</div>
-						<div class="col-lg-8">
-							<div class="row">
-								<div class="col-lg-6 m-b50 m-sm-b30 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="2s">
-									<div class="info-box text-black">
-										<h3 class="title">COMPREHENSIVE GROWTH</h3>
-										<p>Kyyte functions with a core value of growing and evolving together with contemporaries. Our business model is designed to share expertise and services aided by advanced technology and innovation to build a future beneficial to the entire school of business.
-
-											.</p>
-									</div>
-								</div>
-								<div class="col-lg-6 m-b50 m-sm-b30 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="2s">
-									<div class="info-box text-black">
-										<h3 class="title">INNOVATION TO ALL</h3>
-										<p>Kyyte is an amalgamation of business strategy experts, technical intellectuals, economists and operation specialists that are knowledgeable and capable of innovations and ideation that the company provides as services to businesses among multiple industries facilitating mutual growth.
-										</p>
-									</div>
-								</div>
-								<div class="col-lg-6 m-b0 m-sm-b0 wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="2s">
-									<div class="info-box text-black">
-										<h3 class="title">COMMITTED TO DIGITAL TRANSFORMATION</h3>
-										<p>The advanced technologies such as Blockchain, Artificial Intelligence, Machine Learning and more are revolutionising the businesses and leading them towards a virtual awakening. Kyyte is committed to aid businesses in this digital transformation of all their relevant services and products.
-
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div> -->
-			<!-- Our Services End -->
-			<!-- Img Carousel  -->
-			<!-- <div class="section-full content-inner-1 wow fadeIn" data-wow-delay="0.3s" data-wow-duration="2s">
-				<div class="img-carousel owl-carousel owl-none"  id="lightgallery">
-					<div class="item">
-						<div class="project-bx">
-							<div class="media">
-								<img src="images/slide/slide1.png" alt="">
-							</div>
-							<div class="info">
-								<span data-exthumbimage="images/slide/slide1.png" data-src="images/slide/slide1.png" class="check-km" title="Title Come Here">		
-									<i class="ti-image"></i> 
-								</span>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="project-bx">
-							<div class="media">
-								<img src="images/slide/slide2.png" alt="">
-							</div>
-							<div class="info">
-								<span data-exthumbimage="images/slide/slide2.png" data-src="images/slide/slide2.png" class="check-km" title="Title Come Here">		
-									<i class="ti-image"></i> 
-								</span>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="project-bx">
-							<div class="media">
-								<img src="images/slide/slide3.png" alt="">
-							</div>
-							<div class="info">
-								<span data-exthumbimage="images/slide/slide3.png" data-src="images/slide/slide3.png" class="check-km" title="Title Come Here">		
-									<i class="ti-image"></i> 
-								</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div> -->
-			<!-- Clients -->
+			
 			<div class="section-full content-inner-2">
 				<div class="container">
 					<div class="row">
@@ -419,43 +387,68 @@
     </div>
     <!-- Content END -->
 	<!-- Footer -->
-	<footer >
-		<div class="container-fluid footer-container">
-			<div class="row">
-				<div class="col-md-8">
-					<ul class="footer-social-links">
-						<li><a href="">FACEBOOK</a></li>
-						<li><a href="">INSTAGRAM</a></li>
-						<li><a href="">LINKEDIN</a></li>
-						<li><a href="">TWITTER</a></li>
-					</ul>
-				</div>
-				<div class="col-md-4">
-					<ul class="footer-social-links" >
-						<li><a href=""> </a></li>
-						<li><a href=""> </a></li>
-						<li><a href=""> </a></li>
-						<li><a href="">CONTACT US</a></li>
-					</ul>
-				</div>
+	<footer>
+		<div class="container-fluid footer-container-main p-3">
+			<div class="row ">
+				<div class="col-md-6 footer-container-ul-links">
+			<ul>
+			  <li><a href="">FACEBOOK</a></li>
+			  <li><a href="">INSTAGRAM</a></li>
+			  <li><a href="">LINKEDIN</a></li>
+			  <li><a href="">TWITTER</a></li>
+			</ul>
+		  </div>
+		  <div class="col-md-2"></div>
+		  <div class="col-md-4 footer-container-ul-links">
+			<ul>
+			  <li><a href="">CONTACT US</a></li>
+			</ul>
+		  </div>
 			</div>
 		</div>
-		<div class="container-fluid footer-container-2">
-			<div class="row">
-			<div class="col-md-6 pt-3"><p>© 2023 KYYTE. All rights reserved.</p></div>
-			<div class="col-md-6 pt-3"><p>5865 North Point Pkwy,Suite 100, Alpharetta, GA 30022</p></div>
-		</div>
+
+		<div class="container-fluid footer-container-main2 p-3">
+		<div class="row ">
+				<div class="col-md-4">
+			<p>© 2023 KYYTE. All rights reserved.</p>
+		  </div>
+		  <div class="col-md-4">
+			
+		  </div>
+		  <div class="col-md-4">
+			<p>5865 North Point Pkwy,Suite 100, Alpharetta, GA 30022</p>
+		  </div>
+			</div>
 		</div>
 	</footer>
    
 
 
 	
-
+	
 	
     <!-- Footer END -->
     <button class="scroltop icon-up" type="button"><i class="fa fa-arrow-up"></i></button>
 </div>
+
+
+
+
+<script type="text/javascript">
+
+	/* Simple appearence with animation AN-1*/
+	function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+	}
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+	}
+	/* Simple appearence with animation AN-1*/
+	</script>
+
+
+
+
 <script src="js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
 <script src="plugins/wow/wow.js"></script><!-- WOW JS -->
 <script src="plugins/bootstrap/js/popper.min.js"></script><!-- BOOTSTRAP.MIN JS -->
@@ -466,9 +459,9 @@
 <script src="plugins/masonry/masonry.filter.js"></script><!-- MASONRY -->
 <script src="plugins/owl-carousel/owl.carousel.js"></script><!-- OWL SLIDER -->
 <script src="plugins/lightgallery/js/lightgallery-all.min.js"></script><!-- Lightgallery -->
-<script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
+ <script src="js/custom.js"></script>  <!-- CUSTOM FUCTIONS  -->
 <script src="js/dz.carousel.js"></script><!-- SORTCODE FUCTIONS  -->
-<script src="js/navscript.js"></script><!-- SORTCODE FUCTIONS  -->
+<!-- <script src="js/navscript.js"></script> -->
 
 </body>
 </html>

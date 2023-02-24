@@ -91,12 +91,12 @@
 }
 .nav{
 	position: fixed;
+	right:0;
 	left:0;
-	top:0;
 	background-color: #E7F2FF;;
 	height: 100%;
 	width: 260px;
-	z-index: 500;
+	z-index: 100;
 	transform: translateX(-260px);
 	overflow-y: auto;
 }

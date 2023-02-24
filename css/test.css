@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "DIN Condensed Bold";
+  font-style: normal;
+  font-weight: 400;
+  src: local("../fonts/din/DIN Condensed Bold"),
+      url(../fonts/din/DINCondensed-Bold.woff) format("woff");
+}
+  .nav-section{
+    position:relative;
+    top:0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 6%;
+    height: 10vh;
+    background-color:#E7F2FF;
+    ;
+    z-index: 10;
+    position: fixed;
+    width:100%;
+  }
+  .logo-section img{
+    width:200px;
+    height: 48px;
+  }
+  .links ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap:60px;
+    margin-bottom: 0px;
+  }
+  .navbar-head{
+    position: absolute;
+    right:0px;
+    width:260px;
+    height:100%;
+    background-color: rgb(17, 180, 60);
+    text-align: center;
+    transition: 0.800s ease;
+    z-index: 20;
+}
+.navbar-head > .side-nav{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.nav-item{
+    /* display: flex */
+}
+.nav-item > .nav-link:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+.toggle-collaps{
+    float: left;
+    margin-left: -3.3em;
+    
+}
+.toggle-icon, .toggle-icon:before, .toggle-icon::after{
+    content:"";
+    width:30px;
+    height:3px;
+    position: fixed;
+    background-color: rgb(134, 19, 19);
+    border-radius: 2em;
+    border: 2 px solid black;
+    cursor: pointer;
+    transition: 0.800s ease;
+    margin-top: 0.8em;
+   
+ 
+}
+.toggle-icon::before{
+    position: absolute;
+    left: 3px;
+    top:3px;
+   
+}
+.toggle-icon::after{
+    position: absolute;
+    left:-5px;
+    top:-4px;
+    width:40px;
+}
+.toggle-icon{
+    width:30px;
+}
+.show .toggle-icon::after{
+    width:30px;
+}
+.show .toggle-icon {
+    width:30px;
+}
+.nav-item > .site-name{
+text-decoration: none;
+padding: 1.3em;
+font-size: 2em;
+color: whitesmoke;
+}
+.nav-item:last-child > .nav-link i{
+    padding: .5em;
+}
+.nav-item:hover:last-child > .nav-link{
+    background-color: rgb(139, 12, 12);
+    color: white;
+}
