@@ -11182,13 +11182,14 @@ footer .widget_services ul li {
 }
 /*widget Getintuch*/
 .footer-top {
-    background: var(--color-primary);
+    /* background: var(--color-primary); */
+      background: red;
     background-size: cover;
     background-position: center;
     padding: 80px 0 20px;
 }
 .footer-bottom {
-    background-color:var(--color-primary);
+    background-color:blue;
     padding: 25px 0;
     color: #b0b0b0;
     font-size: 14px;

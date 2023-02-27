@@ -1,0 +1,351 @@
+@font-face {
+  font-family: "DIN Condensed Bold";
+  font-style: normal;
+  font-weight: 400;
+  src: local("../fonts/din/DIN Condensed Bold"),
+    url(../fonts/din/DINCondensed-Bold.woff) format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*----------------------------------------------------------------------------------------------------------------- section1    */
+
+.industries-parent {
+  /* margin:75px 0px; */
+  position: relative;
+  overflow: hidden;
+  padding-left: 7vw;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.industries-heading {
+  font-family: "DIN Condensed Bold";
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72.5px;
+  line-height: 110%;
+  /* or 80px */
+
+  text-transform: uppercase;
+
+  /* black */
+
+  color: #000000;
+}
+
+.industries-para {
+  font-family: "lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  /* black */
+
+  color: #000000;
+
+  opacity: 0.5;
+  max-width: 612px;
+}
+
+.industries-parent img {
+  position: absolute;
+  /* transform:rotate(180deg); */
+  opacity: 0.2;
+  right: 0;
+  top: -113px;
+}
+
+@media (max-width: 768px) {
+  .industries-heading {
+    font-size: 10vw;
+  }
+
+  .industries-para {
+
+   width: 85%;
+  }
+}
+
+/*----------------------------------------------------------------------------------------------------------------- section2    */
+.ship-section {
+  background-color: #1661be;
+}
+.ship-parent {
+  padding: 100px 0px;
+}
+
+.ship-img img {
+  width: 100%;
+  height: 82%;
+}
+
+.ship-icons {
+  display: flex;
+  align-items: center;
+  margin: 6px;
+  height: 110px;
+  background: rgba(0, 0, 0, 0.15);
+  /* Blue */
+
+  border: 2px solid #1661be;
+  /* shad1 */
+
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ship-icons:hover {
+  background-color: #4379bc;
+  border:2px solid white;
+}
+
+.ship-icons img {
+  width: 59px;
+  height: 78px;
+  margin: 0px 40px;
+}
+
+.ship-industries-heading {
+  font-family: "DIN Condensed Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 102.5px;
+  line-height: 110%;
+  /* identical to box height, or 113px */
+
+  text-transform: uppercase;
+
+  /* fff */
+
+  color: #ffffff;
+  margin-top:10px;
+}
+
+.ship-icons div h1 {
+  font-family: "Titillium Web";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 28px;
+  /* identical to box height, or 187% */
+
+  /* fff */
+
+  color: #ffffff;
+}
+
+.ship-icons div h3 {
+  font-family: "Titillium Web";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 22px;
+  /* identical to box height, or 176% */
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.ship-icons div p {
+  font-family: "Titillium Web";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 26px;
+  /* identical to box height, or 173% */
+
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+
+
+@media (max-width: 800px) {
+  .ship-industries-heading {
+    font-size: 12vw;
+  }
+
+.ship-icons div h3 {
+
+font-size: 20px;
+}
+
+.ship-icons div p {
+
+    font-size: 13px;
+}
+}
+
+@media (max-width: 400px) {
+  .ship-icons img{
+    margin:0px 17px;
+  }
+}
+/*-----------------------------------------------------------------------------------------------------------------  secction3    */
+
+.function-section {
+  background-color: white;
+}
+.function-parent {
+  padding: 100px 0px;
+}
+
+.functional-img img {
+  width: 100%;
+  height: 82%;
+}
+
+.function-icons {
+  display: flex;
+  align-items: center;
+  margin: 6px;
+  height: 110px;
+  background: rgba(0, 0, 0, 0.15);
+  /* Blue */
+
+  background: rgba(22, 97, 190, 0.1);
+  border: 2px solid rgba(22, 97, 190, 0.3);
+  box-shadow: 0px 4px 20px rgba(0, 107, 206, 0.15);
+  color: #1661BE;
+
+}
+
+.function-icons:hover {
+  background-color: #2b6fc4;
+  color:white;
+}
+
+.function-icons img {
+  width: 59px;
+  height: 78px;
+  margin: 0px 40px;
+}
+
+.function-icons div h1 {
+  font-family: "Titillium Web";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 28px;
+  /* identical to box height, or 187% */
+  
+  
+  /* Blue */
+  
+  /* color: #1661BE; */
+}
+
+
+.function-icons div h3 {
+  font-family: "Titillium Web";
+  font-style: normal;
+font-weight: 700;
+font-size: 34px;
+line-height: 22px;
+/* identical to box height, or 176% */
+
+letter-spacing: 1px;
+text-transform: uppercase;
+
+/* Blue */
+
+/* color: #1661BE; */
+}
+
+.function-icons div p {
+  font-family: "Titillium Web";
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 26px;
+  /* identical to box height, or 173% */
+  
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  
+  /* Blue */
+  
+  /* color: #1661BE; */
+}
+
+.functional-heading {
+  font-family: "DIN Condensed Bold";
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 102.5px;
+  line-height: 90%;
+  /* or 92px */
+
+  text-align: right;
+  text-transform: uppercase;
+
+  /* Blue */
+
+  color: #1661be;
+  margin-bottom:20px;
+}
+
+
+
+.contact-us-button {
+  position: absolute;
+  height: 60px;
+  width: 166px;
+
+  background: #ffe13c;
+  border-radius: 0px;
+  border: none;
+
+  font-family: "DIN Condensed Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18.9841px;
+  line-height: 44px;
+  /* identical to box height, or 231% */
+
+
+  letter-spacing: 1.46032px;
+  text-transform: uppercase;
+
+  color: #000000;
+  right: -53px;
+  bottom:100px;
+  transform: rotate(90deg);
+}
+
+@media (max-width: 800px) {
+  .functional-heading {
+    font-size: 12vw;
+  }
+
+
+  .function-icons div h3 {
+
+    font-size: 20px;
+    }
+    
+    .function-icons div p {
+    
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 400px) {
+  .function-icons img{
+    margin:0px 17px;
+  }
+}
+

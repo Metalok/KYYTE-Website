@@ -28,138 +28,263 @@
 	<![endif]-->
 	
 	<!-- STYLESHEETS -->
+    <link rel="stylesheet" type="text/css" href="css/test.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
 	<link rel="stylesheet" type="text/css" href="css/plugins.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/templete.css">
 	<link class="skin" rel="stylesheet" type="text/css" href="css/skin/skin-1.css">
+    <style>
+        /* The side navigation menu */
+    .sidenav {
+        height: 100%;
+        width: 0; 
+        position: fixed;
+        z-index: 1; 
+        top: 0;
+        background-color:  #E7F2FF;;
+        overflow-x: hidden; 
+        padding-top: 60px; 
+        transition: 0.5s; 
+    }
+    
+    /* The navigation menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #1661BE;;
+        display: block;
+        transition: 0.3s
+    }
+    
+    /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover, .offcanvas a:focus{
+        color: #f1f1f1;
+    }
+    
+    /* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    
+    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+    #main {
+        transition: margin-left .5s;
+        padding: 20px;
+    }
+    .sidenav {
+        right: 0;
+    }
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+    .sidenav {
+        right: 0;
+    }
+    </style>
 </head>
 <body id="bg" class="footer-fixed">
-<div class="page-wraper">
+
 <div id="loading-area"></div>
     <!-- header -->
-    <header class="site-header mo-left header header-white style-1 navstyle4">
-		<!-- main header -->
-        <div class="main-bar-wraper navbar-expand-lg">
-            <div class="main-bar clearfix ">
-                <div class="container clearfix">
-                    <!-- website logo -->
-                    <div class="logo-header mostion">
-						<a href="index.html">
-							<div class="logo-text">
-								<span class="wow bounce" data-wow-duration="2s" data-wow-delay="0.5s">S</span>
-								<span class="wow bounce" data-wow-duration="2s" data-wow-delay="0.6s">M</span>
-								<span class="wow bounce" data-wow-duration="2s" data-wow-delay="0.7s">A</span>
-								<span class="wow bounce" data-wow-duration="2s" data-wow-delay="0.8s">R</span>
-								<span class="wow bounce" data-wow-duration="2s" data-wow-delay="0.9s">T</span>
-							</div>
-						</a>
-					</div>
-					<!-- extra nav -->
-                    <div class="extra-nav">
-                        <div class="extra-cell">
-							<div class="video-wraper">
-								<div class="video-play">
-									<a href="https://www.youtube.com/watch?v=UMX6eWoMXAM" class="popup-youtube video"><div><i class="fa fa-play"></i></div><span>Showreel ‘18</span></a>
-								</div>
-							</div>
-						</div>
-                    </div>
-                    <!-- nav toggle button -->
-                    <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-						<span></span>
-						<span></span>
-						<span></span>
-					</button>
-                    <!-- main nav -->
-                    <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
-						<ul class="nav navbar-nav">	
-							<li>
-								<a href="index.html">Home </a>
-							</li>
-							<li><a href="about.html">About</a></li>
-							<li>
-								<a href="javascript:void(0);">Services <i class="fa fa-chevron-down"></i></a>
-								<ul class="sub-menu">
-									<li><a href="services.html">Services</a></li>
-									<li><a href="services-details.html">services Details</a></li>
-								</ul>
-							</li>
-							<li><a href="javascript:void(0);">Works <i class="fa fa-chevron-down"></i></a>
-								<ul class="sub-menu">
-									<li><a href="work.html">Works</a></li>
-									<li><a href="work-details.html">Work Details</a></li>
-								</ul>
-							</li>
-							<li class="active"><a href="contact.html">Contacts</a></li>
-							<li><a href="javascript:void(0);">Blog <i class="fa fa-chevron-down"></i></a>
-								<ul class="sub-menu left">
-									<li><a href="blog.html">Blog</a></li>
-									<li><a href="blog-details.html">Blog Details</a></li>
-								</ul>
-							</li>
-						</ul>	
-					</div>
-				 </div>
-            </div>
-        </div>
-        <!-- main header END -->
-    </header>
+     <!-- header -->
+   <header>
+	<div class="nav-section">
+	  <div class="logo-section">
+		<img src="./images/icon/logo.png" alt="" />
+		<!-- <h1>FILMABLE</h1> -->
+	  </div>
+	  <div class="links">
+		<ul class="menu-links">
+		
+	  </ul>
+	  </div>
+	  
+		  <img src="./images/icon/burger-menu.png" class="toggle-collaps" alt=""   onclick="openNav()"/>
+		  <div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="home.html">HOME</a>
+			<a href="about.html">ABOUT</a>
+			<a href="services.html">SERVICES</a>
+			<a href="industries.html">INDUSTRIES & FUNCTIONAL AREAS</a>
+			<a href="ourpartners.html">PARTNERS</a>
+			<a href="customers.html">CUSTOMERS</a>
+			<a href="career.html">CAREER</a>
+			<a href="#">CONTACT US</a>
+		  </div>
+	  
+	</div>
+  </header>
+	<!-- header END -->
     <!-- header END -->
-    <!-- Content -->
-    <div class="page-content bg-white">
-		<!-- inner page banner -->
-        <div class="dlab-bnr-inr no-bg-bnr">
-            <div class="container">
-                <div class="dlab-bnr-inr-entry text-black text-left">
-                    <h1 class="wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">DON’T BE SHY, <span class="text-primary">SAY HI</span></h1>
+		<!-- Banner -->
+		<div class="section-full customer-inner-section page-banner pt-5">
+			<div class="container pt-5">
+				<div class="row pt-5">
+					<div class="col-xl-6 col-lg-12">
+						<!-- <h2 class="intro-title" data-text="BUILD">BUILDING</h2> -->
+						<h2 class="intro-title our-partner-head">Contact Us</h2>
+						<!-- <h2 class="intro-title our-partner-head">PARTNERS</h2> -->
+						<p class="partners-text">We serve a diverse set of clientele that range from private enterprises to government agencies accelerating their digital transformation and assisting in innovations.</p>
+					</div>
+					<div class="col-xl-6 col-lg-12">
+						
+					</div>
 				</div>
-            </div>
-        </div>
-        <!-- inner page banner END -->
-        <!-- contact area -->
-        <div class="content-block">
-			<div class="section-full content-inner-3">
+			</div>
+			<a href="contact.html" class="contact-btn side-btn">Contact us</a>
+			<!-- <a href="contact.html" class="discover-btn side-btn"><i class="fa fa-long-arrow-down"></i> DISCOVER ME </a> -->
+		</div>
+		<!-- Banner End -->
+    <!-- Content -->
+    <!-- Social Section -->
+			<div class="section-full social-section">
 				<div class="container">
-					<div class="row">
-						<div class="col-lg-4 col-md-4 m-b50 m-sm-b30 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">
-							<div class="contact-info text-black text-center">
-								<div class="thumb">
-									<img src="images/icon/map/map1.png" alt="">
+					<div class="row sp60">
+						<div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 content-inner-2 bg-white after-right">
+							<h3 class="text-uppercase pt-title text-black wow fadeIn" data-wow-delay="1.5s" data-wow-duration="2s">Check More Work</h3>
+							<div class="project-carousel owl-carousel" id="lightgallery">
+								<div class="item wow bounceInUp" data-wow-delay="0.5s" data-wow-duration="2s">
+									<div class="project-bx">
+										<div class="media">
+											<img src="images/our-work/construct-work/pic1.jpg" alt=""/>
+										</div>
+										<div class="info">
+											<span data-exthumbimage="images/our-work/construct-work/pic1.jpg" data-src="images/our-work/construct-work/pic1.jpg" class="check-km" title="Title Come Here">		
+												<i class="ti-image"></i> 
+											</span>
+										</div>
+									</div>
 								</div>
-								<h4 class="title font-weight-700"> CANADA</h4>
-								<p>Address #8901 marmora road chi  <br/>minh city, vietnam</p>
-								<a href="#" class="btn-link text-black"><i class="la la-map-marker"></i>VIEW ON MAP</a>
+								<div class="item wow bounceInUp" data-wow-delay="1.0s" data-wow-duration="2s">
+									<div class="project-bx">
+										<div class="media">
+											<img src="images/our-work/construct-work/pic2.jpg" alt=""/>
+										</div>
+										<div class="info">
+											<span data-exthumbimage="images/our-work/construct-work/pic2.jpg" data-src="images/our-work/construct-work/pic2.jpg" class="check-km" title="Title Come Here">		
+												<i class="ti-image"></i> 
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="item wow bounceInUp" data-wow-delay="1.5s" data-wow-duration="2s">
+									<div class="project-bx">
+										<div class="media">
+											<img src="images/our-work/construct-work/pic3.jpg" alt=""/>
+										</div>
+										<div class="info">
+											<span data-exthumbimage="images/our-work/construct-work/pic3.jpg" data-src="images/our-work/construct-work/pic3.jpg" class="check-km" title="Title Come Here">		
+												<i class="ti-image"></i> 
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="item wow bounceInUp" data-wow-delay="2.0s" data-wow-duration="2s">
+									<div class="project-bx">
+										<div class="media">
+											<img src="images/our-work/construct-work/pic4.jpg" alt=""/>
+										</div>
+										<div class="info">
+											<span data-exthumbimage="images/our-work/construct-work/pic4.jpg" data-src="images/our-work/construct-work/pic4.jpg" class="check-km" title="Title Come Here">		
+												<i class="ti-image"></i> 
+											</span>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-4 m-b50 m-sm-b10 wow fadeInUp" data-wow-delay="1.0s" data-wow-duration="1s">
-							<div class="contact-info text-black text-center">
-								<div class="thumb">
-									<img src="images/icon/map/map2.png" alt="">
-								</div>
-								<h4 class="title font-weight-700">LOS ANGELES</h4>
-								<p>Address #8901 marmora road chi  <br/>minh city, vietnam</p>
-								<a href="#" class="btn-link text-black"><i class="la la-map-marker"></i>VIEW ON MAP</a>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 m-b50 m-sm-b0 wow fadeInUp" data-wow-delay="1.5s" data-wow-duration="1s">
-							<div class="contact-info text-black text-center">
-								<div class="thumb">
-									<img src="images/icon/map/map3.png" alt="">
-								</div>
-								<h4 class="title font-weight-700">MEXICO </h4>
-								<p>Address #8901 marmora road chi  <br/>minh city, vietnam</p>
-								<a href="#" class="btn-link text-black"><i class="la la-map-marker"></i>VIEW ON MAP</a>
-							</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6 content-inner-2 d-none d-lg-block wow fadeInRight" data-wow-delay="1s" data-wow-duration="1s">
+							<p class="text-uppercase pt-title text-black">CONNECT WITH US ON</p>
+							<h2 class="title">
+								<a href="javascript:void(0);">FACEBOOK</a>
+								<a href="javascript:void(0);">TWITTER</a>
+								<a href="javascript:void(0);">LINKEDIN</a>
+							</h2>
 						</div>
 					</div>
 				</div>
 			</div>
+			<!-- Social Section End -->
+	<!-- Social Section -->
+	<div class="section-full social-section">
+		<div class="container">
+			<div class="row sp60">
+				<div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 content-inner-2 bg-white after-right">
+					<h3 class="text-uppercase pt-title text-black wow fadeIn" data-wow-delay="1.5s" data-wow-duration="2s">OUR OFFICES WORLDWIDE</h3>
+					<div class="project-carousel owl-carousel" id="lightgallery">
+						<div class="item wow bounceInUp" data-wow-delay="0.5s" data-wow-duration="2s">
+							<div class="project-bx">
+								<div class="media">
+									<img src="./images/banner/usa.png" alt=""/>
+								</div>
+								<div class="info">
+									<span data-exthumbimage="images/our-work/construct-work/pic1.jpg" data-src="images/our-work/construct-work/pic1.jpg" class="check-km" title="Title Come Here">		
+										<i class="ti-image"></i> 
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="item wow bounceInUp" data-wow-delay="1.0s" data-wow-duration="2s">
+							<div class="project-bx">
+								<div class="media">
+									<img src="./images/banner/canada.png" alt=""/>
+								</div>
+								<div class="info">
+									<span data-exthumbimage="images/our-work/construct-work/pic2.jpg" data-src="images/our-work/construct-work/pic2.jpg" class="check-km" title="Title Come Here">		
+										<i class="ti-image"></i> 
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="item wow bounceInUp" data-wow-delay="1.5s" data-wow-duration="2s">
+							<div class="project-bx">
+								<div class="media">
+									<img src="./images/banner/india.png" alt=""/>
+								</div>
+								<div class="info">
+									<span data-exthumbimage="images/our-work/construct-work/pic3.jpg" data-src="images/our-work/construct-work/pic3.jpg" class="check-km" title="Title Come Here">		
+										<i class="ti-image"></i> 
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="item wow bounceInUp" data-wow-delay="2.0s" data-wow-duration="2s">
+							<div class="project-bx">
+								<div class="media">
+									<img src="./images/banner/usa.png" alt=""/>
+								</div>
+								<div class="info">
+									<span data-exthumbimage="./images/banner/usa.png" data-src="./images/banner/usa.png" class="check-km" title="Title Come Here">		
+										<i class="ti-image">hi</i> 
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6 content-inner-2 d-none d-lg-block wow fadeInRight" data-wow-delay="1s" data-wow-duration="1s">
+					<!-- <p class="text-uppercase pt-title text-black">Discover more of our work on</p>
+					<h2 class="title">
+						<a href="javascript:void(0);">FACEBOOK</a>
+						<a href="javascript:void(0);">TWITTER</a>
+						<a href="javascript:void(0);">LINKEDIN</a>
+					</h2> -->
+				</div>
+			</div>
 		</div>
-		<!-- contact area END -->
-    </div>
+	</div>
+	<!-- Social Section End -->
     <!-- Content END -->
 	<!-- Footer -->
-    <footer class="site-footer bg-primary">
+    <footer class="site-footer ">
         <!-- footer top part -->
         <div class="footer-top">
             <div class="container">
@@ -197,7 +322,7 @@
     </footer>
     <!-- Footer END -->
     <button class="scroltop icon-up" type="button"><i class="fa fa-arrow-up"></i></button>
-</div>
+
 <script src="js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
 <script src="plugins/wow/wow.js"></script><!-- WOW JS -->
 <script src="plugins/bootstrap/js/popper.min.js"></script><!-- BOOTSTRAP.MIN JS -->

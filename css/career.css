@@ -1,0 +1,273 @@
+@font-face {
+  font-family: "DIN Condensed Bold";
+  font-style: normal;
+  font-weight: 400;
+  src: local("../fonts/din/DIN Condensed Bold"),
+    url(../fonts/din/DINCondensed-Bold.woff) format("woff");
+
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------- section 1  */
+
+.career-page-section {
+  position: relative;
+  background-color: #166abe;
+  overflow: hidden;
+}
+
+.career-heading-section {
+  max-width: 535px;
+  padding: 88px 0px;
+}
+
+.career-heading-section h1 {
+  font-family: "DIN Condensed Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72.5px;
+  line-height: 100%;
+  /* identical to box height, or 72px */
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.career-heading-section p {
+  font-family: "lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  /* fff */
+
+  color: #ffffff;
+}
+
+.career-back-img1 {
+  position: absolute;
+  opacity: 0.2;
+  transform: rotate(180deg);
+  right: 0;
+  width: 56%;
+  height: 100%;
+  top: -208px;
+}
+.career-back-img2 {
+  position: absolute;
+  opacity: 0.2;
+  left: 19%;
+  bottom: -84%;
+}
+
+.contact-us-button {
+  position: absolute;
+  height: 60px;
+  width: 166px;
+
+  background: #ffe13c;
+  border-radius: 0px;
+  border: none;
+
+  font-family: "DIN Condensed Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18.9841px;
+  line-height: 44px;
+  /* identical to box height, or 231% */
+
+
+  letter-spacing: 1.46032px;
+  text-transform: uppercase;
+
+  color: #000000;
+  right: -53px;
+  bottom:100px;
+  transform: rotate(90deg);
+}
+
+@media (max-width: 768px) {
+  .career-back-img1 {
+    width: 100%;
+  }
+  .career-back-img2 {
+    left: 0px;
+    bottom: -56%;
+  }
+
+
+}
+@media (max-width: 600px) {
+
+.career-heading-section p {
+    width: 87%;
+}
+}
+
+/*---------------------------------------------------------------------------------------------------------------- section2  */
+
+.career-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 0px 0px 30px;
+  border-bottom: 1px solid rgba(212, 211, 212);
+}
+
+.career-menu h1 {
+  font-family: "Chakra Petch";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height, or 139% */
+  color: #2b292d;
+  border-bottom: 2px solid white;
+  margin-bottom: 0px;
+  padding: 0px 10px 15px 10px;
+}
+
+
+.career-menu h1:hover {
+  border-bottom: 2px solid black;
+  transition-duration: .5s;
+  font-weight: 700;
+
+}
+@media(max-width:768px){
+.career-menu {
+    flex-wrap: wrap;
+
+}
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------- section2  */
+.email-marketing-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top:30px;
+    padding-bottom:50px;
+    
+}
+.email-marketing-parent{
+    position:relative;
+    width: 546px;
+    height: 240px;
+    background: #FFFFFF;
+    border: 1px solid rgba(43, 41, 45, 0.2);
+    margin-bottom:20px;
+
+
+
+}
+
+.email-marketing-child{
+    width: 274px;
+    /* height: 140px; */
+    padding:20px 0px 20px 0px;
+    margin-left:50px;
+}
+
+.email-marketing-parent:hover{
+
+    background: #FFFFFF;
+box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15), 0px 11px 55px rgba(0, 0, 0, 0.07);
+}
+
+.email-apply-btn{
+    position:absolute;
+    right: 0px;
+    top:50%;
+    transform: translateY(-50%);
+
+
+    width: 80px;
+height: 50px;
+
+
+/* Yellow */
+
+background: #F99400;
+
+
+
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 26px;
+/* identical to box height, or 186% */
+
+text-align: right;
+
+color: #FFFFFF;
+border:none;
+    
+}
+
+
+.email-marketing-child h1{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    /* or 144% */
+    width: 238px;
+    
+    color: #2B292D;
+}
+
+.email-marketing-child p{
+
+    font-family: 'Work Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+/* or 144% */
+width: 238px;
+
+color: #2B292D;
+}
+
+.email-marketing-child h2{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    /* or 144% */
+    width: 238px;
+    color:#F99400;
+
+
+}
+
+.blue-border{
+    border-bottom:20px solid #1661be;
+}
+@media(max-width:1200px){
+    .email-marketing-section{
+        justify-content: center;
+    }
+}
+
+@media(max-width:600px){
+    .email-marketing-parent{
+        width: 320px;
+    }
+    .email-apply-btn{
+        top:60%;
+
+    }
+.email-marketing-child{
+
+ margin-left:20px;   
+}
+}

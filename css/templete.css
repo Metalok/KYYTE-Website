@@ -422,7 +422,7 @@
 .social-section {
   align-items: center;
   display: flex;
-  background: #e39a00;
+  /* background: #e39a00; */
 }
 .p-title {
   font-size: 20px;
