@@ -230,7 +230,7 @@ input[type="radio"] + label:hover:before,
 .social-section .title a,
 .site-footer .widget.widget_about .footer-title a, 
 .site-footer {
-	background-image: linear-gradient(90deg,#007bff,#ffc107 50%,#000 0);
+	background-image: linear-gradient(#000 0);
 }
 .site-footer .footer-bottom-in{
 	border-top: 1px solid rgba(0,0,0,0.1);

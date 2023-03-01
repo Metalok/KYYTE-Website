@@ -23,10 +23,15 @@
 }
 
 .digital-section {
-  background-color: #e7f2ff;
+  /* background-color: #e7f2ff; */
   position: relative;
   overflow: hidden;
-  margin-top:45px;
+
+  background-image: url('../images/banner/bg-frame-1.svg');
+  background-repeat: no-repeat;
+  height:700px;
+  width:100%;
+  background-size: cover;
 }
 
 
@@ -65,7 +70,7 @@
 
   color: #f99400;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 9%;
   transform: translateY(-64%);
 }
@@ -78,7 +83,7 @@
   width: 50%;
   height: 100%;
   z-index: 2;
-  padding:62px 0px;
+  padding:100px 0px;
 }
 
 .gitital-circuit {
@@ -579,9 +584,6 @@
   
   color: #FFFFFF;
   }
-  
-  
-  
   .infotech-heading{
     font-family: 'Poppins';
   font-style: normal;
@@ -589,11 +591,9 @@
   font-size: 20px;
   line-height: 28px;
   /* identical to box height, or 140% */
-  
-  
   color: #FFFFFF;
   }
-  
+
   .ceo-para{
     font-family: 'Poppins';
   font-style: normal;
@@ -601,11 +601,27 @@
   font-size: 18px;
   line-height: 28px;
   /* or 156% */
-  
-  
   color: #FFFFFF;
   }
-  
+
   .index-hover-section-3 a{
     text-decoration: none;
+  }
+  .number-size{
+    font-size: 32px !important;
+    opacity: 40%;
+  }
+  @media (min-width: 320px) and (max-width: 790px){
+    .digital-section {
+      /* background-color: #e7f2ff; */
+      position: relative;
+      overflow: hidden;
+    
+      background-image: url('../images/banner/bg-frame-1.svg');
+      background-repeat: no-repeat;
+      height:500px !important;
+      width:100%;
+      background-size: cover;
+    }
+
   }

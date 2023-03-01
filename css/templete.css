@@ -2049,7 +2049,7 @@ content: "";
   }
   .site-footer .social-link li a i {
     display: block;
-    color: #000;
+    color: #fcfbfb;
   }
   .site-footer .social-link li a span {
     display: none;
@@ -2060,6 +2060,7 @@ content: "";
   .site-footer .social-link li a {
     font-size: 25px;
     line-height: 25px;
+    
   }
   .page-banner .intro-title {
     font-size: 120px;

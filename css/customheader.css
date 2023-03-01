@@ -1,171 +1,188 @@
 @font-face {
-    font-family: "DIN Condensed Bold";
-    font-style: normal;
-    font-weight: 400;
-    src: local("../fonts/din/DIN Condensed Bold"),
-      url(../fonts/din/DINCondensed-Bold.woff) format("woff");
+  font-family: "DIN Condensed Bold";
+  font-style: normal;
+  font-weight: 400;
+  src: local("../fonts/din/DIN Condensed Bold"),
+    url(../fonts/din/DINCondensed-Bold.woff) format("woff");
+}
+
+/* The side navigation menu */
+.sidenav-custom {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: #e7f2ff;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+   background-image: url('../images/banner/header-svg-bg.svg');
+ background-size: cover;
+  background-repeat: no-repeat;
+  
+  
+}
+
+/* The navigation menu links */
+.sidenav-custom a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #1661be;
+  display: block;
+  transition: 0.3s;
+  font-family: "DIN Condensed Bold";
+}
+
+/* When you mouse over the navigation links, change their color */
+
+.offcanvas a:focus {
+  color: #f1f1f1;
+}
+.sidenav-custom a:hover{
+    
+}
+/* Position and style the close button (top right corner) */
+.sidenav-custom .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+.sidenav-custom {
+  right: 0;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav-custom {
+    padding-top: 15px;
   }
-  
-  
-    /* The side navigation menu */
-    .sidenav-custom {
-        height: 100%;
-        width: 0; 
-        position: fixed;
-        z-index: 1; 
-        top: 0;
-        background-color:  #E7F2FF;;
-        overflow-x: hidden; 
-        padding-top: 60px; 
-        transition: 0.5s; 
-    }
-
-    /* The navigation menu links */
-    .sidenav-custom a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 22px;
-        color: #1661BE;;
-        display: block;
-        transition: 0.3s;
-        font-family: "DIN Condensed Bold";
-        
-    }
-
-    /* When you mouse over the navigation links, change their color */
-    .sidenav-custom a:hover, .offcanvas a:focus{
-        color: #f1f1f1;
-    }
-
-    /* Position and style the close button (top right corner) */
-    .sidenav-custom .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-    }
-
-    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-    #main {
-        transition: margin-left .5s;
-        padding: 20px;
-    }
-    .sidenav-custom {
-        right: 0;
-    }
-    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-    @media screen and (max-height: 450px) {
-        .sidenav-custom {padding-top: 15px;}
-        .sidenav-custom a {font-size: 18px;}
-    }
-    .sidenav-custom {
-        right: 0;
-    }
-    @font-face {
-        font-family: "DIN Condensed Bold";
-        font-style: normal;
-        font-weight: 400;
-        src: local("../fonts/din/DIN Condensed Bold"),
-            url(../fonts/din/DINCondensed-Bold.woff) format("woff");
-      }
-        .nav-section-custom{
-          position:relative;
-          top:0px;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding:0px 6%;
-          height: 10vh;
-          background-color:#E7F2FF;
-          ;
-          z-index: 10;
-          position: fixed;
-          width:100%;
-        }
-        .logo-section-custom img{
-          /* width:200px; */
-          height: 48px;
-        }
-        .links ul{
-          display: flex;
-          align-items: center;
-          list-style-type: none;
-          gap:60px;
-          margin-bottom: 0px;
-        }
-        .navbar-head{
-          position: absolute;
-          right:0px;
-          width:260px;
-          height:100%;
-          background-color: rgb(17, 180, 60);
-          text-align: center;
-          transition: 0.800s ease;
-          z-index: 20;
-      }
-      .navbar-head > .side-nav{
-          list-style-type: none;
-          padding: 0px;
-          margin: 0px;
-      }
-      .nav-item{
-          /* display: flex */
-      }
-      .nav-item > .nav-link:hover{
-          background-color: whitesmoke;
-          color: black;
-      }
-      .toggle-collaps-custom{
-          float: left;
-          margin-left: -3.3em;
-          
-      }
-      .toggle-icon, .toggle-icon:before, .toggle-icon::after{
-          content:"";
-          width:30px;
-          height:3px;
-          position: fixed;
-          background-color: rgb(134, 19, 19);
-          border-radius: 2em;
-          border: 2 px solid black;
-          cursor: pointer;
-          transition: 0.800s ease;
-          margin-top: 0.8em;
-         
-       
-      }
-      .toggle-icon::before{
-          position: absolute;
-          left: 3px;
-          top:3px;
-         
-      }
-      .toggle-icon::after{
-          position: absolute;
-          left:-5px;
-          top:-4px;
-          width:40px;
-      }
-      .toggle-icon{
-          width:30px;
-      }
-      .show .toggle-icon::after{
-          width:30px;
-      }
-      .show .toggle-icon {
-          width:30px;
-      }
-      .nav-item > .site-name{
-      text-decoration: none;
-      padding: 1.3em;
-      font-size: 2em;
-      color: whitesmoke;
-      }
-      .nav-item:last-child > .nav-link i{
-          padding: .5em;
-      }
-      /* .nav-item:hover:last-child > .nav-link{
-          background-color: rgb(139, 12, 12);
-          color: white;
-      } */
+  .sidenav-custom a {
+    font-size: 18px;
+  }
+}
+.sidenav-custom {
+  right: 0;
+}
+@font-face {
+  font-family: "DIN Condensed Bold";
+  font-style: normal;
+  font-weight: 400;
+  src: local("../fonts/din/DIN Condensed Bold"),
+    url(../fonts/din/DINCondensed-Bold.woff) format("woff");
+}
+.nav-section-custom {
+  position: relative;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 6%;
+  height: 10vh;
+  background-color:#e7f2ff8f;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+ 
+}
+.logo-section-custom img {
+  /* width:200px; */
+  height: 48px;
+  /* padding-left: 20px; */
+}
+.links ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 60px;
+  margin-bottom: 0px;
+}
+.navbar-head {
+  position: absolute;
+  right: 0px;
+  width: 260px;
+  height: 100%;
+  background-color: rgb(17, 180, 60);
+  text-align: center;
+  transition: 0.8s ease;
+  z-index: 20;
+}
+.navbar-head > .side-nav {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+.nav-item {
+  /* display: flex */
+}
+.nav-item > .nav-link:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+.toggle-collaps-custom {
+  float: left;
+  margin-left: -3.3em;
+}
+.toggle-icon,
+.toggle-icon:before,
+.toggle-icon::after {
+  content: "";
+  width: 30px;
+  height: 3px;
+  position: fixed;
+  background-color: rgb(134, 19, 19);
+  border-radius: 2em;
+  border: 2 px solid black;
+  cursor: pointer;
+  transition: 0.8s ease;
+  margin-top: 0.8em;
+}
+.toggle-icon::before {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+}
+.toggle-icon::after {
+  position: absolute;
+  left: -5px;
+  top: -4px;
+  width: 40px;
+}
+.toggle-icon {
+  width: 30px;
+}
+.show .toggle-icon::after {
+  width: 30px;
+}
+.show .toggle-icon {
+  width: 30px;
+}
+.nav-item > .site-name {
+  text-decoration: none;
+  padding: 1.3em;
+  font-size: 2em;
+  color: whitesmoke;
+}
+.nav-item:last-child > .nav-link i {
+  padding: 0.5em;
+}
+.menu-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 86px !important;
+  line-height: 123px;
+  text-transform: uppercase;
+  color: #1661be;
+  opacity: 0.2;
+}
+.footer-copyright-custom{
+    text-decoration: none;
+}
