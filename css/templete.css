@@ -257,7 +257,7 @@
 }
 /* ==== Banner ==== */
 .page-banner {
-  min-height: calc(100vh - 118px);
+  /* min-height: calc(100vh - 118px); */
 }
 .page-banner .intro-title {
   color: #000;
@@ -639,7 +639,7 @@
 }
 .services-box:after {
   content: "";
-  background-color: #000;
+  /* background-color: #000; */
   position: absolute;
   width: 100%;
   top: 0;

@@ -14,55 +14,99 @@
         url(../fonts/din/DINCondensed-Bold.woff) format("woff");
   }
   
-  .digital-section {
-    background-color: #e7f2ff;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .digital-heading {
-    font-family: "DIN Condensed Bold";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 5vw;
-    line-height: 110%;
-    text-transform: uppercase;
-  
-    color: #f99400;
-    position: absolute;
-    top:50%;
-    left: 2%;
-    transform: translateY(-64%);
-  }
-  .digital-img-section {
-    display: flex;
-    justify-content: end;
-  }
-  
-  .digital-img-section img {
-    width: 70%;
-    height: 100%;
-    z-index: 2;
-  
-  }
-  
-  .gitital-circuit{
-      position:absolute;
-      top:47%;
-      opacity: .2;
-      width: 89%;
-      height: 83%;
-  }
+@font-face {
+  font-family: "DIN Condensed Bold";
+  font-style: normal;
+  font-weight: 400;
+  src: local("../fonts/din/DIN Condensed Bold"),
+    url(../fonts/din/DINCondensed-Bold.woff) format("woff");
+}
 
-  .gitital-circuit2{
-      position: absolute;
-      top: -39%;
-      right: -9%;
-      opacity: .2;
-      width: 72%;
-      height: 83%;
-      transform: rotate(180deg);
-  }
+.digital-section {
+  background-color: #e7f2ff;
+  position: relative;
+  overflow: hidden;
+  margin-top:45px;
+}
+
+
+.contact-us-button {
+  position: fixed;
+  height: 60px;
+  width: 166px;
+
+  background: #f99400;
+  border-radius: 0px;
+  border: none;
+
+  font-family: "DIN Condensed Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18.9841px;
+  line-height: 44px;
+
+  z-index: 4;
+  letter-spacing: 1.46032px;
+  text-transform: uppercase;
+
+  color: #000000;
+  right: -53px;
+  bottom:100px;
+  transform: rotate(90deg);
+}
+
+.digital-heading {
+  font-family: "DIN Condensed Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 7vw;
+  line-height: 110%;
+  text-transform: uppercase;
+
+  color: #f99400;
+  position: absolute;
+  top: 50%;
+  left: 9%;
+  transform: translateY(-64%);
+}
+.digital-img-section {
+  display: flex;
+  justify-content: end;
+}
+
+.digital-img-section img {
+  width: 50%;
+  height: 100%;
+  z-index: 2;
+  padding:62px 0px;
+}
+
+.gitital-circuit {
+  position: absolute;
+  top: 47%;
+  left:0px;
+  opacity: 0.2;
+  width: 68%;
+  height: 83%;
+}
+
+.gitital-circuit2 {
+  position: absolute;
+  top: -39%;
+  right: -9%;
+  opacity: 0.2;
+  width: 72%;
+  height: 83%;
+  transform: rotate(180deg);
+}
+@media(max-width:644px){
+.contact-us-button {
+  height: 42px;
+  width: 140px;
+
+}
+}
+
   /*--------------------------------------------------------------------------------------------------------------------> section 2      */
   
   .aboutus-section {
@@ -562,4 +606,6 @@
   color: #FFFFFF;
   }
   
-  
+  .index-hover-section-3 a{
+    text-decoration: none;
+  }

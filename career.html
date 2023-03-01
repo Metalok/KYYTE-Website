@@ -15,6 +15,7 @@
     />
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/test.css">
+    <link rel="stylesheet" type="text/css" href="css/customheader.css" />
 <!-- poppins  -->
     <link
       href="https://fonts.googleapis.com/css?family=Poppins"
@@ -41,66 +42,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Work+Sans:wght@600;700&display=swap" rel="stylesheet">
 <!-- end  -->
-<title></title>
-		<style>
-				/* The side navigation menu */
-			.sidenav {
-			    height: 100%;
-			    width: 0; 
-			    position: fixed;
-			    z-index: 1; 
-			    top: 0;
-			    background-color:  #E7F2FF;;
-			    overflow-x: hidden; 
-			    padding-top: 60px; 
-			    transition: 0.5s; 
-          background-image: url('./images/banner/circute-header.png');
-          background-repeat: no-repeat;
-          background-position: bottom left;
-			}
 
-			/* The navigation menu links */
-			.sidenav a {
-			    padding: 8px 8px 8px 32px;
-			    text-decoration: none;
-			    font-size: 20px;
-			    color: #1661BE;;
-			    display: block;
-			    transition: 0.3s;
-          font-family: "DIN Condensed Bold";
-			}
-
-			/* When you mouse over the navigation links, change their color */
-			/* .sidenav a:hover, .offcanvas a:focus{
-			    color: #f1f1f1;
-			} */
-
-			/* Position and style the close button (top right corner) */
-			.sidenav .closebtn {
-			    position: absolute;
-			    top: 0;
-			    right: 25px;
-			    font-size: 36px;
-			    margin-left: 50px;
-			}
-
-			/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-			#main {
-			    transition: margin-left .5s;
-			    padding: 20px;
-			}
-			.sidenav {
-			    right: 0;
-			}
-			/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-			@media screen and (max-height: 450px) {
-			    .sidenav {padding-top: 15px;}
-			    .sidenav a {font-size: 18px;}
-			}
-			.sidenav {
-			    right: 0;
-			}
-		</style>
   </head>
   <body>
 
@@ -108,30 +50,27 @@
 
 
     <header>
-      <div class="nav-section">
-        <div class="logo-section">
-          <img src="./images/icon/logo.png" alt="" />
+      <div class="nav-section-custom">
+        <div class="logo-section-custom">
+        <a href="index.html">  <img src="./images/icon/logo.png" alt="" /></a>
           <!-- <h1>FILMABLE</h1> -->
         </div>
         <div class="links">
-          <ul class="menu-links">
-          
-        </ul>
+          <ul class="menu-links"></ul>
         </div>
-        
-            <img src="./images/icon/burger-menu.png" class="toggle-collaps" alt=""   onclick="openNav()"/>
-            <div id="mySidenav" class="sidenav">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <a href="index.html">HOME</a>
-              <a href="about.html">ABOUT</a>
-              <a href="services.html">SERVICES</a>
-              <a href="industries.html">INDUSTRIES & FUNCTIONAL AREAS</a>
-              <a href="ourpartners.html">PARTNERS</a>
-              <a href="customers.html">CUSTOMERS</a>
-              <a href="career.html">CAREER</a>
-              <a href="contact.html">CONTACT US</a>
-            </div>
-        
+  
+        <img src="./images/icon/burger-menu.png" class="toggle-collaps-custom" alt="" onclick="openNav()" />
+        <div id="mySidenav" class="sidenav-custom">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="services.html">SERVICES</a>
+          <a href="industries.html">INDUSTRIES & FUNCTIONAL AREAS</a>
+          <a href="ourpartners.html">PARTNERS</a>
+          <a href="customers.html">CUSTOMERS</a>
+          <a href="career.html">CAREER</a>
+          <a href="contact.html">CONTACT US</a>
+        </div>
       </div>
     </header>
     <!----------------------------------------------------------------------------------------------------------------------- section 1   -->
@@ -293,15 +232,14 @@
         </div>
       </footer>
       <script type="text/javascript">
-
         /* Simple appearence with animation AN-1*/
         function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("mySidenav").style.width = "250px";
         }
         function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("mySidenav").style.width = "0";
         }
-        /* Simple appearence with animation AN-1*/
-        </script>
+          /* Simple appearence with animation AN-1*/
+      </script>
   </body>
 </html>

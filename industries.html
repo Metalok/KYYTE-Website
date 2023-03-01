@@ -1,335 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="./css/industries.css" />
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<meta name="robots" content="" />
+	<meta name="description" content="Industry - Factory & Industrial HTML Template" />
+	<meta property="og:title" content="Industry - Factory & Industrial HTML Template" />
+	<meta property="og:description" content="Industry - Factory & Industrial HTML Template" />
+	<meta property="og:image" content="" />
+	<meta name="format-detection" content="telephone=no">
+	
+	<!-- FAVICONS ICON -->
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+	
+	<!-- PAGE TITLE HERE -->
+	<title>Smart</title>
+	
+	<!-- MOBILE SPECIFIC -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	
+	<!-- STYLESHEETS -->
+	<link rel="stylesheet" href="./css/industries.css" />
+    <link rel="stylesheet" type="text/css" href="css/customheader.css" />
     <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" type="text/css" href="css/test.css" />
-<!-- lato -->
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Work+Sans:wght@600;700&display=swap" rel="stylesheet">
-<!-- end  -->
-
-<!-- Titillium+Web  -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Lato:ital@0;1&family=Titillium+Web:wght@600&family=Work+Sans:wght@600;700&display=swap" rel="stylesheet">
-<!-- end  -->
-<title></title>
-		<style>
-				/* The side navigation menu */
-			.sidenav {
-			    height: 100%;
-			    width: 0; 
-			    position: fixed;
-			    z-index: 1; 
-			    top: 0;
-			    background-color:  #E7F2FF;;
-			    overflow-x: hidden; 
-			    padding-top: 60px; 
-			    transition: 0.5s; 
-          background-image: url('./images/banner/circute-header.png');
-          background-repeat: no-repeat;
-          background-position: bottom left;
-			}
-
-			/* The navigation menu links */
-			.sidenav a {
-			    padding: 8px 8px 8px 32px;
-			    text-decoration: none;
-			    font-size: 20px;
-			    color: #1661BE;;
-			    display: block;
-			    transition: 0.3s;
-          font-family: "DIN Condensed Bold";
-			}
-
-			/* When you mouse over the navigation links, change their color */
-			/* .sidenav a:hover, .offcanvas a:focus{
-			    color: #f1f1f1;
-			} */
-
-			/* Position and style the close button (top right corner) */
-			.sidenav .closebtn {
-			    position: absolute;
-			    top: 0;
-			    right: 25px;
-			    font-size: 36px;
-			    margin-left: 50px;
-			}
-
-			/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-			#main {
-			    transition: margin-left .5s;
-			    padding: 20px;
-			}
-			.sidenav {
-			    right: 0;
-			}
-			/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-			@media screen and (max-height: 450px) {
-			    .sidenav {padding-top: 15px;}
-			    .sidenav a {font-size: 18px;}
-			}
-			.sidenav {
-			    right: 0;
-			}
-		</style>
-  </head>
-  <body>
-
-
-    <!------------------------------------------------------------------------------------------------------------ header -->
-
-
+	<link rel="stylesheet" type="text/css" href="css/plugins.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/templete.css">
+	<link class="skin" rel="stylesheet" type="text/css" href="css/skin/skin-1.css">
+</head>
+<body id="bg" class="footer-fixed">
+<div class="page-wraper">
+<div id="loading-area"></div>
+    <!-- header -->
+   
     <header>
-      <div class="nav-section">
-        <div class="logo-section">
-          <img src="./images/icon/logo.png" alt="" />
-          <!-- <h1>FILMABLE</h1> -->
-        </div>
-        <div class="links">
-          <ul class="menu-links">
-          
-        </ul>
-        </div>
-        
-            <img src="./images/icon/burger-menu.png" class="toggle-collaps" alt=""   onclick="openNav()"/>
-            <div id="mySidenav" class="sidenav">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <a href="home.html">HOME</a>
-              <a href="about.html">ABOUT</a>
-              <a href="services.html">SERVICES</a>
-              <a href="industries.html">INDUSTRIES & FUNCTIONAL AREAS</a>
-              <a href="ourpartners.html">PARTNERS</a>
-              <a href="customers.html">CUSTOMERS</a>
-              <a href="career.html">CAREER</a>
-              <a href="#">CONTACT US</a>
-            </div>
-        
-      </div>
-    </header>
-
-
-    <!------------------------------------------------------------------------------------------------------------ section 2 -->
-
-
+		<div class="nav-section-custom">
+		  <div class="logo-section-custom">
+		  <a href="index.html">  <img src="./images/icon/logo.png" alt="" /></a>
+			<!-- <h1>FILMABLE</h1> -->
+		  </div>
+		  <div class="links">
+			<ul class="menu-links"></ul>
+		  </div>
+	
+		  <img src="./images/icon/burger-menu.png" class="toggle-collaps-custom" alt="" onclick="openNav()" />
+		  <div id="mySidenav" class="sidenav-custom">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="index.html">HOME</a>
+			<a href="about.html">ABOUT</a>
+			<a href="services.html">SERVICES</a>
+			<a href="industries.html">INDUSTRIES & FUNCTIONAL AREAS</a>
+			<a href="ourpartners.html">PARTNERS</a>
+			<a href="customers.html">CUSTOMERS</a>
+			<a href="career.html">CAREER</a>
+			<a href="contact.html">CONTACT US</a>
+		  </div>
+		</div>
+	  </header>
+    <!-- header END -->
+    <!-- Content -->
+    
     <div class="industries-section  mt-5">
       
    
-      <div class="industries-parent">
-        <button class="contact-us-button">CONTACT US</button>
-
-        <img src="./images/banner/industries-circuit-img.png" alt="" />
-        <h1 class="industries-heading">
-          INDUSTRIES & <br />
-          FUNCTIONAL DOMAINS
-        </h1>
-        <p class="industries-para">
-          Propel your digital transformation with innovative and pragmatic
-          solutions tailored to your specific business requirements.
-        </p>
-      </div>
+		<div class="industries-parent">
+		  <button class="contact-us-button">CONTACT US</button>
+  
+		  <img src="./images/banner/industries-circuit-img.png" alt="" />
+		  <h1 class="industries-heading">
+			INDUSTRIES & <br />
+			FUNCTIONAL DOMAINS
+		  </h1>
+		  <p class="industries-para">
+			Propel your digital transformation with innovative and pragmatic
+			solutions tailored to your specific business requirements.
+		  </p>
+		</div>
+	  </div>
+			<!-- Social Section End -->
+		</div>
+		<div class="section-full bg-functional-area p-lg-t40 p-sm-t20 wow fadeIn" data-wow-delay="1s" data-wow-duration="1s">
+			<div class="container">
+				<div class="row filter-work-box">
+					<div class="col-xl-5 col-lg-12 our-works-filter content-inner-2 d-none d-xl-block">
+						<ul class="filter-list">
+							<li>
+							<a href="javascript:void(0);" data-image-bx="Capmap">
+								<p class="number">01</p>
+								<h2 class="title">Oil & Gas
+								</h2>
+								<span>VIEW CASE STUDY</span>
+								
+							</a>
+							</li>
+							<li><a href="javascript:void(0);" data-image-bx="SmartMirror">
+								<p class="number">02</p>
+								<h2 class="title">UTILITIES
+								</h2>
+								<span>VIEW CASE STUDY</span>
+								
+							</a></li>
+							<li><a href="javascript:void(0);" data-image-bx="Waft">
+								<p class="number">03</p>
+								<h2 class="title">PUBLIC SERVICES</h2>
+								<span>VIEW CASE STUDY</span>
+							</a></li>
+							<li><a href="javascript:void(0);" data-image-bx="NoteQuest">
+								<p class="number">04</p>
+								<h2 class="title">HIGH TECH</h2>
+								<span>VIEW CASE STUDY</span>
+							</a></li>
+							<li><a href="javascript:void(0);" data-image-bx="BrusselsTimes">
+								<p class="number">05</p>
+								<h2 class="title">LIFE SCIENCES</h2>
+								<span>VIEW CASE STUDY</span>
+							</a></li>
+							<li><a href="javascript:void(0);" data-image-bx="InfiniteSelection">
+								<p class="number">06</p>
+								<h2 class="title">AUTO MOTIVE</h2>
+								<span>VIEW CASE STUDY</span>
+							</a></li>
+							<li><a href="javascript:void(0);" data-image-bx="Zentask">
+								<p class="number">07</p>
+								<h2 class="title">REATIL AND FASHION</h2>
+								<span>VIEW CASE STUDY</span>
+							</a></li>
+							<li><a href="javascript:void(0);" data-image-bx="StandardBank">
+								<p class="number">08</p>
+								<h2 class="title">AEROSPACE & DEFENSE</h2>
+								<span>VIEW CASE STUDY</span>
+							<!-- </a></li>
+							<li><a href="javascript:void(0);" data-image-bx="MultiсastMedia">
+								<p class="number">09</p>
+								<h2 class="title">SUSTAINABILITY</h2>
+								
+							</a></li>
+							<li><a href="javascript:void(0);" data-image-bx="Lethub">
+								<p class="number">10</p>
+								<h2 class="title">BEST QUALITY</h2>
+								
+							</a></li> -->
+						</ul>
+					</div>
+					<div class="col-xl-7 col-lg-12">
+						<div class="filter-thumb-box sticky-top">
+								<div class="filter-item">
+									<div class="filter-thumb active" id="Capmap">
+										<div class="img-thumb">
+											<img src="images/about/factory/factory/oil and gas.png" alt="">
+										</div>
+									</div>
+									<h2 class="title"><a href="">Oil & Gas</a></h2>
+								</div>
+								<div class="filter-item">
+									<div class="filter-thumb" id="SmartMirror">
+										<div class="img-thumb">
+											<img src="images/about/factory/factory/utilities.png" alt="">
+										</div>
+									</div>
+									<h2 class="title"><a href="">UTILITIES</a></h2>
+								</div>
+								<div class="filter-item">
+									<div class="filter-thumb" id="Waft">
+										<div class="img-thumb">
+											<img src="images/about/factory/factory/public services.png" alt="">
+										</div>
+									</div>
+									<h2 class="title"><a href="">PUBLIC SERVICES</a></h2>
+								</div>
+								<div class="filter-item">
+									<div class="filter-thumb" id="NoteQuest">
+										<div class="img-thumb">
+											<img src="images/about/factory/factory/high Tech.png" alt="">
+										</div>
+									</div>
+									<h2 class="title"><a href="">HIGH TECH</a></h2>
+								</div>
+								<div class="filter-item">
+									<div class="filter-thumb" id="BrusselsTimes">
+										<div class="img-thumb">
+											<img src="images/about/factory/factory/life sciences.png" alt="">
+										</div>
+									</div>
+									<h2 class="title"><a href="">LIFE SCIENCES</a></h2>
+								</div>
+								<div class="filter-item">
+									<div class="filter-thumb" id="InfiniteSelection">
+										<div class="img-thumb">
+											<img src="images/about/factory/factory/Automotive.png" alt="">
+										</div>
+									</div>
+									<h2 class="title"><a href="">AUTO MOTIVE</a></h2>	
+								</div>
+								<div class="filter-item">
+									<div class="filter-thumb" id="Zentask">
+										<div class="img-thumb">
+											<img src="images/about/factory/factory/Frame 32.png" alt="">
+										</div>	
+									</div>
+									<h2 class="title"><a href="">REATIL AND FASHION</a></h2>
+								</div>
+								<div class="filter-item">
+									<div class="filter-thumb" id="StandardBank">
+										<div class="img-thumb">
+											<img src="images/about/factory/factory/defence.png" alt="">
+										</div>
+									</div>
+									<h2 class="title"><a href="">AEROSPACE & DEFENSE</a></h2>
+								</div>
+								<!-- <div class="filter-item">
+									<div class="filter-thumb" id="MultiсastMedia">
+										<div class="img-thumb">
+											<img src="images/about/pic2.jpg" alt="">
+										</div>
+									</div>
+									<h2 class="title"><a href="work-details.html">SUSTAINABILITY</a></h2>
+								</div>
+								<div class="filter-item">
+									<div class="filter-thumb" id="Lethub">
+										<div class="img-thumb">
+											<img src="images/about/pic1.jpg" alt="">
+										</div>
+									</div>
+									<h2 class="title"><a href="work-details.html">BEST QUALITY</a></h2>
+								</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
     </div>
-
-    <!------------------------------------------------------------------------------------------------------------ section 2 -->
-
-    <div class="ship-section">
-      <div class="container">
-        <div class="ship-parent">
-            <div>
-                <h1 class="ship-industries-heading">INDUSTRIES</h1>
-              </div>
-        <div class="row">
-          <div class="col-xl-6 col-lg-6">
-         
-            <div class="ship-icons">
-              <img src="./images/banner/icons/ship-icon1.png" alt="" />
-              <div>
-                <h1>01</h1>
-                <h3>OIL & GAS</h3>
-                <p>VIEW CASE STUDY</p>
-              </div>
-            </div>
-            <div class="ship-icons">
-              <img src="./images/banner/icons/ship-icon2.png" alt="" />
-              <div>
-                <h1>02</h1>
-                <h3>Public Services</h3>
-                <p>VIEW CASE STUDY</p>
-              </div>
-            </div>
-            <div class="ship-icons">
-              <img src="./images/banner/icons/ship-icon3.png" alt="" />
-              <div>
-                <h1>03</h1>
-                <h3>Life Sciences</h3>
-                <p>VIEW CASE STUDY</p>
-              </div>
-            </div>
-            <div class="ship-icons">
-              <img src="./images/banner/icons/ship-icon4.png" alt="" />
-              <div>
-                <h1>04</h1>
-                <h3>Retail & Fashion</h3>
-                <p>VIEW CASE STUDY</p>
-              </div>
-            </div>
-            <div class="ship-icons">
-              <img src="./images/banner/icons/ship-icon5.png" alt="" />
-              <div>
-                <h1>05</h1>
-                <h3>Utilities</h3>
-                <p>VIEW CASE STUDY</p>
-              </div>
-            </div>
-            <div class="ship-icons">
-              <img src="./images/banner/icons/ship-icon6.png" alt="" />
-              <div>
-                <h1>06</h1>
-                <h3>High Tech</h3>
-                <p>VIEW CASE STUDY</p>
-              </div>
-            </div>
-            <div class="ship-icons">
-              <img src="./images/banner/icons/ship-icon7.png" alt="" />
-              <div>
-                <h1>07</h1>
-                <h3>Automotive</h3>
-                <p>VIEW CASE STUDY</p>
-              </div>
-            </div>
-            <div class="ship-icons">
-              <img src="./images/banner/icons/ship-icon8.png" alt="" />
-              <div>
-                <h1>08</h1>
-                <h3>DefenSe</h3>
-                <p>VIEW CASE STUDY</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-6 col-lg-6 ship-img">
-            <img src="./images/banner/ship-img.png" alt="" />
-          </div>
-        </div>
-    </div>
-      </div>
-    </div>
-
-    <!-- ----------------------------------------------------------------------------------------------------------------- section3     -->
-
-    <div class="function-section">
-      <div class="container">
-       <div class="function-parent">
-        <div>
-            <h1 class="functional-heading">FUNCTIONAL DOMAINS</h1>
-          </div>
-        <div class="row">
-          <div class="col-xl-6 col-lg-6 functional-img">
-            <img src="./images/banner/functional-img.png" alt="" />
-          </div>
-
-          <div class="col-xl-6 col-lg-6">
-         
-            <div class="function-icons">
-              <img src="./images/banner/icons/functional-icon1.png" alt="" />
-              <div>
-                <h1>01</h1>
-                <h3>Consumer Goods</h3>
-                <p>VIEW CASE STUDY</p>
-              </div>
-            </div>
-            <div class="function-icons">
-              <img src="./images/banner/icons/functional-icon2.png" alt="" />
-              <div>
-                <h1>02</h1>
-                <h3>Industrial Tools</h3>
-                <p>VIEW CASE STUDY</p>
-              </div>
-            </div>
-            <div class="function-icons">
-              <img src="./images/banner/icons/functional-icon3.png" alt="" />
-              <div>
-                <h1>03</h1>
-                <h3>Supply Chain</h3>
-                <p>VIEW CASE STUDY</p>
-              </div>
-            </div>
-            <div class="function-icons">
-              <img src="./images/banner/icons/functional-icon4.png" alt="" />
-              <div>
-                <h1>04</h1>
-                <h3>Procurement</h3>
-                <p>VIEW CASE STUDY</p>
-              </div>
-            </div>
-            <div class="function-icons">
-              <img src="./images/banner/icons/functional-icon5.png" alt="" />
-              <div>
-                <h1>05</h1>
-                <h3>Finance</h3>
-                <p>VIEW CASE STUDY</p>
-              </div>
-            </div>
-            <div class="function-icons">
-              <img src="./images/banner/icons/functional-icon6.png" alt="" />
-              <div>
-                <h1>06</h1>
-                <h3>S&P</h3>
-                <p>VIEW CASE STUDY</p>
-              </div>
-            </div>
-            <div class="function-icons">
-              <img src="./images/banner/icons/functional-icon7.png" alt="" />
-              <div>
-                <h1>07</h1>
-                <h3>CX</h3>
-                <p>VIEW CASE STUDY</p>
-              </div>
-            </div>
-            <div class="function-icons">
-              <img src="./images/banner/icons/functional-icon8.png" alt="" />
-              <div>
-                <h1>08</h1>
-                <h3>HXM</h3>
-                <p>VIEW CASE STUDY</p>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-      </div>
-    </div>
-
-
-
-
-
-
-    
-    
+    <!-- Content END-->
+	
     <footer>
         <div class="container-fluid footer-container-main p-3">
           <div class="row ">
@@ -364,16 +274,30 @@
           </div>
         </div>
       </footer>
-      <script type="text/javascript">
-
-        /* Simple appearence with animation AN-1*/
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-        }
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-        /* Simple appearence with animation AN-1*/
-        </script>
-  </body>
+    <!-- Footer END -->
+    <button class="scroltop icon-up" type="button"><i class="fa fa-arrow-up"></i></button>
+</div>
+<script type="text/javascript">
+	/* Simple appearence with animation AN-1*/
+	function openNav() {
+	  document.getElementById("mySidenav").style.width = "250px";
+	}
+	function closeNav() {
+	  document.getElementById("mySidenav").style.width = "0";
+	}
+	  /* Simple appearence with animation AN-1*/
+	</script>
+<script src="js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
+<script src="plugins/wow/wow.js"></script><!-- WOW JS -->
+<script src="plugins/bootstrap/js/popper.min.js"></script><!-- BOOTSTRAP.MIN JS -->
+<script src="plugins/bootstrap/js/bootstrap.min.js"></script><!-- BOOTSTRAP.MIN JS -->
+<script src="plugins/magnific-popup/magnific-popup.js"></script><!-- MAGNIFIC POPUP JS -->
+<script src="plugins/imagesloaded/imagesloaded.js"></script><!-- IMAGESLOADED -->
+<script src="plugins/masonry/masonry-3.1.4.js"></script><!-- MASONRY -->
+<script src="plugins/masonry/masonry.filter.js"></script><!-- MASONRY -->
+<script src="plugins/owl-carousel/owl.carousel.js"></script><!-- OWL SLIDER -->
+<script src="plugins/lightgallery/js/lightgallery-all.min.js"></script><!-- Lightgallery -->
+<script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
+<script src="js/dz.carousel.js"></script><!-- SORTCODE FUCTIONS  -->
+</body>
 </html>

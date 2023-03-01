@@ -348,4 +348,6 @@ text-transform: uppercase;
     margin:0px 17px;
   }
 }
-
+.bg-functional-area{
+  background-color: #1661be !important;
+}
