@@ -157,7 +157,21 @@ border:none;
 }
 
 
+@media(max-width:560px){
+  .form-section input{
+    width: 280px;
+    height: 45px;
+    margin:5px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  } 
 
+
+
+  .submit-btn button{
+      width:280px;
+      height:45px;
+  }
+}
 
 
 

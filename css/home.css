@@ -139,7 +139,7 @@
   }
   
   .about-content-section {
-    max-width: 579px;
+    max-width: 755px;
   }
   
   .about-para {
@@ -555,7 +555,7 @@
     height: 100%;
   }
   
-  .ceo-heading {
+  .ceo-heading h1{
     font-family: "DIN Condensed Bold";
     font-style: normal;
     font-weight: 700;
@@ -567,7 +567,7 @@
   
     /* Yellow */
   
-    color: #f99400;
+    color: #f99400 !important;
   }
   
   
