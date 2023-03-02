@@ -16,7 +16,7 @@
 .footer-social-links li a {
   text-decoration: none;
   justify-content: space-evenly;
-  
+
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -95,17 +95,19 @@
   margin-bottom: 0;
   font-weight: 900;
 }
-.background-red-ser{
-  background-color: #F04040 !important;
+.background-red-ser {
+  background-color: #f04040 !important;
 }
-.empty{
-  width:100%;
-  height:100px
+.background-blue-ser {
+  background-color: #1661be !important;
 }
-
-
-
-
+.background-white-ser {
+  background-color: #ffffff !important;
+}
+.empty {
+  width: 100%;
+  height: 100px;
+}
 
 @font-face {
   font-family: "DIN Condensed Bold";
@@ -115,72 +117,58 @@
     url(../fonts/din/DINCondensed-Bold.woff) format("woff");
 }
 
-
-
-.drop-heading{
-
-font-family: "DIN Condensed Bold";
+.drop-heading {
+  font-family: "DIN Condensed Bold";
 
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
   line-height: 80px;
   /* identical to box height, or 167% */
-  
+
   text-transform: uppercase;
-  
+
   color: #000000;
 }
 
-
-.form-section{
+.form-section {
   display: flex;
   flex-direction: column;
-  gap:30px;
-  
+  gap: 30px;
 }
 
-.form-section input{
+.form-section input {
   width: 460px;
   height: 48px;
-  margin:5px 0px;
+  margin: 5px 0px;
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.submit-btn button{
+.submit-btn button {
   width: 460px;
   height: 48px;
-  background: #F99400;
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
-border-radius: 2px;
-border:none;
+  background: #f99400;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  border: none;
 }
 
-
-@media(max-width:560px){
-  .form-section input{
+@media (max-width: 560px) {
+  .form-section input {
     width: 280px;
     height: 45px;
-    margin:5px 0px;
+    margin: 5px 0px;
     border: 1px solid rgba(0, 0, 0, 0.2);
-  } 
+  }
 
-
-
-  .submit-btn button{
-      width:280px;
-      height:45px;
+  .submit-btn button {
+    width: 280px;
+    height: 45px;
   }
 }
 
-
-
 /*------------------------------------------------------------------------------------------------------ services heading section  */
-
-
-
-
-
 
 .career-page-section {
   position: relative;
@@ -209,19 +197,18 @@ border:none;
 }
 
 .career-heading-section p {
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* or 150% */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
 
+  /* fff */
 
-/* fff */
+  color: #ffffff;
 
-color: #FFFFFF;
-
-opacity: 0.9;
+  opacity: 0.9;
 }
 
 .career-back-img1 {
@@ -256,13 +243,12 @@ opacity: 0.9;
   line-height: 44px;
   /* identical to box height, or 231% */
 
-
   letter-spacing: 1.46032px;
   text-transform: uppercase;
 
   color: #000000;
   right: -53px;
-  bottom:100px;
+  bottom: 100px;
   transform: rotate(90deg);
 }
 
@@ -274,28 +260,25 @@ opacity: 0.9;
     left: 0px;
     bottom: -56%;
   }
-
-
 }
 @media (max-width: 600px) {
-
-.career-heading-section p {
+  .career-heading-section p {
     width: 87%;
+  }
 }
+.footer-phone-color {
+  color: white !important;
 }
-.footer-phone-color{
-  color:white !important;
+.footer-bg-custom {
+  background-color: #1a1a1a;
+  color: #ffffff !important;
 }
-.footer-bg-custom{
-  background-color: #1A1A1A;;
-  color: #FFFFFF !important;
+.footer-phone-color {
+  color: #ffffff !important;
 }
-.footer-phone-color{
-  color: #FFFFFF !important;
+.footer-copyright-custom {
+  color: #ffffff !important;
 }
-.footer-copyright-custom{
-  color: #FFFFFF !important;
-}
-.services-description{
+.services-description {
   color: #000 !important;
 }
