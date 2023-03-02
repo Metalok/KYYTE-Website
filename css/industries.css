@@ -191,6 +191,56 @@ font-size: 20px;
     margin:0px 17px;
   }
 }
+
+/*-------------------------------------------------------------------------------- industrial section   */
+.industries-li-div{
+  display: flex !important;
+  align-items: center;
+  gap:20px;
+  color:white !important;
+  border:2px solid #1661be;
+}
+.industries-li-div:hover{
+  background: rgba(255, 255, 255, 0.2);
+/* fff */
+
+border: 2px solid #FFFFFF;
+/* shad1 */
+
+box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.industries-heading-ship{
+  padding-top:120px;
+  font-family: 'DIN Condensed Bold';
+font-style: normal;
+font-weight: 700;
+font-size: 102.5px;
+line-height: 110%;
+/* identical to box height, or 113px */
+
+text-transform: uppercase;
+
+/* fff */
+
+color: #FFFFFF;
+}
+
+
+
+@media(max-width:768px){
+  
+.industries-heading-ship{
+  font-size: 25px;
+  padding-top:20px;
+}
+}
+
+
+
+
+
 /*-----------------------------------------------------------------------------------------------------------------  secction3    */
 
 .function-section {
@@ -350,4 +400,13 @@ text-transform: uppercase;
 }
 .bg-functional-area{
   background-color: #1661be !important;
+}
+
+
+
+.div-2-indust-hover{
+  color:red !important
+}
+.div-2-indust-hover .div-text-2{
+  color: red !important;
 }
