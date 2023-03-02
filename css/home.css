@@ -508,6 +508,7 @@
 .domains-section {
   background-color: #0a4b9b;
   padding: 10px 0px;
+  width: 100% !important;
 }
 
 .domain-heading {
