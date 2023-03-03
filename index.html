@@ -8,6 +8,11 @@
   <title>Kyyte</title>
   <link rel="stylesheet" href="./css/home.css" />
   <link rel="stylesheet" href="./css/custom.css" />
+
+
+
+  <link rel="icon" href="./images/banner/kyyte-search-icon.png">
+
   <!-- <link rel="stylesheet" href="./css/footer.css" /> -->
   <link rel="stylesheet" type="text/css" href="css/customheader.css" />
   <link href="https://fonts.cdnfonts.com/css/d-din" rel="stylesheet" />
@@ -26,11 +31,37 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
   <title></title>
 
+  <!--START:: stylesheet for fade in & fade out animation while scrolling-->
+	<link rel="stylesheet" type="text/css" href="css/templete.css">
+	<link class="skin" rel="stylesheet" type="text/css" href="css/skin/skin-1.css">
+  <!--END:: stylesheet for fade in & fade out animation while scrolling-->
+
+  <style>
+    @media only screen and (max-width: 1199px) {
+      .split-box-area > [class*="col-"] {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
+    }
+    
+    @media only screen and (max-width: 767px) {
+      .split-box-area > [class*="col-"] {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
+      .split-box-area.row.spno {
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+    }
+
+  </style>
 </head>
 
 <body>
   <!--------------------------------------------------------------------------------------------------------------------- section  1  -->
- 
+  <div id="loading-area"></div>
+
     <header class="nav-section-custom">
       <div class="logo-section-custom">
         <a href="index.html"> <img src="./images/icon/logo.png" alt="" /></a>
@@ -50,256 +81,381 @@
         <a href="industries.html">INDUSTRIES & FUNCTIONAL AREAS</a>
         <a href="ourpartners.html">PARTNERS</a>
         <a href="customers.html">CUSTOMERS</a>
-        <a href="career.html">CAREERS</a>
+        <a href="career.html">CAREER</a>
         <a href="contact.html">CONTACT US</a>
       </div>
-  
-  </header>
-  <div class="digital-section">
-    <button class="contact-us-button">CONTACT US</button>
+    </header>
+ 
+  <div class="page-content bg-white">
+    <!-- contact area -->
 
-    <div class="container-fluid ">
-      <h1 class="digital-heading">
-        DIGITAL <br />
-        Transformation <br />
-        Simplified
-      </h1>
-      <div class="digital-img-section">
-        <img src="./images/banner/digital-img4.png" alt="" />
+    <!-- Split Slider -->
+    <div class="section-full bg-primary">
+      <div class="row split-box-area spno ">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-12 row split-box background-white-ser" id="project1">
+          <div class="digital-section">
+            <button class="contact-us-button">CONTACT US</button>
+        
+            <div class="container-fluid ">
+              <h1 class="digital-heading">
+                DIGITAL <br />
+                Transformation <br />
+                Simplified
+              </h1>
+              <div class="digital-img-section">
+                <img src="./images/banner/digital-img4.png" alt="" />
+              </div>
+              <!-- <img class="gitital-circuit" src="./images/banner/circuit-img.png" alt="" />
+              <img class="gitital-circuit2" src="./images/banner/circuit-img.png" alt="" /> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-12 col-lg-12 col-md-12 col-12 row split-box background-white-ser" id="project1">
+          <div class="aboutus-section">
+            <div class="about-content-section">
+              <h1 class="about-haeding">ABOUT US</h1>
+              <p class="about-para">
+                An outcome-focused, customer centric, and innovation driven company
+                that amplifies untapped technology investments by providing process
+                optimization, deep industry expertise, and delivery excellence.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-12 col-lg-12 col-md-12 col-12 row split-box background-white-ser" id="project1">
+          <div class="our-services-section">
+            <div>
+              <img class="circuit-img" src="./images/banner/circuit-img.png" alt="" />
+              <div>
+                <h1 class="services-heading">OUR SERVICES</h1>
+                <p class="services-para">
+                  Our services enable E2E digital transformation and enhanced CX by
+                  bridging the gap between innovation, transformation, and
+                  affordability
+                </p>
+              </div>
+              <div class="our-services-parent">
+                <div class="our-services-child">
+                  <img src="./images/banner/advisory-img.png" alt="" />
+                  <h1>Advisory Services</h1>
+                </div>
+                <div class="our-services-child">
+                  <img src="./images/banner/innovative-img.png" alt="" />
+                  <h1>Innovative Solutions</h1>
+                </div>
+                <div class="our-services-child">
+                  <img src="./images/banner/implemention-img.png" alt="" />
+                  <h1>Implementation Services</h1>
+                </div>
+                <div class="our-services-child">
+                  <img src="./images/banner/nextgen-img.png" alt="" />
+                  <h1>Next Gen Application Managed Services</h1>
+                </div>
+                <div class="our-services-child">
+                  <img src="./images/banner/business-img.png" alt="" />
+                  <h1>Business Outsourcing</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-12 col-lg-12 col-md-12 col-12 row split-box background-white-ser" id="project1">
+          <div class="why-kyyte-section">
+            <img class="why-circuit" src="./images/banner/circuit-img.png" alt="" />
+            <div class="why-kyyte-parent">
+              <div class="why-kyyte-child1">
+                <h1 class="why-kyyte-header">WHY KYYTE?</h1>
+                <p class="why-kyyte-para">
+                  Kyyte is designed to add value to your businesses by interfacing
+                  digital transformation, innovation and customer-focused business
+                  approach to facilitate the growth of your business and optimizes
+                  business & process standardization.
+                </p>
+              </div>
+              <div class="why-kyyte-child2">
+                <div class="why-kyyte-sub">
+                  <p>Seasoned leadership, deep expertise, proven trusted advisory</p>
+                </div>
+                <div class="why-kyyte-sub">
+                  <p>Agile, industry focused,<br/> speed-to-value</p>
+                </div>
+                <div class="why-kyyte-sub">
+                  <p>Pragmatic, personal, responsive</p>
+                </div>
+                <div class="why-kyyte-sub">
+                  <p>Steeped in a client serving mindset</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-12 col-lg-12 col-md-12 col-12 row split-box background-white-ser" id="project1">
+          <div class="section-full">
+            <!-- <h2 class="title-back text-right title-stroke">CONSTRUCT & ARCHITECT</h2> -->
+            <div class="row m-lr0 services-box-area">
+              <div class="col-lg-4 col-md-4 wow fadeInLeft index-hover-section-3" data-wow-delay="1s" data-wow-duration="2s"
+                style="background-image: url(images/banner/innovation-backimg.png);">
+                <a href="#" class="services-box">
+                  <div class="services-text">
+                    <div class="number number-size">01</div>
+                    <h2 class="title">INNOVATION</h2>
+                    <p class="description">Kyyte is laser focused on bringing pragmatic, fit-for-purpose innovation for its
+                      clients that drive tangible value</p>
+                  </div>
+                  <!-- <span class="btn-link text-white">Learn More</span> -->
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-4 wow fadeInLeft index-hover-section-3" data-wow-delay="1.5s" data-wow-duration="2s"
+                style="background-image: url(images/banner/innovation-backimg.png);">
+                <a href="#" class="services-box">
+                  <div class="services-text">
+                    <div class="number number-size">02</div>
+                    <h2 class="title">DIGITAL
+                      TRANSFORMATION</h2>
+                    <p class="description">Kyyte operates with an outcomes-based approach to digital transformation by
+                      leveraging decades of transformation experience and deep technical expertise </p>
+                  </div>
+                  <!-- <span class="btn-link text-white">Learn More</span> -->
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-4 wow fadeInLeft index-hover-section-3" data-wow-delay="2s" data-wow-duration="2s"
+                style="background-image: url(images/banner/innovation-backimg.png);">
+                <a href="#" class="services-box">
+                  <div class="services-text">
+                    <div class="number number-size">03</div>
+                    <h2 class="title">Customer
+                      Experience</h2>
+                    <p class="description">Kyyte prioritizes the customer experience and adoption of digital solutions by using
+                      next-gen technology and innovations to achieve the targeted outcome</p>
+                  </div>
+                  <!-- <span class="btn-link text-white">Learn More</span> -->
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!------------------------------------------------------------------------------------------ Industry & Functional Domains   -->
+
+
+
+      
+
+
+
+
+
+        <div class="col-xl-12 col-lg-12 col-md-12 col-12 12ow split12box b12ckground-blue-ser" id="project1">
+          <div class="domains-section">
+            <div class="domain-container">
+              <h1 class="domain-heading">Industry & Functional Domains</h1>
+              <div class="row m-0">
+        
+        
+        
+                <div class="col-lg-2 col-6 m-auto px-0 ">
+
+                  
+                  <div class="domain-section-child mr-auto mr-lg-0">
+                    <!-- <img class="domain-all-imgs"l src="./images/banner/domain-img1.png" alt="" />
+                    <h4>Oil & Gas</h4> -->
+                    <img class="domain-all-imgs"l src="./images/banner/domain-img3.png" alt="" />
+                    <h4>Life Sciences</h4>
+
+                  </div>
+
+
+
+                  <div class="domain-section-child mr-auto mr-lg-0">
+                    <!-- <img class="domain-all-imgs"l src="./images/banner/domain-img2.png" alt="" />
+                    <h4>Public Services</h4> -->
+                    <img class="domain-all-imgs"l src="./images/banner/domain-img1.png" alt="" />
+                    <h4>Oil & Gas</h4>
+                  </div>
+
+
+
+
+
+
+
+                  <div class="domain-section-child mr-auto mr-lg-0">
+                    <!-- <img class="domain-all-imgs"l src="./images/banner/domain-img3.png" alt="" />
+                    <h4>Life Sciences</h4> -->
+                    <img class="domain-all-imgs" src="./images/banner/domain-img6.png" alt="" />
+                    <h4>High Tech</h4>
+
+
+
+                  </div>
+                  <div class="domain-section-child mr-auto mr-lg-0">
+                    <!-- <img class="domain-all-imgs"l src="./images/banner/domain-img4.png" alt="" />
+                    <h4>Retail & Fashion</h4> -->
+                    <img class="domain-all-imgs" src="./images/banner/domain-img7.png" alt="" />
+                    <h4  >Automotive</h4>
+                  </div>
+                </div>
+
+                
+        
+        
+        
+                <div class="col-lg-2 col-6 m-auto px-0 ">
+                  <div class="domain-section-child ">
+                    <!-- <img class="domain-all-imgs" src="./images/banner/domain-img5.png" alt="" />
+                    <h4>Utilities</h4> -->
+                    <img class="domain-all-imgs"l src="./images/banner/domain-img4.png" alt="" />
+                    <h4>Retail & Fashion</h4>
+                  </div>
+                  <div class="domain-section-child">
+                    <!-- <img class="domain-all-imgs" src="./images/banner/domain-img6.png" alt="" />
+                    <h4>High Tech</h4> -->
+
+                    <img class="domain-all-imgs" src="./images/banner/domain-img8.png" alt="" />
+                    <h4  style="margin-top:-5px">Defence</h4>
+
+                  </div>
+                  <div class="domain-section-child" >
+                    
+                    <!-- <img class="domain-all-imgs" src="./images/banner/domain-img7.png" alt="" />
+                    <h4  style="margin-top:-7px">Automotive</h4> -->
+                    <img class="domain-all-imgs" src="./images/banner/domain-img5.png" alt="" />
+                    <h4>Utilities</h4>
+
+                  </div>
+                  <div class="domain-section-child">
+                    <!-- <img class="domain-all-imgs" src="./images/banner/domain-img8.png" alt="" />
+                    <h4  style="margin-top:-5px">Defence</h4> -->
+                    <img class="domain-all-imgs"l src="./images/banner/domain-img2.png" alt="" />
+                    <h4>Public Services</h4>
+
+                  </div>
+                </div>
+        
+        
+        
+                <div class="col-lg-4 m-auto text-center domain-center-img">
+               
+                  <img src="./images/banner/video7.gif" alt="" />
+                </div>
+        
+        
+        
+        
+                <div class="col-lg-2 col-6 px-0" >
+                  <div class=" domain-section-child">
+                    <img class="domain-all-imgs"l src="./images/banner/domain-img10.png" alt="" />
+                    <h4>Supply Chain</h4>
+                  </div>
+                  <div class=" domain-section-child">
+                    <!-- <img class="domain-all-imgs"l src="./images/banner/domain-img10.png" alt="" />
+                    <h4>Supply Chain</h4> -->
+                    <img class="domain-all-imgs" src="./images/banner/domain-img15.png" alt="" />
+                    <h4>S&P</h4>
+                  </div>
+
+
+                  <div class=" domain-section-child">
+                    <img class="domain-all-imgs"l src="./images/banner/domain-img11.png" alt="" />
+                    <h4>Finance</h4>
+
+                    <!-- <img class="domain-all-imgs" src="./images/banner/domain-img16.png" alt="" />
+                    <h4>HXM</h4> -->
+
+                  </div>
+
+                  <div class=" domain-section-child">
+                    <img class="domain-all-imgs"l src="./images/banner/domain-img12.png" alt="" />
+                    <h4>CX</h4>
+                  </div>
+
+                </div>
+
+                <div class="col-lg-2 col-6 px-0">
+                  <div class="domain-section-child ml-auto ml-lg-0">
+                    <img class="domain-all-imgs" src="./images/banner/domain-img13.png" alt="" />
+                    <h4>Industrial Tools</h4>
+                  </div>
+                  <div class="domain-section-child ml-auto ml-lg-0">
+                    <img class="domain-all-imgs" src="./images/banner/domain-img14.png" alt="" />
+                    <h4>Procurement</h4>
+                  </div>
+                  <div class="domain-section-child ml-auto ml-lg-0">
+                    <img class="domain-all-imgs" src="./images/banner/domain-img9.png" alt="" />
+                    <h4 style="width:120px">Consumer Goods</h4>
+                  </div>
+                  <!-- <div class="domain-section-child ml-auto ml-lg-0">
+                    <img class="domain-all-imgs" src="./images/banner/domain-img16.png" alt="" />
+                    <h4>HXM</h4>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+      
+
+        <div class="col-xl-12 col-lg-12 col-md-12 col-12 row split-box background-white-ser" id="project1">
+          <div class="ceo-section">
+            <div class="container">
+              <div class="text-center py-5 ceo-heading">
+                <h1>CEO MESSAGE</h1>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 ceo-img">
+                  <img src="./images/banner/ceo-img.png" alt="" />
+                </div>
+                <div class="col-lg-4 m-auto">
+                  <h1 class="ily-heading pt-5 col-lg-0">Robert Saini</h1>
+                  <h3 class="infotech-heading">CEO, KYYTE</h3>
+                  <p class="ceo-para">
+                    Customer Experience continues to be a critical success factor of any digital transformation. Kyyte’s deep functional expertise and proven industry driven delivery excellence helps to access untapped potential within your existing ERP investments in an agile, accelerated, and outcome-oriented way. We are focused on “personalized innovation” that is specific and practical. With a value-driven mindset, Kyyte offers advisory, implementation, and outsourcing services. Simplifying the transformation journey is the heartbeat of who we are and what we strive for. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
       </div>
-      <!-- <img class="gitital-circuit" src="./images/banner/circuit-img.png" alt="" />
-      <img class="gitital-circuit2" src="./images/banner/circuit-img.png" alt="" /> -->
     </div>
   </div>
+
+
+  
   <!--------------------------------------------------------------------------------------------------------------------- section  2  -->
-  <div class="aboutus-section">
-    <div class="about-content-section">
-      <h1 class="about-haeding">ABOUT US</h1>
-      <p class="about-para">
-        An outcome-focused, customer centric, and innovation driven company
-        that amplifies untapped technology investments by providing process
-        optimization, deep industry expertise, and delivery excellence.
-      </p>
-    </div>
-  </div>
+  
 
   <!--------------------------------------------------------------------------------------------------------------------- section   3  -->
 
-  <div class="our-services-section">
-    <div>
-      <img class="circuit-img" src="./images/banner/circuit-img.png" alt="" />
-      <div>
-        <h1 class="services-heading">OUR SERVICES</h1>
-        <p class="services-para">
-          Our services enable E2E digital transformation and enhanced CX by
-          bridging the gap between innovation, transformation, and
-          affordability
-        </p>
-      </div>
-      <div class="our-services-parent">
-        <div class="our-services-child">
-          <img src="./images/banner/advisory-img.png" alt="" />
-          <h1>Advisory Services</h1>
-        </div>
-        <div class="our-services-child">
-          <img src="./images/banner/innovative-img.png" alt="" />
-          <h1>Innovative Solutions</h1>
-        </div>
-        <div class="our-services-child">
-          <img src="./images/banner/implemention-img.png" alt="" />
-          <h1>Implementation Services</h1>
-        </div>
-        <div class="our-services-child">
-          <img src="./images/banner/nextgen-img.png" alt="" />
-          <h1>Next Gen Application Managed Services</h1>
-        </div>
-        <div class="our-services-child">
-          <img src="./images/banner/business-img.png" alt="" />
-          <h1>Business Outsourcing</h1>
-        </div>
-      </div>
-    </div>
-  </div>
+  
 
   <!--------------------------------------------------------------------------------------------------------------------- section  4  -->
 
-  <div class="why-kyyte-section">
-    <img class="why-circuit" src="./images/banner/circuit-img.png" alt="" />
-    <div class="why-kyyte-parent">
-      <div class="why-kyyte-child1">
-        <h1 class="why-kyyte-header">WHY KYYTE?</h1>
-        <p class="why-kyyte-para">
-          Kyyte is designed to add value to your businesses by interfacing
-          digital transformation, innovation and customer-focused business
-          approach to facilitate the growth of your business and optimizes
-          business & process standardization.
-        </p>
-      </div>
-      <div class="why-kyyte-child2">
-        <div class="why-kyyte-sub">
-          <p>Seasoned leadership, deep expertise, proven trusted advisory</p>
-        </div>
-        <div class="why-kyyte-sub">
-          <p>Agile, industry focused, speed-to-value</p>
-        </div>
-        <div class="why-kyyte-sub">
-          <p>Pragmatic, personal, responsive</p>
-        </div>
-        <div class="why-kyyte-sub">
-          <p>Steeped in a client serving mindset</p>
-        </div>
-      </div>
-    </div>
-  </div>
+  
   <!--------------------------------------------------------------------------------------------------------------------- section  5  -->
 
-  <div class="section-full">
-    <!-- <h2 class="title-back text-right title-stroke">CONSTRUCT & ARCHITECT</h2> -->
-    <div class="row m-lr0 services-box-area">
-      <div class="col-lg-4 col-md-4 wow fadeInLeft index-hover-section-3" data-wow-delay="1s" data-wow-duration="2s"
-        style="background-image: url(images/banner/innovation-backimg.png);">
-        <a href="#" class="services-box">
-          <div class="services-text">
-            <div class="number number-size">01</div>
-            <h2 class="title">INNOVATION</h2>
-            <p class="description">Kyyte is laser focused on bringing pragmatic, fit-for-purpose innovation for its
-              clients that drive tangible value</p>
-          </div>
-          <!-- <span class="btn-link text-white">Learn More</span> -->
-        </a>
-      </div>
-      <div class="col-lg-4 col-md-4 wow fadeInLeft index-hover-section-3" data-wow-delay="1.5s" data-wow-duration="2s"
-        style="background-image: url(images/banner/innovation-backimg.png);">
-        <a href="#" class="services-box">
-          <div class="services-text">
-            <div class="number number-size">02</div>
-            <h2 class="title">DIGITAL
-              TRANSFORMATION</h2>
-            <p class="description">Kyyte operates with an outcomes-based approach to digital transformation by
-              leveraging decades of transformation experience and deep technical expertise </p>
-          </div>
-          <!-- <span class="btn-link text-white">Learn More</span> -->
-        </a>
-      </div>
-      <div class="col-lg-4 col-md-4 wow fadeInLeft index-hover-section-3" data-wow-delay="2s" data-wow-duration="2s"
-        style="background-image: url(images/banner/innovation-backimg.png);">
-        <a href="#" class="services-box">
-          <div class="services-text">
-            <div class="number number-size">03</div>
-            <h2 class="title">Customer
-              Experience</h2>
-            <p class="description">Kyyte prioritizes the customer experience and adoption of digital solutions by using
-              next-gen technology and innovations to achieve the targeted outcome</p>
-          </div>
-          <!-- <span class="btn-link text-white">Learn More</span> -->
-        </a>
-      </div>
-    </div>
-  </div>
+  
   <!--------------------------------------------------------------------------------------------------------------------- section 6  -->
-  <div class="domains-section">
-    <div class="container">
-      <h1 class="domain-heading">Industry & Functional Domains</h1>
-      <div class="row">
-
-
-
-        <div class="col-lg-2 col-6 px-0 ">
-          <div class="col-6 m-auto">
-            <img class="domain-all-imgs" style="margin-left:60px;" src="./images/banner/oilgas-img.png" alt="" />
-          </div>
-          <div class="col-6 m-auto">
-            <img class="domain-all-imgs" style="margin-left:60px;" src="./images/banner/ulities-img.png" alt="" />
-          </div>
-          <div class="col-6 m-auto">
-            <img class="domain-all-imgs" style="margin-left:60px;" src="./images/banner/oilgas-img.png" alt="" />
-          </div>
-          <div class="col-6 m-auto">
-            <img class="domain-all-imgs" style="margin-left:60px;" src="./images/banner/ulities-img.png" alt="" />
-          </div>
-        </div>
-
-
-
-        <div class="col-lg-2 col-6 px-0">
-          <div class="col-6 ">
-            <img class="domain-all-imgs" src="./images/banner/oilgas-img.png" alt="" />
-          </div>
-          <div class="col-6">
-            <img class="domain-all-imgs" src="./images/banner/ulities-img.png" alt="" />
-          </div>
-          <div class="col-6">
-            <img class="domain-all-imgs" src="./images/banner/oilgas-img.png" alt="" />
-          </div>
-          <div class="col-6 ">
-            <img class="domain-all-imgs" src="./images/banner/ulities-img.png" alt="" />
-          </div>
-        </div>
-
-
-
-        <div class="col-lg-4 m-auto text-center domain-center-img">
-          <img src="./images/banner/domain-center.gif" alt="" />
-        </div>
-
-
-
-
-        <div class="col-lg-2 col-6 px-0">
-          <div class="col-6 m-auto domain-short-div">
-            <img class="domain-all-imgs"  src="./images/banner/icon-2.png"  style="width:59px;height:60px"alt="" />
-          </div>
-          <div class="col-6 m-auto domain-short-div">
-            <img class="domain-all-imgs" style="margin-left:60px;" src="./images/banner/ulities-img.png" alt="" />
-          </div>
-          <div class="col-6 m-auto domain-short-div">
-            <img class="domain-all-imgs" style="margin-left:60px;" src="./images/banner/oilgas-img.png" alt="" />
-          </div>
-          <div class="col-6 m-auto domain-short-div" >
-            <img class="domain-all-imgs" style="margin-left:60px;" src="./images/banner/ulities-img.png" alt="" />
-          </div>
-        </div>
-        <div class="col-lg-2 col-6 px-0">
-          <div class="col-6 m-auto">
-            <img class="domain-all-imgs" style="margin-left:-47px;width:" src="./images/banner/oilgas-img.png" alt="" />
-          </div>
-          <div class="col-6 m-auto">
-            <img class="domain-all-imgs" style="margin-left:-47px;" src="./images/banner/ulities-img.png" alt="" />
-          </div>
-          <div class="col-6 m-auto">
-            <img class="domain-all-imgs" style="margin-left:-47px;" src="./images/banner/oilgas-img.png" alt="" />
-          </div>
-          <div class="col-6 m-auto">
-            <img class="domain-all-imgs" style="margin-left:-47px;" src="./images/banner/ulities-img.png" alt=""/>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  
 
   <!--------------------------------------------------------------------------------------------------------------------- section  7  -->
 
-  <div class="ceo-section">
-    <div class="container">
-      <div class="text-center py-5 ceo-heading ">
-        <h1>CEO MESSAGE</h1>
-      </div>
-      <div class="row pt-3">
-        <div class="col-lg-6 ceo-img">
-          <img src="./images/banner/ceo-img.png" alt="" />
-        </div>
-        <div class="col-lg-4 m-auto">
-          <h1 class="ily-heading pt-5 col-lg-0">Ily Wilson</h1>
-          <h3 class="infotech-heading">CEO, Centra Infotech</h3>
-          <p class="ceo-para">
-            Kyyte services has been a rare amalgamation of futuristic and
-            concurrent solutions that has boosted our Customer experiences and
-            in turn our customer adoption.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+  
   <footer class="site-footer ">
     <!-- footer top part -->
     <div class="footer-bg-custom">
@@ -366,13 +522,24 @@
   };
 
 
+
   </script>
 
 
-   
-    <!-- script for on scroll header color change -->
-   
-     <!-- script for on scroll header color change  end-->
+<script src="js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
+	<script src="plugins/wow/wow.js"></script><!-- WOW JS -->
+	<script src="plugins/bootstrap/js/popper.min.js"></script><!-- BOOTSTRAP.MIN JS -->
+	<script src="plugins/bootstrap/js/bootstrap.min.js"></script><!-- BOOTSTRAP.MIN JS -->
+	<script src="plugins/magnific-popup/magnific-popup.js"></script><!-- MAGNIFIC POPUP JS -->
+	<script src="plugins/imagesloaded/imagesloaded.js"></script><!-- IMAGESLOADED -->
+	<script src="plugins/masonry/masonry-3.1.4.js"></script><!-- MASONRY -->
+	<script src="plugins/masonry/masonry.filter.js"></script><!-- MASONRY -->
+	<script src="plugins/owl-carousel/owl.carousel.js"></script><!-- OWL SLIDER -->
+	<script src="plugins/lightgallery/js/lightgallery-all.min.js"></script><!-- Lightgallery -->
+	<script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
+	<script src="js/dz.carousel.js"></script><!-- SORTCODE FUCTIONS  -->
+
+
 
 </body>
 

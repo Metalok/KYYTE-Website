@@ -1,0 +1,9 @@
+.linkedin-section{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.linkedin-section img{
+    width: 30px;
+}
