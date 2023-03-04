@@ -581,7 +581,7 @@ border-radius:0px 0px 8px 8px;
  
 }
 
-.domain-all-imgs {
+.domain-all-imgs:hover{
   animation: flooting 1s infinite;
  /* margin-top:5px; */
  position:relative;

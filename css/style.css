@@ -11240,7 +11240,7 @@ footer.text-white p a {
 	color:#7b849a;
 }
 .footer-title{
-	margin-bottom:30px;
+	/* margin-bottom:30px; */
 }
 @media only screen and (max-width: 991px) {
     .col-md-3.col-sm-6.footer-col-4:nth-child(3) {
