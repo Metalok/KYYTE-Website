@@ -2,734 +2,796 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
-	<meta name="robots" content="" />
-	<meta name="description" content="Industry - Factory & Industrial HTML Template" />
-	<meta property="og:title" content="Industry - Factory & Industrial HTML Template" />
-	<meta property="og:description" content="Industry - Factory & Industrial HTML Template" />
-	<meta property="og:image" content="" />
-	<meta name="format-detection" content="telephone=no" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+  <meta name="robots" content="" />
+  <meta name="description" content="Industry - Factory & Industrial HTML Template" />
+  <meta property="og:title" content="Industry - Factory & Industrial HTML Template" />
+  <meta property="og:description" content="Industry - Factory & Industrial HTML Template" />
+  <meta property="og:image" content="" />
+  <meta name="format-detection" content="telephone=no" />
 
-	<!-- FAVICONS ICON -->
-	<link rel="icon" href="./images/banner/kyyte-search-icon.png">
+  <!-- FAVICONS ICON -->
+  <link rel="icon" href="./images/banner/kyyte-search-icon.png" />
 
+  <!-- PAGE TITLE HERE -->
+  <title>Kyyte</title>
 
-	<!-- PAGE TITLE HERE -->
-	<title>Kyyte</title>
+  <!-- MOBILE SPECIFIC -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<!-- MOBILE SPECIFIC -->
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-	<!--[if lt IE 9]>
+  <!--[if lt IE 9]>
       <script src="js/html5shiv.min.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
 
-	<!-- STYLESHEETS -->
+  <!-- STYLESHEETS -->
 
-	<link rel="stylesheet" type="text/css" href="css/footer.css" />
-	<!-- <link rel="stylesheet" type="text/css" href="css/test.css" /> -->
-	<link rel="stylesheet" type="text/css" href="css/plugins.css" />
-	<link rel="stylesheet" type="text/css" href="css/customheader.css" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<link rel="stylesheet" type="text/css" href="css/custom.css" />
-	<link rel="stylesheet" type="text/css" href="css/templete.css" />
-	<link class="skin" rel="stylesheet" type="text/css" href="css/skin/skin-1.css" />
-	<link href="https://fonts.googleapis.com/css?family=Roboto Condensed" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/footer.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="css/test.css" /> -->
+  <link rel="stylesheet" type="text/css" href="css/plugins.css" />
+  <link rel="stylesheet" type="text/css" href="css/customheader.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="css/templete.css" />
+  <link class="skin" rel="stylesheet" type="text/css" href="css/skin/skin-1.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto Condensed" rel="stylesheet" />
 
-
-	<link rel="stylesheet" href="css/about.css">
-	<title></title>
+  <link rel="stylesheet" href="css/about.css" />
+  <title></title>
 </head>
 
 <body id="bg" class="footer-fixed">
-	<div class="page-wraper">
-		<div id="loading-area"></div>
-		<header>
-			<div class="nav-section-custom">
-			  <div class="logo-section-custom">
-				<a href="index.html"> <img src="./images/icon/logo.png" alt="" /></a>
-				<!-- <h1>FILMABLE</h1> -->
-			  </div>
-			  <div class="links">
-				<ul class="menu-links"></ul>
-			  </div>
-		
-			  <img src="./images/icon/burger-menu.png" class="toggle-collaps-custom" alt="" onclick="openNav()" />
-			  <div id="mySidenav" class="sidenav-custom">
-				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-				<a href="" class="menu-text">MENU</a>
-				<a href="index.html">HOME</a>
-				<a href="about.html">ABOUT</a>
-				<a href="services.html">SERVICES</a>
-				<a href="industries.html">INDUSTRIES & FUNCTIONAL AREAS</a>
-				<a href="ourpartners.html">PARTNERS</a>
-				<a href="customers.html">CUSTOMERS</a>
-				<a href="career.html">CAREER</a>
-				<a href="contact.html">CONTACT US</a>
-			  </div>
-			</div>
-		  </header>
+  <!-- POPUP  -->
 
-		<!-- carousel start here  -->
+  <div class="pop-none" id="pop-open">
+    <div class="about-popup">
+      <div class="about-popup-parent" >
+        <h2 class="text-right close-button" id="pop-close" onclick="pop_close1()">X</h2>
 
-		<button class="contact-us-button" style="z-index: 6;">CONTACT US</button>
+        <div class="about-popup-child">
+          <h1>ROBERT SAINI</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Cumque nostrum
+            possimus accusamus voluptate, esse accusantium distinctio corporis
+            deserunt quidem modi! Maxime, ullam?
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img class="d-block w-100" src="./images/about/about-slide-1.png" alt="First slide" />
-				</div>
-				<div class="carousel-item">
-					<img class="d-block w-100" src="./images/about/about-slide-1.png" alt="Second slide" />
-				</div>
-				<div class="carousel-item">
-					<img class="d-block w-100" src="./images/about/about-slide-1.png" alt="Third slide" />
-				</div>
-			</div>
-			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div>
+  <div class="pop-none" id="pop-open2">
+    <div class="about-popup">
+      <div class="about-popup-parent" >
+        <h2 class="text-right close-button" id="pop-close" onclick="pop_close2()">X</h2>
 
-		<!-- carousel end here  -->
-
-		<!-- Content -->
-		<div class="page-content bg-white">
-			<!-- inner page banner -->
-			<div class="dlab-bnr-inr no-bg-bnr">
-				<div class="container">
-					<div class="dlab-bnr-inr-entry text-black text-left">
-						<h1 class="wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">
-							Our Key
-						</h1>
-						<h1 class="wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">
-							Differentiators
-						</h1>
-					</div>
-				</div>
-			</div>
-			<!-- inner page banner END -->
-			<!-- contact area -->
-			<div class="content-block">
-				<!-- About Info -->
-				<div class="section-full bg-white p-sm-t40">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-4 col-md-6 m-md-b30 wow bounceInUp" data-wow-delay="0.3s"
-								data-wow-duration="2s">
-								<div class="info-box text-black-1">
-									<!-- <h3 class="title">VISION</h3> -->
-									<p>
-										Kyyte enables E2E digital transformation and enhanced CX
-										by bridging the gap between innovation, transformation,
-										and affordability which is a gap in today's market
-									</p>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-6 m-md-b30 wow bounceInUp" data-wow-delay="0.5s"
-								data-wow-duration="2s">
-								<div class="info-box text-black-2">
-									<!-- <h3 class="title">MISSION</h3> -->
-									<p>
-										Kyyte offers Business and Technology transformation
-										services to midsize and large companies, specifically
-										focused on ERP investment maximization
-									</p>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-6 m-md-b0 wow bounceInUp" data-wow-delay="0.8s"
-								data-wow-duration="2s">
-								<div class="info-box text-black-3">
-									<!-- <h3 class="title">TEAM</h3> -->
-									<p>
-										Kyyte provides an holistic, E2E perspective that
-										seamlessly connects Advisory, Innovation, System
-										Implementation, Application Managed Service and Business
-										Outsourcing
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- About Info End -->
-				<!-- Team -->
-				<div class="section-full content-inner-1 mt-5">
-					<div class="container">
-						<div class="section-full p-sm-t40">
-							<div class="container">
-								<div class="row">
-									<div class="col-lg-4 col-md-6 m-b40 m-sm-b30 wow bounceInUp" data-wow-delay="0.5s"
-										data-wow-duration="3s">
-										<div class="info-box text-black">
-											<h3 class="title">LEADERSHIP</h3>
-											<p>
-												Proven collective experience of 150+ years in digital
-												and business transformations delivering effective and
-												timely solutions by simplifying and solving business
-												critical needs
-											</p>
-										</div>
-									</div>
-									<div class="col-lg-4 col-md-6 m-b40 m-sm-b30 wow bounceInUp" data-wow-delay="0.8s"
-										data-wow-duration="3s">
-										<div class="info-box text-black">
-											<h3 class="title">VISION - THE WHAT</h3>
-											<p>
-												To Amplify the untapped potential of ERP investments
-												by leveraging thought leadership, deep industry
-												experience, and delivery excellence.
-											</p>
-										</div>
-									</div>
-									<div class="col-lg-4 col-md-6 m-b0 wow bounceInUp" data-wow-delay="1s"
-										data-wow-duration="3s">
-										<div class="info-box text-black">
-											<h3 class="title">MISSION - THE HOW</h3>
-											<p>
-												By providing best-in-class advisory, practical
-												innovation that bridge the gap between product
-												capabilities and specific industry needs, delivery
-												excellence through purposeful accelerators.
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+        <div class="about-popup-child">
+          <h1>Zia Rahman</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Cumque nostrum
+            possimus accusamus voluptate, esse accusantium distinctio corporis
+            deserunt quidem modi! Maxime, ullam?
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
+  <div class="pop-none" id="pop-open3">
+    <div class="about-popup">
+      <div class="about-popup-parent" >
+        <h2 class="text-right close-button" id="pop-close" onclick="pop_close3()">X</h2>
+
+        <div class="about-popup-child">
+          <h1>Naeem Hussain</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Cumque nostrum
+            possimus accusamus voluptate, esse accusantium distinctio corporis
+            deserunt quidem modi! Maxime, ullam?
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="pop-none" id="pop-open4">
+    <div class="about-popup">
+      <div class="about-popup-parent" >
+        <h2 class="text-right close-button" id="pop-close" onclick="pop_close4()">X</h2>
+
+        <div class="about-popup-child">
+          <h1>Naeem Hussain</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Cumque nostrum
+            possimus accusamus voluptate, esse accusantium distinctio corporis
+            deserunt quidem modi! Maxime, ullam?
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="pop-none" id="pop-open5">
+    <div class="about-popup">
+      <div class="about-popup-parent" >
+        <h2 class="text-right close-button" id="pop-close" onclick="pop_close5()">X</h2>
+
+        <div class="about-popup-child">
+          <h1>Naeem Hussain</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Cumque nostrum
+            possimus accusamus voluptate, esse accusantium distinctio corporis
+            deserunt quidem modi! Maxime, ullam?
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+      <div class="pop-none" id="pop-open6">
+        <div class="about-popup">
+          <div class="about-popup-parent" >
+            <h2 class="text-right close-button" id="pop-close" onclick="pop_close6()">X</h2>
+    
+            <div class="about-popup-child">
+              <h1>Naeem Hussain</h1>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Cumque nostrum
+                possimus accusamus voluptate, esse accusantium distinctio corporis
+                deserunt quidem modi! Maxime, ullam?
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+    </div>
+  </div>
+  <!-- end  -->
+
+  <div class="page-wraper">
+    <div id="loading-area"></div>
+    <header>
+      <div class="nav-section-custom">
+        <div class="logo-section-custom">
+          <a href="index.html">
+            <img src="./images/icon/logo.png" alt="" /></a>
+          <!-- <h1>FILMABLE</h1> -->
+        </div>
+        <div class="links">
+          <ul class="menu-links"></ul>
+        </div>
+
+        <img src="./images/icon/burger-menu.png" class="toggle-collaps-custom" alt="" onclick="openNav()" />
+        <div id="mySidenav" class="sidenav-custom">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="" class="menu-text">MENU</a>
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="services.html">SERVICES</a>
+          <a href="industries.html">INDUSTRIES & FUNCTIONAL AREAS</a>
+          <a href="ourpartners.html">PARTNERS</a>
+          <a href="customers.html">CUSTOMERS</a>
+          <a href="career.html">CAREER</a>
+          <a href="contact.html">CONTACT US</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- carousel start here  -->
+
+    <a href="contact.html"><button class="contact-us-button" style="z-index: 6">CONTACT US</button></a>
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="./images/about/about-slide-1.png" alt="First slide" />
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./images/about/about-slide-1.png" alt="Second slide" />
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./images/about/about-slide-1.png" alt="Third slide" />
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- carousel end here  -->
+
+    <!-- Content -->
+    <div class="page-content bg-white">
+      <!-- inner page banner -->
+      <div class="dlab-bnr-inr no-bg-bnr">
+        <div class="container">
+          <div class="dlab-bnr-inr-entry text-black text-left">
+            <h1 class="wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">
+              Our Key
+            </h1>
+            <h1 class="wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">
+              Differentiators
+            </h1>
+          </div>
+        </div>
+      </div>
+      <!-- inner page banner END -->
+      <!-- contact area -->
+      <div class="content-block">
+        <!-- About Info -->
+        <div class="section-full bg-white p-sm-t40">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 m-md-b30 wow bounceInUp" data-wow-delay="0.3s" data-wow-duration="2s">
+                <div class="info-box text-black-1">
+                  <!-- <h3 class="title">VISION</h3> -->
+                  <p>
+                    Kyyte enables E2E digital transformation and enhanced CX
+                    by bridging the gap between innovation, transformation,
+                    and affordability which is a gap in today's market
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 m-md-b30 wow bounceInUp" data-wow-delay="0.5s" data-wow-duration="2s">
+                <div class="info-box text-black-2">
+                  <!-- <h3 class="title">MISSION</h3> -->
+                  <p>
+                    Kyyte offers Business and Technology transformation
+                    services to midsize and large companies, specifically
+                    focused on ERP investment maximization
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 m-md-b0 wow bounceInUp" data-wow-delay="0.8s" data-wow-duration="2s">
+                <div class="info-box text-black-3">
+                  <!-- <h3 class="title">TEAM</h3> -->
+                  <p>
+                    Kyyte provides an holistic, E2E perspective that
+                    seamlessly connects Advisory, Innovation, System
+                    Implementation, Application Managed Service and Business
+                    Outsourcing
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- About Info End -->
+
+        <!-- Team -->
+        <div class="section-full content-inner-1 mt-5">
+          <div class="container">
+            <div class="section-full p-sm-t40">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 m-b40 m-sm-b30 wow bounceInUp" data-wow-delay="0.5s"
+                    data-wow-duration="3s">
+                    <div class="info-box text-black">
+                      <h3 class="title">LEADERSHIP</h3>
+                      <p>
+                        Proven collective experience of 150+ years in digital
+                        and business transformations delivering effective and
+                        timely solutions by simplifying and solving business
+                        critical needs
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 m-b40 m-sm-b30 wow bounceInUp" data-wow-delay="0.8s"
+                    data-wow-duration="3s">
+                    <div class="info-box text-black">
+                      <h3 class="title">VISION - THE WHAT</h3>
+                      <p>
+                        To Amplify the untapped potential of ERP investments
+                        by leveraging thought leadership, deep industry
+                        experience, and delivery excellence.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 m-b0 wow bounceInUp" data-wow-delay="1s" data-wow-duration="3s">
+                    <div class="info-box text-black">
+                      <h3 class="title">MISSION - THE HOW</h3>
+                      <p>
+                        By providing best-in-class advisory, practical
+                        innovation that bridge the gap between product
+                        capabilities and specific industry needs, delivery
+                        excellence through purposeful accelerators.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row spsm15 about-custom p-5">
+              <div class="col-lg-4 col-md-6 col-sm-6 m-b30 m-sm-b15 col-6 wow bounceInUp" data-wow-delay="0.3s"
+                data-wow-duration="3s">
+                <div class="team-box text-white dlab-media dlab-overlay-primary dlab-img-overlay1"
+                  onclick="robin_pop()">
+                  <div class="thumb">
+                    <img src="./images/banner/ceo-img.png" alt="" />
+                  </div>
+                  <div class="team-info">
+                    <h4 class="name">ROBERT SAINI</h4>
+                    <div class="linkedin-section">
+                      <h3 class="position">CEO</h3>
+                      <a href="https://www.linkedin.com/in/robert-saini-0a2157/" target="_blank"><img
+                          src="./images/banner/linkdein.png" alt="" /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6 m-b30 m-sm-b15 col-6 wow bounceInUp" data-wow-delay="0.5s"
+                data-wow-duration="3s">
+                <div class="team-box text-white dlab-media dlab-overlay-primary dlab-img-overlay1" onclick="popup2()">
+                  <div class="thumb">
+                    <img src="./images/banner/zia.png" alt="" />
+                  </div>
+                  <div class="team-info">
+                    <h4 class="name">Zia Rahman</h4>
+                    <div class="linkedin-section">
+                      <h3 class="position">Chief Strategic Advisor</h3>
+                      <a href="https://www.linkedin.com/in/iamziarahman/" target="_blank"><img
+                          src="./images/banner/linkdein.png" alt="" /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6 m-b30 m-sm-b15 col-6 wow bounceInUp" data-wow-delay="0.8s"
+                data-wow-duration="3s">
+                <div class="team-box text-white dlab-media dlab-overlay-primary dlab-img-overlay1" onclick="popup3()">
+                  <div class="thumb">
+                    <img src="./images/banner/naeem-hussain 1.png" alt="" />
+                  </div>
+                  <div class="team-info">
+                    <h3 class="position">Naeem Hussain</h3>
+
+                    <div class="linkedin-section">
+                      <h3 class="position">VP</h3>
+                      <a href="https://www.linkedin.com/in/naeemhussain/" target="_blank"><img
+                          src="./images/banner/linkdein.png" alt="" /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6 m-b30 m-sm-b15 col-6 wow bounceInUp" data-wow-delay="0.3s"
+                data-wow-duration="3s">
+                <div class="team-box text-white dlab-media dlab-overlay-primary dlab-img-overlay1" onclick="popup4()">
+                  <div class="thumb">
+                    <img src="./images/banner/santosh-jayaram.png" alt="" />
+                  </div>
+                  <div class="team-info">
+                    <h3 class="position">Santosh Jayaraman</h3>
+
+                    <div class="linkedin-section">
+                      <h3 class="position">VP</h3>
+                      <a href="https://www.linkedin.com/in/santosh-jayaram-2aa391/" target="_blank"><img
+                          src="./images/banner/linkdein.png" alt="" /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6 m-b30 m-sm-b15 col-6 wow bounceInUp" data-wow-delay="0.5s"
+                data-wow-duration="3s">
+                <div class="team-box text-white dlab-media dlab-overlay-primary dlab-img-overlay1" onclick="popup5()">
+                  <div class="thumb">
+                    <img src="./images/banner/padman.png" alt="" />
+                  </div>
+                  <div class="team-info">
+                    <h3 class="position">Padman Ramankutty</h3>
+
+                    <div class="linkedin-section">
+                      <h3 class="position">Board of Directors</h3>
+                      <a href="https://www.linkedin.com/in/santosh-jayaram-2aa391/" target="_blank"><img
+                          src="./images/banner/linkdein.png" alt="" /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6 m-b30 m-sm-b15 col-6 wow bounceInUp" data-wow-delay="0.8s"
+                data-wow-duration="3s">
+                <div class="team-box text-white dlab-media dlab-overlay-primary dlab-img-overlay1" onclick="popup6()">
+                  <div class="thumb">
+                    <img src="./images/banner/raj 1.png" alt="" />
+                  </div>
+                  <div class="team-info">
+                    <h4 class="name">Raj Manickam</h4>
+
+                    <div class="linkedin-section">
+                      <h3 class="position">VP Delivery Centers</h3>
+                      <a href="https://www.linkedin.com/in/rajmanickamintrigo/" target="_blank"><img
+                          src="./images/banner/linkdein.png" alt="" /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6 m-b30 m-sm-b15 col-6 wow bounceInUp" data-wow-delay="0.8s"
+              data-wow-duration="3s">
+              <div class="team-box text-white dlab-media dlab-overlay-primary dlab-img-overlay1" onclick="popup6()">
+                <div class="thumb">
+                  <img src="./images/banner/gopinath.png" alt="" />
+                </div>
+                <div class="team-info">
+                  <h4 class="name">Gopinath</h4>
+
+                  <div class="linkedin-section">
+                    <h3 class="position">VP Delivery Centers</h3>
+                    <a href="https://www.linkedin.com/in/rajmanickamintrigo/" target="_blank"><img
+                        src="./images/banner/linkdein.png" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="section-full content-inner-2">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="section-head">
+                  <h2 class="title">CUSTOMERS</h2>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <ul class="client-logo-list light-border column-4 m-b0">
+
+
+                  <!-- this is the new one  -->
+
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/financial Services/financial Sservices.png"
+                        alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/financial Services/Frame 2.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/financial Services/Frame 3.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/financial Services/Frame 4.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/financial Services/Frame 5.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/government/1.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/government/2.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/government/3.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/government/4.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/government/Government.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/health services/Frame 7.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/health services/Frame 8.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/health services/Frame 9.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/health services/Frame 10.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/health services/Health Services-1.png"
+                        alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/health services/Health Services-2.png"
+                        alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/health services/Health Services.png"
+                        alt="" /></a>
+                  </li>
+
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/1.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/2.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/5.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/6.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/7.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/8.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/9.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/10.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/11.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/12.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/13.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/14.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/15.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/16.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/17.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/18.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/19.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/other.png" alt="" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Clients End -->
+        <!-- Partners -->
+        <div class="section-full content-inner-2">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="section-head">
+                  <h2 class="title">PARTNERS</h2>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <ul class="client-logo-list light-border column-4 m-b0">
+                  <!-- new changes  -->
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/PARTNERS/PARTNERS/Frame 11.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/PARTNERS/PARTNERS/Frame 12.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/PARTNERS/PARTNERS/Frame 13.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/PARTNERS/PARTNERS/Frame 14.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/PARTNERS/PARTNERS/Frame 15.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/PARTNERS/PARTNERS/Frame 16.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/PARTNERS/PARTNERS/Frame 17.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/PARTNERS/PARTNERS/Frame 18.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/PARTNERS/PARTNERS/Frame 19.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/PARTNERS/PARTNERS/Frame 20.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/PARTNERS/PARTNERS/Frame 21.png" alt="" /></a>
+                  </li>
+                  <li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
+                    <a href="#"><img src="images/banner/PARTNERS/PARTNERS/Frame 22.png" alt="" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Content END -->
+
+    <button class="scroltop icon-up" type="button">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+  </div>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <!-- footer top part -->
+    <div class="footer-bg-custom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 pb-5">
+            <ul class="social-link">
+              <li>
+                <a href="javascript:void(0);"><span>FACEBOOK</span> <i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="javascript:void(0);"><span>INSTAGRAM</span> <i class="fa fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="javascript:void(0);"><span>LINKEDIN</span> <i class="fa fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="javascript:void(0);"><span>TWITTER</span> <i class="fa fa-twitter"></i></a>
+              </li>
+              <li class="ml-auto">
+                <a href="contact.html"> <span>CONTACT US</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer bottom part -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-in">
+          <div class="">
+            <a href="index.html" class="footer-copyright-custom">© 2023 KYYTE. All rights reserved.</a>
+          </div>
+          <div class="footer-copyright">
+            <p>5865 North Point Pkwy,Suite 100, Alpharetta, GA 30022</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer END -->
+  <script type="text/javascript">
+    /* Simple appearence with animation AN-1*/
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "320px";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+      /* Simple appearence with animation AN-1*/
+  </script>
+
+  <script src="js/jquery.min.js"></script>
+  <!-- JQUERY.MIN JS -->
+  <script src="plugins/wow/wow.js"></script>
+  <!-- WOW JS -->
+  <script src="plugins/bootstrap/js/popper.min.js"></script>
+  <!-- BOOTSTRAP.MIN JS -->
+  <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+  <!-- BOOTSTRAP.MIN JS -->
+  <script src="plugins/magnific-popup/magnific-popup.js"></script>
+  <!-- MAGNIFIC POPUP JS -->
+  <script src="plugins/imagesloaded/imagesloaded.js"></script>
+  <!-- IMAGESLOADED -->
+  <script src="plugins/masonry/masonry-3.1.4.js"></script>
+  <!-- MASONRY -->
+  <script src="plugins/masonry/masonry.filter.js"></script>
+  <!-- MASONRY -->
+  <script src="plugins/owl-carousel/owl.carousel.js"></script>
+  <!-- OWL SLIDER -->
+  <script src="plugins/lightgallery/js/lightgallery-all.min.js"></script>
+  <!-- Lightgallery -->
+  <script src="js/custom.js"></script>
+  <!-- CUSTOM FUCTIONS  -->
+  <script src="js/dz.carousel.js"></script>
+
+  <script>
+    //  let popup_remove='popup-remove'
+
+    function robin_pop() {
+    
+
+      document.getElementById("pop-open").style.display = "block";
+    }
+
+    function pop_close1() {
+      document.getElementById("pop-open").style.display = "none";
+    }
+
+
+    function popup2() {
+  
+
+      document.getElementById("pop-open2").style.display = "block";
+    }
+
+    function pop_close2() {
+      document.getElementById("pop-open2").style.display = "none";
+    }
+
+
+    function popup3() {
+  
+
+  document.getElementById("pop-open3").style.display = "block";
+}
+
+function pop_close3() {
+  document.getElementById("pop-open3").style.display = "none";
+}
+
+
+
+
+function popup4() {
+  
+
+  document.getElementById("pop-open4").style.display = "block";
+}
+
+function pop_close4() {
+  document.getElementById("pop-open4").style.display = "none";
+}
 
 
 
 
 
+function popup5() {
+  
 
-						<div class="row spsm15">
-							<div class="col-lg-4 col-md-6 col-sm-6 m-b30 m-sm-b15 col-6 wow bounceInUp"
-								data-wow-delay="0.3s" data-wow-duration="3s">
-								<div class="team-box text-white dlab-media dlab-overlay-primary dlab-img-overlay1">
-									<div class="thumb">
-										<img src="./images/banner/ceo-img.png" alt="" />
-									</div>
-									<div class="team-info">
-										<h4 class="name">ROBERT SAINI</h4>
-										<div class="linkedin-section">
-											<h3 class="position">CEO</h3>
-											<a href="https://www.linkedin.com/in/robert-saini-0a2157/" target="_blank"><img src="./images/banner/linkdein.png" alt=""></a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-6 col-sm-6 m-b30 m-sm-b15 col-6 wow bounceInUp"
-								data-wow-delay="0.5s" data-wow-duration="3s">
-								<div class="team-box text-white dlab-media dlab-overlay-primary dlab-img-overlay1">
-									<div class="thumb">
-										<img src="./images/banner/Zia-Rehman.webp" alt="" />
-									</div>
-									<div class="team-info">
-										<h4 class="name">Zia Rahman</h4>
-										<div class="linkedin-section">
-											<h3 class="position">Chief Strategic Advisor</h3>
-											<a href="https://www.linkedin.com/in/iamziarahman/" target="_blank"><img src="./images/banner/linkdein.png" alt=""></a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-6 col-sm-6 m-b30 m-sm-b15 col-6 wow bounceInUp"
-								data-wow-delay="0.8s" data-wow-duration="3s">
-								<div class="team-box text-white dlab-media dlab-overlay-primary dlab-img-overlay1">
-									<div class="thumb">
-										<img src="./images/banner/naeem-hussain.webp" alt="" />
-									</div>
-									<div class="team-info">
-										<h3 class="position">Naeem Hussain</h3>
+  document.getElementById("pop-open5").style.display = "block";
+}
 
-										<div class="linkedin-section">
-											<h3 class="position">VP</h3>
-											<a href="https://www.linkedin.com/in/naeemhussain/" target="_blank"><img src="./images/banner/linkdein.png" alt=""></a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-6 col-sm-6 m-b30 m-sm-b15 col-6 wow bounceInUp"
-								data-wow-delay="0.3s" data-wow-duration="3s">
-								<div class="team-box text-white dlab-media dlab-overlay-primary dlab-img-overlay1">
-									<div class="thumb">
-										<img src="./images/banner/santosh-jayaram.jpg" alt="" />
-									</div>
-									<div class="team-info">
-										<h3 class="position">Santosh Jayaraman</h3>
-
-										<div class="linkedin-section">
-											<h3 class="position">VP</h3>
-											<a href="https://www.linkedin.com/in/santosh-jayaram-2aa391/" target="_blank"><img src="./images/banner/linkdein.png" alt=""></a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-6 col-sm-6 m-b30 m-sm-b15 col-6 wow bounceInUp"
-								data-wow-delay="0.5s" data-wow-duration="3s">
-								<div class="team-box text-white dlab-media dlab-overlay-primary dlab-img-overlay1">
-									<div class="thumb">
-										<img src="./images/banner/padman.jpeg" alt="" />
-									</div>
-									<div class="team-info">
-										<h3 class="position">Padman Ramankutty</h3>
-
-										<div class="linkedin-section">
-											<h3 class="position">Board of Directors</h3>
-											<a href="https://www.linkedin.com/in/santosh-jayaram-2aa391/" target="_blank"><img src="./images/banner/linkdein.png" alt=""></a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-6 col-sm-6 m-b30 m-sm-b15 col-6 wow bounceInUp"
-								data-wow-delay="0.8s" data-wow-duration="3s">
-								<div class="team-box text-white dlab-media dlab-overlay-primary dlab-img-overlay1">
-									<div class="thumb">
-										<img src="./images/banner/raj.jpeg" alt="" />
-									</div>
-									<div class="team-info">
-										<h4 class="name">Raj Manickam</h4>
-
-										<div class="linkedin-section">
-											<h3 class="position">VP Delivery Centers</h3>
-											<a href="https://www.linkedin.com/in/rajmanickamintrigo/" target="_blank"><img src="./images/banner/linkdein.png" alt=""></a>
-										</div>
-									</div>
-								</div>
-							</div>
+function pop_close5() {
+  document.getElementById("pop-open5").style.display = "none";
+}
 
 
-							<!-- <div class="col-lg-4 col-md-6 col-sm-6 m-b30 m-sm-b15 col-6 wow bounceInUp"
-								data-wow-delay="0.3s" data-wow-duration="3s">
-								<div class="team-box text-white dlab-media dlab-overlay-primary dlab-img-overlay1">
-									<div class="thumb">
-										<img src="./images/banner/shnakar-sir.jpeg" alt="" />
-									</div>
-									<div class="team-info">
-										<h4 class="name">KIRILL</h4>
-
-										<div class="linkedin-section">
-											<h3 class="position">CEO</h3>
-											<a href="" target="_blank"><img src="./images/banner/linkdein.png" alt=""></a>
-										</div>
-									</div>
-								</div>
-							</div> -->
 
 
-							<!-- <div class="col-lg-4 col-md-6 col-sm-6 col-6 m-b30 m-sm-b15 wow bounceInUp"
-								data-wow-delay="0.5s" data-wow-duration="3s">
-								<div class="team-box text-white dlab-media dlab-overlay-primary dlab-img-overlay1">
-									<div class="thumb">
-										<img src="./images/about/pic 8.png" alt="" />
-									</div>
-									<div class="team-info">
-										<h4 class="name">KIRILL</h4>
+function popup6() {
+  
 
-										<div class="linkedin-section">
-											<h3 class="position">CEO</h3>
-											<a href="" target="_blank"><img src="./images/banner/linkdein.png" alt=""></a>
-										</div>
-									</div>
-								</div>
-							</div> -->
+  document.getElementById("pop-open6").style.display = "block";
+  console.log('hello')
+}
 
 
-							<div class="col-lg-4 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.8s"
-								data-wow-duration="3s">
-								<div class="section-head m-sm-b0">
-									<h2 class="title">Want to join our team?</h2>
-									<a href="#" class="btn-link text-black">CONTACT US</a>
-								</div>
-							</div>
-
-							
-						</div>
-					</div>
-				</div>
-
-				<div class="section-full content-inner-2">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-4">
-								<div class="section-head">
-									<h2 class="title">CUSTOMERS</h2>
-								</div>
-							</div>
-							<div class="col-lg-8">
-								<ul class="client-logo-list light-border column-4 m-b0">
-									<!-- <li class="wow zoomIn" data-wow-delay="0.1s" data-wow-duration="2s">
-										<a href="#"><img src="images/client-logo/logo/logo1.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="0.2s" data-wow-duration="2s">
-										<a href="#"><img src="images/client-logo/logo/logo2.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="0.3s" data-wow-duration="2s">
-										<a href="#"><img src="images/client-logo/logo/logo3.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="0.4s" data-wow-duration="2s">
-										<a href="#"><img src="images/client-logo/logo/logo4.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="0.5s" data-wow-duration="2.5s">
-										<a href="#"><img src="images/client-logo/logo/logo5.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="0.6s" data-wow-duration="2.5s">
-										<a href="#"><img src="images/client-logo/logo/logo6.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="0.7s" data-wow-duration="2.5s">
-										<a href="#"><img src="images/client-logo/logo/logo7.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="0.8s" data-wow-duration="2.5s">
-										<a href="#"><img src="images/client-logo/logo/logo8.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="0.9s" data-wow-duration="2s">
-										<a href="#"><img src="images/client-logo/logo/logo9.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="0.10s" data-wow-duration="2s">
-										<a href="#"><img src="images/client-logo/logo/logo10.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.11s" data-wow-duration="2s">
-										<a href="#"><img src="images/client-logo/logo/logo1.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/client-logo/logo/logo2.png" alt="" /></a>
-									</li> -->
-
-									<!-- this is the new one  -->
-
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img
-												src="images/banner/CLIENTS/CLIENTS/financial Services/financial Sservices.png"
-												alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img
-												src="images/banner/CLIENTS/CLIENTS/financial Services/Frame 2.png"
-												alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img
-												src="images/banner/CLIENTS/CLIENTS/financial Services/Frame 3.png"
-												alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img
-												src="images/banner/CLIENTS/CLIENTS/financial Services/Frame 4.png"
-												alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img
-												src="images/banner/CLIENTS/CLIENTS/financial Services/Frame 5.png"
-												alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/CLIENTS/CLIENTS/government/1.png"
-												alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/CLIENTS/CLIENTS/government/2.png"
-												alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/CLIENTS/CLIENTS/government/3.png"
-												alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/CLIENTS/CLIENTS/government/4.png"
-												alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/CLIENTS/CLIENTS/government/Government.png"
-												alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/CLIENTS/CLIENTS/health services/Frame 7.png"
-												alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/CLIENTS/CLIENTS/health services/Frame 8.png"
-												alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/CLIENTS/CLIENTS/health services/Frame 9.png"
-												alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img
-												src="images/banner/CLIENTS/CLIENTS/health services/Frame 10.png"
-												alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img
-												src="images/banner/CLIENTS/CLIENTS/health services/Health Services-1.png"
-												alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img
-												src="images/banner/CLIENTS/CLIENTS/health services/Health Services-2.png"
-												alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img
-												src="images/banner/CLIENTS/CLIENTS/health services/Health Services.png"
-												alt="" /></a>
-									</li>
-
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/1.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/2.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/5.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/6.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/7.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/8.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/9.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/10.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/11.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/12.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/13.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/14.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/15.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/16.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/17.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/18.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/19.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/CLIENTS/CLIENTS/other/other.png"
-												alt="" /></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Clients End -->
-				<!-- Partners -->
-				<div class="section-full content-inner-2">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-4">
-								<div class="section-head">
-									<h2 class="title">PARTNERS</h2>
-								</div>
-							</div>
-							<div class="col-lg-8">
-								<ul class="client-logo-list light-border column-4 m-b0">
-									<!-- <li class="wow zoomIn" data-wow-delay="0.1s" data-wow-duration="2s">
-										<a href="#"><img src="images/client-logo/logo/logo1.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="0.2s" data-wow-duration="2s">
-										<a href="#"><img src="images/client-logo/logo/logo2.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="0.3s" data-wow-duration="2s">
-										<a href="#"><img src="images/client-logo/logo/logo3.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="0.4s" data-wow-duration="2s">
-										<a href="#"><img src="images/client-logo/logo/logo4.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="0.5s" data-wow-duration="2.5s">
-										<a href="#"><img src="images/client-logo/logo/logo5.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="0.6s" data-wow-duration="2.5s">
-										<a href="#"><img src="images/client-logo/logo/logo6.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="0.7s" data-wow-duration="2.5s">
-										<a href="#"><img src="images/client-logo/logo/logo7.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="0.8s" data-wow-duration="2.5s">
-										<a href="#"><img src="images/client-logo/logo/logo8.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="0.9s" data-wow-duration="2s">
-										<a href="#"><img src="images/client-logo/logo/logo9.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="0.10s" data-wow-duration="2s">
-										<a href="#"><img src="images/client-logo/logo/logo10.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.11s" data-wow-duration="2s">
-										<a href="#"><img src="images/client-logo/logo/logo1.png" alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/client-logo/logo/logo2.png" alt="" /></a>
-									</li> -->
-
-									<!-- new changes  -->
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/PARTNERS/PARTNERS/Frame 11.png"
-												alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/PARTNERS/PARTNERS/Frame 12.png"
-												alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/PARTNERS/PARTNERS/Frame 13.png"
-												alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/PARTNERS/PARTNERS/Frame 14.png"
-												alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/PARTNERS/PARTNERS/Frame 15.png"
-												alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/PARTNERS/PARTNERS/Frame 16.png"
-												alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/PARTNERS/PARTNERS/Frame 17.png"
-												alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/PARTNERS/PARTNERS/Frame 18.png"
-												alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/PARTNERS/PARTNERS/Frame 19.png"
-												alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/PARTNERS/PARTNERS/Frame 20.png"
-												alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/PARTNERS/PARTNERS/Frame 21.png"
-												alt="" /></a>
-									</li>
-									<li class="wow zoomIn" data-wow-delay="1.12s" data-wow-duration="2s">
-										<a href="#"><img src="images/banner/PARTNERS/PARTNERS/Frame 22.png"
-												alt="" /></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Partners End -->
-			</div>
-			<!-- contact area END -->
-		</div>
-		<!-- Content END -->
-	
-		<button class="scroltop icon-up" type="button">
-			<i class="fa fa-arrow-up"></i>
-		</button>
-	</div>
-	<!-- Footer -->
-	<footer class="site-footer ">
-		<!-- footer top part -->
-		<div class="footer-bg-custom">
-		  <div class="container">
-			<div class="row">
-			   
-			   
-			  <div class="col-md-12 pb-5">
-				<ul class="social-link">
-				  <li><a href="javascript:void(0);"><span>FACEBOOK</span> <i class="fa fa-facebook"></i></a></li>
-				  <li><a href="javascript:void(0);"><span>INSTAGRAM</span> <i class="fa fa-instagram"></i></a></li>
-				  <li><a href="javascript:void(0);"><span>LINKEDIN</span> <i class="fa fa-linkedin"></i></a></li>
-				  <li><a href="javascript:void(0);"><span>TWITTER</span> <i class="fa fa-twitter"></i></a></li>
-				  <li class="ml-auto"><a href="contact.html"> <span>CONTACT US</span></a></li>
-				</ul>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		<!-- footer bottom part -->
-		<div class="footer-bottom">
-		  <div class="container">
-			<div class="footer-bottom-in">
-			  <div class=""><a href="index.html" class="footer-copyright-custom">© 2023 KYYTE. All rights reserved.</a>
-			  </div>
-			  <div class="footer-copyright">
-				<p>5865 North Point Pkwy,Suite 100, Alpharetta, GA 30022</p>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </footer>
-	  		<!-- Footer END -->
-	<script type="text/javascript">
-		/* Simple appearence with animation AN-1*/
-		function openNav() {
-		  document.getElementById("mySidenav").style.width = "320px";
-		}
-		function closeNav() {
-		  document.getElementById("mySidenav").style.width = "0";
-		}
-		  /* Simple appearence with animation AN-1*/
-	  </script>
-
-	<script src="js/jquery.min.js"></script>
-	<!-- JQUERY.MIN JS -->
-	<script src="plugins/wow/wow.js"></script>
-	<!-- WOW JS -->
-	<script src="plugins/bootstrap/js/popper.min.js"></script>
-	<!-- BOOTSTRAP.MIN JS -->
-	<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-	<!-- BOOTSTRAP.MIN JS -->
-	<script src="plugins/magnific-popup/magnific-popup.js"></script>
-	<!-- MAGNIFIC POPUP JS -->
-	<script src="plugins/imagesloaded/imagesloaded.js"></script>
-	<!-- IMAGESLOADED -->
-	<script src="plugins/masonry/masonry-3.1.4.js"></script>
-	<!-- MASONRY -->
-	<script src="plugins/masonry/masonry.filter.js"></script>
-	<!-- MASONRY -->
-	<script src="plugins/owl-carousel/owl.carousel.js"></script>
-	<!-- OWL SLIDER -->
-	<script src="plugins/lightgallery/js/lightgallery-all.min.js"></script>
-	<!-- Lightgallery -->
-	<script src="js/custom.js"></script>
-	<!-- CUSTOM FUCTIONS  -->
-	<script src="js/dz.carousel.js"></script>
-	<!-- SORTCODE FUCTIONS  -->
-	<!-- <script src="js/navscript.js"></script> -->
+function pop_close6() {
+  document.getElementById("pop-open6").style.display = "none";
+}
+  </script>
 </body>
 
 </html>

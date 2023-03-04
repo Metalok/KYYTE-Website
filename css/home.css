@@ -86,7 +86,7 @@
   width: 50%;
   height: 100%;
   z-index: 2;
-  padding: 100px 0px;
+  padding: 150px 0px;
 }
 
 .gitital-circuit {
@@ -137,6 +137,7 @@
   /* Yellow */
 
   color: #f99400;
+  padding-top:25px;
 }
 
 .about-content-section {
@@ -216,6 +217,7 @@
   gap: 30px;
   background: rgba(0, 0, 0, 0.4);
   border-radius: 8px;
+  color:white;
 }
 
 .our-services-child h1 {
@@ -227,13 +229,22 @@
   /* or 19px */
   text-align: center;
   /* Yellow */
-  color: #f99400;
+  /* color: #f99400; */
+ 
 }
+
+
+.our-services-child:hover{
+   color:#F99400;
+   background-color: rgba(0, 0, 0, 0.53);
+   cursor: pointer;
+}
+
 
 .circuit-img {
   position: absolute;
   top: -234px;
-  opacity: 0.24;
+  opacity: 0.34;
   left: 0;
 }
 @media (max-width: 1300px) {
@@ -247,6 +258,10 @@
     font-size: 35px;
   }
 }
+
+
+
+
 /*-------------------------------------------------------------------------------------------------------> why kyyte   4      */
 
 .why-kyyte-section {
@@ -521,6 +536,13 @@ border-radius:0px 0px 8px 8px;
 }
 
 /*-------------------------------------------------------------------------------------------------------> why kyyte   6     */
+
+
+
+
+
+
+
 .domains-section {
   background-color: #0a4b9b;
   padding: 10px 0px;
@@ -560,11 +582,32 @@ border-radius:0px 0px 8px 8px;
 }
 
 .domain-all-imgs {
- margin-top:5px
+  animation: flooting 1s infinite;
+ /* margin-top:5px; */
+ position:relative;
+ /* margin-bottom:30px; */
 
-  
+
 
 }
+
+@keyframes flooting{
+    0%{
+  
+     top:0px;
+
+    }
+    50%{
+      top:15px;
+
+    }
+    100%{
+      top:0px;
+    }
+   
+}
+
+
 
 
 .domain-section-child{
@@ -607,6 +650,10 @@ box-shadow: 0px 3.35441px 16.7721px rgba(0, 0, 0, 0.1); */
     transform: scale(1);
   }
 }
+
+
+
+
 /*-------------------------------------------------------------------------------------------------------> why kyyte   7     */
 
 .ceo-section {
@@ -671,7 +718,7 @@ box-shadow: 0px 3.35441px 16.7721px rgba(0, 0, 0, 0.1); */
   text-decoration: none;
 }
 .number-size {
-  font-size: 32px !important;
+  font-size: 9vw !important;
   opacity: 40%;
 }
 @media (min-width: 320px) and (max-width: 790px) {

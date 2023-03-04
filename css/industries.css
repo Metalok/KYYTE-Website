@@ -19,9 +19,9 @@
   position: relative;
   overflow: hidden;
   padding-left: 7vw;
-  padding-top: 35px;
+  padding-top: 80px;
   padding-bottom: 35px;
-  margin-top:10vh;
+  /* margin-top:10vh; */
 }
 
 .industries-heading {
@@ -305,7 +305,7 @@ text-transform: uppercase;
   height: 60px;
   width: 166px;
 
-  background: #ffe13c;
+  background: #F99400;;
   border-radius: 0px;
   border: none;
 

@@ -24,9 +24,6 @@
   
 }
 
-
-
-
 /* The navigation menu links */
 .sidenav-custom a {
   padding: 8px 8px 8px 32px;
@@ -36,7 +33,9 @@
   display: block;
   transition: 0.3s;
   font-family: "DIN Condensed Bold";
+  font-weight: 700;
 }
+
 
 /* When you mouse over the navigation links, change their color */
 
@@ -89,26 +88,29 @@
   align-items: center;
   justify-content: space-between;
   padding: 0px 6%;
-  height: 10vh;
-  background-color:#e7f2ff8f;
-  z-index: 10;
+  height: 12vh;
+  background-color:#e7f2ff8f !important;
+  z-index: 12;
   position: fixed;
   width: 100%;
+
  
 }
-
-.nav-section-custom-active{
+.nav-section-custom-active {
+  
   position: relative;
   top: 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0px 6%;
-  height: 10vh;
-  background-color:#e7f2ff8f;
+  height: 12vh;
+  background-color: #1661be;
   z-index: 10;
   position: fixed;
   width: 100%;
+
+
 }
 
 
@@ -204,4 +206,10 @@
 }
 .footer-copyright-custom{
     text-decoration: none;
+}
+header.scroll-custom {
+  background: #efc47D !important;
+}
+header{
+  background-color: #1661be !important;
 }

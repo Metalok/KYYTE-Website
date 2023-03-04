@@ -54,32 +54,30 @@
 
 
 
-
-    <header>
-			<div class="nav-section-custom">
-			  <div class="logo-section-custom">
-				<a href="index.html"> <img src="./images/icon/logo.png" alt="" /></a>
-				<!-- <h1>FILMABLE</h1> -->
-			  </div>
-			  <div class="links">
-				<ul class="menu-links"></ul>
-			  </div>
-		
-			  <img src="./images/icon/burger-menu.png" class="toggle-collaps-custom" alt="" onclick="openNav()" />
-			  <div id="mySidenav" class="sidenav-custom">
-				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-				<a href="" class="menu-text">MENU</a>
-				<a href="index.html">HOME</a>
-				<a href="about.html">ABOUT</a>
-				<a href="services.html">SERVICES</a>
-				<a href="industries.html">INDUSTRIES & FUNCTIONAL AREAS</a>
-				<a href="ourpartners.html">PARTNERS</a>
-				<a href="customers.html">CUSTOMERS</a>
-				<a href="career.html">CAREER</a>
-				<a href="contact.html">CONTACT US</a>
-			  </div>
-			</div>
-		  </header>
+    <header class="nav-section-custom">
+      <div class="logo-section-custom">
+        <a href="index.html"> <img src="./images/icon/logo.png" alt="" /></a>
+        <!-- <h1>FILMABLE</h1> -->
+      </div>
+      <div class="links">
+        <ul class="menu-links"></ul>
+      </div>
+    
+      <img src="./images/icon/burger-menu.png" class="toggle-collaps-custom" alt="" onclick="openNav()" />
+      <div id="mySidenav" class="sidenav-custom">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="" class="menu-text">MENU</a>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="services.html">SERVICES</a>
+        <a href="industries.html">INDUSTRIES & FUNCTIONAL AREAS</a>
+        <a href="ourpartners.html">PARTNERS</a>
+        <a href="customers.html">CUSTOMERS</a>
+        <a href="career.html">CAREERS</a>
+        <a href="contact.html">CONTACT US</a>
+      </div>
+    
+    </header>
     <!----------------------------------------------------------------------------------------------------------------------- section 1   -->
     <div class="career-page-section">
       <div class="container">
@@ -93,9 +91,9 @@
           src="./images/banner/circuit-img.png"
           alt=""
         />
-        <button class="contact-us-button">CONTACT US</button>
+        <a href="contact.html" ><button class="contact-us-button">CONTACT US</button></a>
         <div class="career-heading-section">
-          <h1>CAREERS</h1>
+          <h1 class="pt-5">CAREERS</h1>
           <p>
             Kyyte is a success defined by collective efforts and values the
             contribution of all its employees. We create an environment
@@ -237,15 +235,35 @@
   </footer>
 
   <script type="text/javascript">
-	/* Simple appearence with animation AN-1*/
-	function openNav() {
-	  document.getElementById("mySidenav").style.width = "320px";
-	}
-	function closeNav() {
-	  document.getElementById("mySidenav").style.width = "0";
-	}
-	  /* Simple appearence with animation AN-1*/
-  </script>
+    /* Simple appearence with animation AN-1*/
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "320px";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+      /* Simple appearence with animation AN-1*/
+  
+      var className = "nav-section-custom";
+      var className2 = "nav-section-custom-active"
+  
+    window.onscroll = function() {
+     
+    if (window.scrollY >= 1) {
+      document.getElementsByTagName("header")[0].classList.remove(className);
+      document.getElementsByTagName("header")[0].classList.add(className2);
+     
+    } else {
+      document.getElementsByTagName("header")[0].classList.add(className);
+      document.getElementsByTagName("header")[0].classList.remove(className2);
+  
+    }
+    };
+  
+    
+  
+  
+    </script>
 
 <!-- Footer END -->
   </body>
