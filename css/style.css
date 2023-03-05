@@ -12333,17 +12333,17 @@ ol.commentlist li .star-rating {
     background-color: #fff;
     position: fixed;
     left: 0;
-    top: 0;
+    top: 0%;
     opacity: 1;
     z-index: 999999999;
-    background-image: url(../images/loading.gif);
+    /* background-image: url(../images/loading.gif); */
     background-repeat: no-repeat;
     background-size: 200px;
     background-position: center;
 }
 #loading-area.solar-loading{
 	 background-size: 280px;
-	background-image: url(../images/solar.gif);
+	/* background-image: url(../images/solar.gif); */
 }
 /* ------------------------------------------------
 30. CONTACT

@@ -34,6 +34,7 @@
   <!--START:: stylesheet for fade in & fade out animation while scrolling-->
 	<link rel="stylesheet" type="text/css" href="css/templete.css">
 	<link class="skin" rel="stylesheet" type="text/css" href="css/skin/skin-1.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"  ></script>
   <!--END:: stylesheet for fade in & fade out animation while scrolling-->
 
   <style>
@@ -60,46 +61,65 @@
 
 <body>
   <!--------------------------------------------------------------------------------------------------------------------- section  1  -->
-  <div id="loading-area"></div>
+  <div id="loading-area">
+    <div class="parent-loader">
+      <div  id="animation-container8" class="loader-position">
+        <script>
+            var animation=bodymovin.loadAnimation({
+                container:document.getElementById('animation-container8'),
+                path:'./images/loade-custom/loader.json',
+                render:'svg',
+                loop:true,
+                autoplay:true,
+                name:'demo animation'
+            });
+        </script>
+            </div>
+          </div>
+        </div>
 
-    <header class="nav-section-custom">
-      <div class="logo-section-custom">
-        <a href="index.html"> <img src="./images/icon/logo.png" alt="" /></a>
-        <!-- <h1>FILMABLE</h1> -->
-      </div>
-      <div class="links">
-        <ul class="menu-links"></ul>
-      </div>
+   
+  <header class="nav-section-custom">
+    <div class="logo-section-custom">
+      <a href="index.html"> <img src="./images/icon/logo.png" alt="" /></a>
+      <!-- <h1>FILMABLE</h1> -->
+    </div>
+    <div class="links">
+      <ul class="menu-links"></ul>
+    </div>
 
-      <img src="./images/icon/burger-menu.png" class="toggle-collaps-custom" alt="" onclick="openNav()" />
-      <div id="mySidenav" class="sidenav-custom">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="" class="menu-text">MENU</a>
-        <a href="index.html">HOME</a>
-        <a href="about.html">ABOUT</a>
-        <a href="services.html">SERVICES</a>
-        <a href="industries.html">INDUSTRIES & FUNCTIONAL AREAS</a>
-        <a href="ourpartners.html">PARTNERS</a>
-        <a href="customers.html">CUSTOMERS</a>
-        <a href="career.html">CAREER</a>
-        <a href="contact.html">CONTACT US</a>
-        <!-- animation start here -->
-        <!-- <div id="animation-custom">
-          <div class="vertWrap-custom">
-              <div class="kite">
-                  <div class="box-custom">
-                      <img src="kite1.png" alt=""   class="rotateimg90"/>
-                  </div>
-                  
-              </div>
-              
-           </div>
-      </div> -->
-        <!-- animation end here -->
-        <img src="./images/banner/cloud.svg" alt="" />
-      </div>
-    </header>
- 
+    <img src="./images/icon/burger-menu.png" class="toggle-collaps-custom" alt="" onclick="openNav()" />
+    <div id="mySidenav" class="sidenav-custom">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="" class="menu-text">MENU</a>
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="services.html">SERVICES</a>
+      <a href="industries.html">INDUSTRIES & FUNCTIONAL AREAS</a>
+      <a href="ourpartners.html">PARTNERS</a>
+      <a href="customers.html">CUSTOMERS</a>
+      <a href="career.html">CAREERS</a>
+      <a href="contact.html">CONTACT US</a>
+      <!-- loader animation start here  -->
+      <div class="parent-loader">
+      <div  id="animation-container"class="loader-class">
+        <script>
+            var animation=bodymovin.loadAnimation({
+                container:document.getElementById('animation-container'),
+                path:'./images/loade-custom/loader.json',
+                render:'svg',
+                loop:true,
+                autoplay:true,
+                name:'demo animation'
+            });
+        </script>
+            </div>
+          </div>
+
+      <!-- loader animation end here  -->
+    </div>
+
+  </header>
   <div class="page-content bg-white">
     <!-- contact area -->
 
