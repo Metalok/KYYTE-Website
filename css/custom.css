@@ -483,3 +483,12 @@
   }
 
 }
+.ceo-italik{
+  font-style: italic !important;
+  font-size: 18px !important;
+}
+.innovation-bg-custom{
+  background-image: url('../images/banner/innovation-backimg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
