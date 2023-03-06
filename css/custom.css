@@ -268,6 +268,7 @@
   background-color: #166abe;
   overflow: hidden;
   width: 100%;
+  height: 458px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -291,6 +292,7 @@
   text-transform: uppercase;
 
   color: #ffffff;
+  margin-top:62px;
 }
 
 .career-heading-section p {
@@ -335,7 +337,7 @@
   position: absolute;
   opacity: 0.2;
   left: 0%;
-  bottom: -30%;
+  bottom: -70%;
   width: 50%;
 }
 
