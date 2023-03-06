@@ -321,9 +321,31 @@
   position: absolute;
   opacity: 0.2;
   left: 19%;
-  bottom: -84%;
+  bottom: -74%;
 }
 
+.career-back-img5 {
+  position: absolute;
+  opacity: 0.2;
+  left: 0%;
+  bottom: -50%;
+}
+
+.career-back-img3 {
+  position: absolute;
+  opacity: 0.2;
+  left: 0%;
+  bottom: -30%;
+  width: 50%;
+}
+
+
+.career-back-img6 {
+  position: absolute;
+  opacity: 0.2;
+  left: 0%;
+  bottom: -50%;
+}
 .contact-us-button {
   position: absolute;
   height: 60px;
@@ -353,10 +375,10 @@
   .career-back-img1 {
     width: 100%;
   }
-  .career-back-img2 {
+  /* .career-back-img2 {
     left: 0px;
     bottom: -56%;
-  }
+  } */
 }
 @media (max-width: 600px) {
   .career-heading-section p {

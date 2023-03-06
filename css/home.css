@@ -122,6 +122,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .about-haeding {
@@ -156,6 +157,25 @@
 
   color: #333333;
   margin-top: 22px;
+}
+
+.about-circuit-img{
+  /* border:2px solid red; */
+  position:absolute;
+  left:0px;
+  top:-11%;
+  opacity: .1;
+  
+
+
+}
+
+.about-circuit-img2{
+  position:absolute;
+  right: 0px;
+  bottom:-8%;
+  transform: rotateY(180deg);
+  opacity: .1;
 }
 
 /*------------------------------------------------------------------------------------------------------> services-section 3      */
@@ -244,7 +264,7 @@
 .circuit-img {
   position: absolute;
   top: -234px;
-  opacity: 0.34;
+  opacity: 0.2;
   left: 0;
 }
 @media (max-width: 1300px) {
@@ -271,7 +291,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: 100vh;
+  min-height: 100vh;
 }
 
 .why-kyyte-parent {
@@ -351,7 +371,12 @@ border-radius:0px 0px 8px 8px;
   opacity: 0.2;
 }
 
+
 @media (max-width: 820px) {
+
+ 
+
+
   .why-kyyte-parent {
     max-width: 500px;
   }
