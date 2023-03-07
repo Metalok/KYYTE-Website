@@ -731,7 +731,7 @@ box-shadow: 0px 3.35441px 16.7721px rgba(0, 0, 0, 0.1); */
 
 .ceo-para {
   font-family: "Poppins";
-  font-style: italic;
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -846,3 +846,19 @@ font-family: "Poppins";
 
 
 /* services popup end  */
+
+.innovation-bg-custom1{
+  background-image: url('../images/banner/bg-innov-1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.innovation-bg-custom2{
+  background-image: url('../images/banner/bg-innov-1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.innovation-bg-custom3{
+  background-image: url('../images/banner/bg-innov-3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

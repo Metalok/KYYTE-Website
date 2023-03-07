@@ -118,10 +118,10 @@
 }
 
 .career-menu h1 {
-  font-family: "Chakra Petch";
+  font-family: "DIN Condensed Bold";
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 2vw;
   line-height: 25px;
   /* identical to box height, or 139% */
   color: #2b292d;
@@ -212,10 +212,10 @@ border:none;
 
 
 .email-marketing-child h1{
-    font-family: 'Work Sans';
+    font-family: "DIN Condensed Bold";
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.5vw;
     line-height: 26px;
     /* or 144% */
     width: 238px;
@@ -225,7 +225,7 @@ border:none;
 
 .email-marketing-child p{
 
-    font-family: 'Work Sans';
+    font-family: 'Poppins';
 font-style: normal;
 font-weight: 500;
 font-size: 18px;
@@ -237,7 +237,7 @@ color: #2B292D;
 }
 
 .email-marketing-child h2{
-    font-family: 'Work Sans';
+  font-family: "DIN Condensed Bold";
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
