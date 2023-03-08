@@ -492,3 +492,28 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.privacy-heading{
+  font-family: "DIN Condensed Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72.5px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #0c0c0c;
+  text-align: center;
+  padding-top: 160px;
+ 
+}
+.privacy-section h2{
+  color: #000;
+}
+.privacy-section p{
+ font-family: 'Poppins';
+ font-weight: 400;
+    color: #6f7275;
+    font-size: 18px;
+}
+.footer-copyright p a{
+  color: #FFFFFF !important;
+  text-decoration: none;
+}
