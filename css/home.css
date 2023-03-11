@@ -617,6 +617,11 @@
   color: #ffffff;
   padding: 52px 0px;
 }
+
+
+
+
+
 .domain-center-img{
   position:relative;
   
@@ -645,6 +650,15 @@
   height: 100%;
  
 }
+
+
+
+
+
+
+
+
+
 
 .domain-all-imgs:hover {
   animation: flooting 1s infinite;
@@ -719,7 +733,6 @@ box-shadow: 0px 3.35441px 16.7721px rgba(0, 0, 0, 0.1); */
   .domain-center-img img {
     transform: scale(1);
   }
- 
 }
 
 /*-------------------------------------------------------------------------------------------------------> why kyyte   7     */
@@ -876,7 +889,7 @@ box-shadow: 0px 3.35441px 16.7721px rgba(0, 0, 0, 0.1); */
 }
 
 .innovation-bg-custom2 {
-  background-image: url("../images/banner/bg-innov-1.png");
+  background-image: url("../images/banner/bg-innov-2.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
