@@ -2448,20 +2448,23 @@ content: "";
 .industries-li-div2 a {
   background-image: linear-gradient(
     90deg,
-    #f5f2f2,
-    #f3f1f1 50%,
+    #1661be,
+    #1661be,
     #1661be 0
   ) !important;
 }
 
-.industries-li-div2:hover {
+/* .industries-li-div2:hover {
   background-color: #1661be !important;
   color: white !important;
-}
+} */
 
 @media (max-width: 768px) {
   .dunctional-domains-heading {
     font-size: 40px;
     padding-top: 20px;
   }
+}
+.industries-li-div2 a:hover{
+  color: #1661be !important;
 }

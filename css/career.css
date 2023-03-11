@@ -228,8 +228,8 @@ border:none;
     font-family: 'Poppins';
 font-style: normal;
 font-weight: 500;
-font-size: 18px;
-line-height: 26px;
+font-size: 15px;
+line-height: 23px;
 /* or 144% */
 width: 238px;
 
@@ -263,11 +263,14 @@ color: #2B292D;
         width: 320px;
     }
     .email-apply-btn{
-        top:60%;
+        top:65%;
 
     }
 .email-marketing-child{
 
  margin-left:20px;   
 }
+}
+.job-2-des{
+ margin-top: -10px;
 }

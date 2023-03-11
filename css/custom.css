@@ -517,3 +517,15 @@
   color: #FFFFFF !important;
   text-decoration: none;
 }
+.domain-short-div p{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+
+/* fff */
+
+color: #FFFFFF;
+
+}
