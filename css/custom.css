@@ -369,7 +369,8 @@
 
   color: #000000;
   right: -53px;
-  bottom: 200px;
+  top: 30%;
+  /* bottom: 200px; */
   transform: rotate(90deg);
 }
 
@@ -534,4 +535,23 @@ line-height: 16px;
 
 color: #FFFFFF;
 
+}
+
+
+/* new added */
+.about{
+  width: 95%;
+}
+@media (min-width: 320px)and (max-width: 790px) {
+  .contact-us-button {
+    position: absolute;
+    height: 44px;
+    width: 150px;
+    /* top: 45%; */
+  }
+}
+@media (min-width: 1080px)and (max-width: 1440px) {
+  .contact-us-button {
+    top:13%;
+  }
 }

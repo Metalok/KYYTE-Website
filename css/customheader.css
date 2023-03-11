@@ -89,7 +89,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0px 6%;
-  height: 12vh;
+  height: 10vh;
   background-color:#e7f2ff8f !important;
   z-index: 12;
   position: fixed;
@@ -105,13 +105,24 @@
   align-items: center;
   justify-content: space-between;
   padding: 0px 6%;
-  height: 12vh;
+  height: 10vh;
   background-color:#e7f2ff8f !important;
   z-index: 10;
   position: fixed;
   width: 100%;
 
 
+}
+
+@media screen and (min-width: 1020px) and (max-width:1430px){
+  .nav-section-custom,.nav-section-custom-active {
+    height: 7vh;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width:1480px){
+  .nav-section-custom,.nav-section-custom-active {
+    height: 5vh !important;
+  }
 }
 
 

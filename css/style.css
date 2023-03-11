@@ -1287,6 +1287,7 @@ dl dd {
 	.spsm15{
 		margin-left:-7.5px;
 		margin-right:-7.5px;
+        margin-top: 10%;
 	}
 	.row.spsm15 [class*="col-"],
 	.spsm15 [class*="col-"]{
@@ -1420,14 +1421,14 @@ dl dd {
     background-image: url('../images/about/bg-2-img.png');
     background-repeat: no-repeat;
     background-position: top left;
-    padding-bottom: 40px;
+    padding-bottom: 70px;
 }
 .text-black-3 {
     color: #000!important;
     background-image: url('../images/about/bg-3-img.png');
     background-repeat: no-repeat;
     background-position: top left;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 .text-gray {
     color: #f5f6f6;
@@ -14275,3 +14276,16 @@ ol.commentlist li .star-rating {
 		opacity: 0.1;
 	}
 }
+
+/* new added */
+@media screen and (min-width: 479px) and (max-width:760px){
+    .text-black-1 {
+        padding-bottom: 60px;
+    }
+    .text-black-2 {
+        padding-bottom: 100px;
+    }
+    .text-black-3 {
+        padding-bottom: 96px;
+    }
+  }
