@@ -623,11 +623,33 @@ color: #FFFFFF;
       height: 50px;
     }
   }
-
-
-
   @media(max-width:1000px){
     .office-location-name{
       font-size: 15px;
     }
   }
+
+
+
+  /* new added 13=3-23 */
+  @media (min-width: 320px)and (max-width: 790px) {
+    .contact-us-button {
+      position: absolute;
+      height: 44px;
+      width: 150px;
+    }
+   .industrial-contact .contact-us-button{
+      height: 44px;
+      width: 150px;
+      top:53%;
+    }
+  }
+  @media (min-width: 1080px)and (max-width: 1440px) {
+    .industrial-contact .contact-us-button{
+      top:47%;
+    }
+  }
+  @media screen and (min-width: 1020px) and (max-width: 1430px){
+  .nav-section-custom, .nav-section-custom-active {
+      height: 6vh;
+    }}
