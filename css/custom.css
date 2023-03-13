@@ -555,6 +555,13 @@ color: #FFFFFF;
     top:13%;
   }
 }
+
+
+
+
+
+
+
 .partner-text-sub{
   font-family: "Poppins" !important;
     font-style: normal !important;
@@ -568,4 +575,19 @@ color: #FFFFFF;
 }
 .title-customer-custom{
   color: #000 !important;
+}
+@media (min-width: 320px)and (max-width: 540px) {
+  .content-inner-1 {
+    padding-top: 0px !important;
+}
+.dlab-bnr-inr.no-bg-bnr .dlab-bnr-inr-entry h1 {
+  font-size: 39px !important;
+  line-height: 40px !important;
+  /* margin-bottom: 15px; */
+  text-transform: uppercase;
+  /* font-size: 56px; */
+  /* font-family: "D-DIN Condensed"; */
+  /* text-transform: uppercase; */
+  color: #1661be;
+}
 }

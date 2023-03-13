@@ -121,7 +121,8 @@
   font-family: "DIN Condensed Bold";
   font-style: normal;
   font-weight: 500;
-  font-size: 2vw;
+  font-size: 22px;
+  /* font-size: 2vw; */
   line-height: 25px;
   /* identical to box height, or 139% */
   color: #2b292d;
@@ -215,7 +216,7 @@ border:none;
     font-family: "DIN Condensed Bold";
     font-style: normal;
     font-weight: 700;
-    font-size: 1.5vw;
+    font-size: 22px;
     line-height: 26px;
     /* or 144% */
     width: 238px;
@@ -263,7 +264,7 @@ color: #2B292D;
         width: 320px;
     }
     .email-apply-btn{
-        top:65%;
+        top:80%;
 
     }
 .email-marketing-child{

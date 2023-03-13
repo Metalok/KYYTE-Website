@@ -2048,7 +2048,7 @@ content: "";
   .site-footer .social-link {
     text-align: center;
     margin-top: 30px;
-    /* margin-bottom: 20px; */
+    margin-bottom: 0px;
   }
   .site-footer .social-link li a i {
     display: block;
@@ -2079,9 +2079,16 @@ content: "";
     text-align: left;
   }
   .dlab-bnr-inr.no-bg-bnr {
-    padding: 30px 0 30px;
+    padding: 100px 0 30px;
     background: #f4f4f4;
   }
+  /* new added */
+  @media (min-width: 600px)and (max-width:760px) {
+    .dlab-bnr-inr.no-bg-bnr {
+      padding: 140px 0 30px;
+    }
+  }  
+  /* new add */
   .dlab-bnr-inr.no-bg-bnr p {
     margin-bottom: 0;
   }
