@@ -2048,7 +2048,7 @@ content: "";
   .site-footer .social-link {
     text-align: center;
     margin-top: 30px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
   .site-footer .social-link li a i {
     display: block;
