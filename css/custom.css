@@ -543,11 +543,10 @@ color: #FFFFFF;
   width: 95%;
 }
 @media (min-width: 320px)and (max-width: 790px) {
-  .contact-us-button {
-    position: absolute;
+  .contact-us-button { 
     height: 44px;
     width: 150px;
-    /* top: 45%; */
+    z-index: 1;
   }
 }
 @media (min-width: 1080px)and (max-width: 1440px) {
@@ -591,3 +590,44 @@ color: #FFFFFF;
   color: #1661be;
 }
 }
+
+
+
+
+
+.partner-contact-us-button{
+  position: fixed;
+      height: 60px;
+      width: 166px;
+      background: #f3a80a;
+      border-radius: 0px;
+      border: none;
+      font-family: "DIN Condensed Bold";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18.9841px;
+      line-height: 44px;
+      letter-spacing: 1.46032px;
+      text-transform: uppercase;
+      color: #000000;
+      right: -53px;
+      z-index: 10;
+      top: 280px;
+    
+      transform: rotate(90deg);
+  }
+  
+  @media(max-width:600px){
+    .partner-contact-us-button{
+      width: 150px;
+      height: 50px;
+    }
+  }
+
+
+
+  @media(max-width:1000px){
+    .office-location-name{
+      font-size: 15px;
+    }
+  }
