@@ -1417,7 +1417,8 @@ dl dd {
     background-image: url('../images/about/bg-1-img.png');
     background-repeat: no-repeat;
     background-position: top left;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
+    /* padding-bottom: 20px; */
 }
 .text-black-2 {
     color: #000!important;

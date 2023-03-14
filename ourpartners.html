@@ -82,7 +82,7 @@
     <img src="./images/icon/burger-menu.png" class="toggle-collaps-custom" alt="" onclick="openNav()" />
     <div id="mySidenav" class="sidenav-custom">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="" class="menu-text">MENU</a>
+      <p href="" class="menu-text">MENU</p>
       <a href="index.html">HOME</a>
       <a href="about.html">ABOUT</a>
       <a href="services.html">SERVICES</a>
@@ -274,6 +274,8 @@
 		</div>
 	</div>
 </footer>
+<a href="javascript:" id="return-to-top"><i class="fa fa-arrow-up"></i></a>
+
 
   
   <script type="text/javascript">
@@ -321,6 +323,23 @@
 <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
 <script src="js/dz.carousel.js"></script><!-- SORTCODE FUCTIONS  -->
 <!-- <script src="js/navscript.js"></script>SORTCODE FUCTIONS  -->
+
+<script>
+	// ===== Scroll to Top ====
+	$(window).scroll(function () {
+		if ($(this).scrollTop() >= 50) {
+			$('#return-to-top').fadeIn(200);
+		} else {
+			$('#return-to-top').fadeOut(200);
+		}
+	});
+	$('#return-to-top').click(function () {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 500);
+	});
+</script>
+
 
 </body>
 </html>

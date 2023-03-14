@@ -11,7 +11,7 @@
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   top: 0;
   background-color: #e7f2ff;
   overflow-x: hidden;
@@ -163,6 +163,7 @@
 .toggle-collaps-custom {
   float: left;
   margin-left: -3.3em;
+  cursor: pointer;
 }
 .toggle-icon,
 .toggle-icon:before,
@@ -215,6 +216,7 @@
   text-transform: uppercase;
   color: #1661be;
   opacity: 0.2;
+  font-family: "DIN Condensed Bold";
 }
 .footer-copyright-custom{
     text-decoration: none;

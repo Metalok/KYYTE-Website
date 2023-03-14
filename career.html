@@ -78,7 +78,7 @@
       <img src="./images/icon/burger-menu.png" class="toggle-collaps-custom" alt="" onclick="openNav()" />
       <div id="mySidenav" class="sidenav-custom">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="" class="menu-text">MENU</a>
+        <p href="" class="menu-text">MENU</p>
         <a href="index.html">HOME</a>
         <a href="about.html">ABOUT</a>
         <a href="services.html">SERVICES</a>
@@ -122,7 +122,7 @@
         />
        
         <div class="carrer-contact">
-          <a href="contact.html" ><button class="contact-us-button">CONTACT US</button></a>
+          <a href="contact.html" ><button class="partner-contact-us-button ">CONTACT US</button></a>
         </div>
          <div class="career-heading-section">
           <h1 class="pt-5">CAREERS</h1>
@@ -280,6 +280,8 @@
       </div>
   </div>
 </footer>
+<a href="javascript:" id="return-to-top"><i class="fa fa-arrow-up"></i></a>
+
 
   <script type="text/javascript">
     /* Simple appearence with animation AN-1*/
@@ -332,5 +334,22 @@
     <script src="plugins/lightgallery/js/lightgallery-all.min.js"></script>
 
 <!-- Footer END -->
+    <script>
+      // ===== Scroll to Top ====
+      $(window).scroll(function () {
+        if ($(this).scrollTop() >= 50) {
+          $('#return-to-top').fadeIn(200);
+        } else {
+          $('#return-to-top').fadeOut(200);
+        }
+      });
+      $('#return-to-top').click(function () {
+        $('body,html').animate({
+          scrollTop: 0
+        }, 500);
+      });
+    </script>
+
+
   </body>
 </html>
