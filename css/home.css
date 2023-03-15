@@ -23,7 +23,7 @@
 }
 
 .digital-section {
-  /* background-color: #e7f2ff; */
+
   position: relative;
   overflow: hidden;
 
@@ -87,9 +87,9 @@
   top:50%;
   transform: translateY(-50%);
   width: 71%;
-  /* height: 100%; */
+
   z-index: 2;
-  /* padding: 150px 0px; */
+
   right: 0;
 }
 
@@ -1001,5 +1001,113 @@ margin-left: -100px !important;
 .ceo-italik {
   font-style: normal !important;
   font-size: 24px !important;
+}
+}
+/* css for digital section from vidya  */
+
+/* 
+@media (min-width:768px) and (max-height:1136px){
+  .loader-top {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0% !important;
+    left: 38% !important;
+   
+  
+  
+  }
+} */
+
+
+
+.loader-top {
+  width: 220px;
+  height: 220px;
+  position: absolute;
+  top: 41% !important;
+  left: 45% !important;
+ 
+
+
+}
+
+
+/* @media (max-width:767px) and (max-height:800px) {
+  .loader-top {
+    top: 32% !important;
+    height: 100px !important;
+    width: 100px !important;
+    left: 38% !important;
+    position:absolute;
+    
+  
+
+  }
+
+} */
+
+
+
+
+/* 
+@media (min-width:768px) and (max-height:1136px){
+  .loader-back {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 10% !important;
+    left: 50% !important;
+   
+  
+  }
+} */
+
+
+
+.loader-back {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 25% !important;
+  left: 35% !important;
+  
+
+
+}
+
+
+/* @media (max-width:767px) and (max-height:800px) {
+  .loader-back {
+    top: 32% !important;
+    height: 100px !important;
+    width: 100px !important;
+    left: 38% !important;
+    position:absolute;
+   
+
+  }
+
+} */
+@media (min-width: 320px) and (max-width: 780px) {
+  .loader-back {
+    top: 32% !important;
+    height: 100px !important;
+    width: 100px !important;
+    left: 38% !important;
+    position:absolute;
+   
+
+  }
+  
+.loader-top {
+  width: 220px;
+  height: 220px;
+  position: absolute;
+  top: 41% !important;
+  left: 45% !important;
+ 
+
+
 }
 }

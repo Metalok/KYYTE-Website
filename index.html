@@ -54,6 +54,155 @@
         margin-right: 0px;
       }
     }
+
+    @media (min-width:320px) and (max-width: 767px) {
+      .container-elements h1 {
+        text-align: center ! important;
+
+        font-family: "DIN Condensed Bold" !important;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 7vw;
+        line-height: 110%;
+        text-transform: uppercase;
+
+        color: #f99400 !important;
+        position: absolute;
+        top: 90% !important;
+        left: 9%;
+        text-align:center;
+  /* margin-top:50px !important;
+  margin-bottom:50px ! important;  */
+        transform: translateY(-64%);
+
+
+
+      }
+      .digital-section-subdiv-1{
+        margin-top:46% ! important;
+        margin-bottom:10% ! important;
+        text-align: center ! important;
+      }
+
+    }
+    
+    @media (min-width: 768px) and (max-width:2000px){
+      .container-elements{
+        display:flex;
+        flex-direction: row;
+        /* justify-content: start; */
+        align-items: center;
+        top:0 ! important;
+        left:0 ! important;
+        width:100% ! important;
+        margin: 0 ! important;
+        margin-left:3.7% ! important;
+      }
+      .digital-section-subdiv-2{
+        width:80% ! important;
+      }
+      .digital-section-subdiv-1{
+        width:20% ! important;
+        margin-top: 7% ! important;
+      }
+
+      .digital-section-subdiv-2 img {
+        /* position: absolute !important; */
+        /* right: 0px !important;
+        /* top: 67% !important; */
+        /* width: "100%";
+        height: "100%"; */
+        /* height:70% ! important; */
+        /* width:70% ! important; */
+        /* line-height:100px ! important;  */
+        /* margin-left:-80% ! important; */
+        height:350% ! important;
+        width:700% ! important;
+
+      }
+      
+      .container-elements h1 { 
+        
+  font-family: "DIN Condensed Bold" !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6vw;
+  line-height: 110%;
+  text-transform: uppercase;
+  
+
+  color: #f99400 !important;
+  position: absolute;
+  /* top: 67% !important;
+  left: 9%; */
+  
+  
+  transform: translateY(-64%);
+
+    }
+
+    }
+
+  
+
+    @media (min-width:320px)and (max-width:767px) {
+
+
+      .digital-heading {
+        font-family: "DIN Condensed Bold";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 7vw;
+        
+        width:30% ! important;
+        line-height: 110%;
+        /* text-transform: uppercase; */
+        text-align: center ! important;
+        /* margin:auto; */
+
+        color: #f99400;
+        position: absolute;
+        top: 55%;
+        left: 29% ! important;
+
+
+        /* margin-top:10% ! important; */
+
+
+        transform: translateY(-64%);
+      }
+    }
+
+    @media (min-width: 768px) and (max-width:2000px) {
+      .digital-heading {
+        text-align: left ! important;
+        top:75% ! important;
+        /* margin-top:30% ! important; */
+
+
+
+      }
+
+    }
+
+    .digital-section {
+      display:flex;
+      flex-direction:row;
+      align-items:center;
+      
+    
+    }
+
+    @media (max-width:800px) {
+      .digital-section {
+        text-align: center ! important;
+      }
+
+    }
+
+
+
+
   </style>
 </head>
 
@@ -241,7 +390,7 @@
           <div class="digital-section">
             <a href="contact.html"><button class="contact-us-button">CONTACT US</button></a>
 
-            <div class="container-fluid">
+            <!-- <div class="container-fluid">
               <h1 class="digital-heading">
                 DIGITAL <br />
                 Transformation <br />
@@ -251,9 +400,66 @@
                 <img src="./images/banner/bg-kyyte-animation-svg.svg" alt="" />
                 
               </div>
-              <!-- <img class="gitital-circuit" src="./images/banner/circuit-img.png" alt="" />
-              <img class="gitital-circuit2" src="./images/banner/circuit-img.png" alt="" /> -->
-            </div>
+             
+            </div> -->
+            <!-- vidya code start here  -->
+
+
+
+            <div class="container-fluid">
+              <div class="row container-elements">
+                <div class="col-lg-6 col-12 col-sm-12 col-md-6 col-xl-6 digital-section-subdiv-1">
+                  <h1 class="digital-heading"> Digital  Transformation Simplified</h1>
+                </div>
+                <div class="col-lg-6  col-sm-12 col-12 col-md-6 col-xl-6 digital-section-subdiv-2 ">
+                  <img src="./images/banner/bg-kyyte-animation-svg.svg" alt="digital-kyyte" />
+                  
+                  <div class="digital-img-section">
+                    <!-- <img src="./images/banner/bg-kyyte-animation-svg.svg" alt="" />  -->
+                             <div class="">
+                              <div id="animation-container10" class="loader-back">
+                                <script>
+                                  var animation = bodymovin.loadAnimation({
+                                    container: document.getElementById('animation-container10'),
+                                    path: './images/loade-custom/topload.json',
+                                    render: 'svg',
+                                    loop: true,
+                                    autoplay: true,
+                                    name: 'demo animation'
+                                  });
+                                </script>
+                               
+                              </div>
+                              <div id="animation-container15" class="loader-top">
+                                <script>
+                                  var animation = bodymovin.loadAnimation({
+                                    container: document.getElementById('animation-container15'),
+                                    path: './images/loade-custom/topload.json',
+                                    render: 'svg',
+                                    loop: true,
+                                    autoplay: true,
+                                    name: 'demo animation'
+                                  });
+                                </script>
+                                
+                              </div>
+                            </div> 
+                                 
+
+                  
+                  
+                  
+                  
+                          </div>
+
+                </div>
+
+          </div>
+        </div>
+
+
+            <!-- vidya code end here -->
+            
           </div>
         </div>
 
@@ -723,6 +929,7 @@
       </div>
     </div>
   </div>
+  
 
   <!--------------------------------------------------------------------------------------------------------------------- section  2  -->
 
@@ -770,9 +977,9 @@
     <div class="footer-bottom">
         <div class="container">
             <div class="footer-bottom-in">
-                <div class=""><a href="index.html" class="footer-copyright-custom">© 2020-2023 KYYTE. All rights
-                        reserved.</a>
-                </div>
+              <div class="">
+                <a class="footer-copyright-custom">© 2020-2023 KYYTE. All rights reserved.</a>
+              </div>
                 <div class="footer-copyright">
                     <p> <a href="privacy.html" class="footer-privacy-text"  target="_blank">Privacy Policy</a></p>
                 </div>
