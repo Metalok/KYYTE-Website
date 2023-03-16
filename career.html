@@ -139,16 +139,22 @@
     <div class="container">
       <div class="career-section2">
         <div class="career-menu">
-          <h1>ALL</h1>
-          <h1>FUNCTIONAL</h1>
-          <h1>TECHNICAL</h1>
-          <h1>OPERATIONAL</h1>
+          <h1 onclick="onClickAll()">ALL</h1>
+          <h1 onclick="onClickFunctional()">FUNCTIONAL</h1>
+          <h1 onclick="onClickTechnical()">TECHNICAL</h1>
+          <h1 onclick="onClickOperational()">OPERATIONAL</h1>
           <!-- <h1>SUPPORT</h1> -->
         </div>
       </div>
     </div>
 
-    <div class="container d-flex justify-content-center">
+    <div >
+
+    </div>
+
+
+
+    <div class="container justify-content-center"  id="all-section">
       <div class="email-marketing-section">
         <div class="email-marketing-parent">
           <div class="email-marketing-child">
@@ -156,8 +162,8 @@
             <p>
               We require a senior developer demonstrating strong skills and Experience in Java Webstack and Node.js 
             </p>
-            <h2>JOB DESCRIPTION</h2>
-            <button class="email-apply-btn">APPLY</button>
+          
+            <button class="email-apply-btn">Learn more</button>
           </div>
         </div>
         <div class="email-marketing-parent">
@@ -167,66 +173,73 @@
               We require a senior developer experienced in Fiori UI5 application 
               and strong integration knowledge of using OData Rest API’s. 
             </p>
-            <h2 class="job-2-des">JOB DESCRIPTION</h2>
-            <button class="email-apply-btn">APPLY</button>
+            
+            <button class="email-apply-btn">Learn more</button>
           </div>
         </div>
-        <div class="email-marketing-parent">
-          <div class="email-marketing-child">
-            <h1>Email Marketing</h1>
-            <p>
-              Foundation works with the tools and services you already use every
-              day.
-            </p>
-            <h2>View materials</h2>
-            <button class="email-apply-btn">APPLY</button>
-          </div>
-        </div>
-        <div class="email-marketing-parent">
-          <div class="email-marketing-child">
-            <h1>Email Marketing</h1>
-            <p>
-              Foundation works with the tools and services you already use every
-              day.
-            </p>
-            <h2>Learn more</h2>
-            <button class="email-apply-btn">APPLY</button>
-          </div>
-        </div>
-        <div class="email-marketing-parent">
-          <div class="email-marketing-child">
-            <h1>Email Marketing</h1>
-            <p>
-              Foundation works with the tools and services you already use every
-              day.
-            </p>
-            <h2>Learn more</h2>
-            <button class="email-apply-btn">APPLY</button>
-          </div>
-        </div>
-        <div class="email-marketing-parent">
-          <div class="email-marketing-child">
-            <h1>Email Marketing</h1>
-            <p>
-              Foundation works with the tools and services you already use every
-              day.
-            </p>
-            <h2>View materials</h2>
-            <button class="email-apply-btn">APPLY</button>
-          </div>
-        </div>
-        <div class="email-marketing-parent">
-          <div class="email-marketing-child">
-            <h1>Email Marketing</h1>
-            <p>
-              Foundation works with the tools and services you already use every
-              day.
-            </p>
-            <h2>View materials</h2>
-            <button class="email-apply-btn">APPLY</button>
-          </div>
-        </div>
+       
       </div>
+
+    </div>
+
+
+    <div class="container  justify-content-center"  id="all-functional">
+      <div class="email-marketing-section">
+       
+       
+        <div class="email-marketing-parent">
+          <div class="email-marketing-child">
+            <h1>Senior SAP Developer </h1>
+            <p>
+              We require a senior developer experienced in Fiori UI5 application 
+              and strong integration knowledge of using OData Rest API’s. 
+            </p>
+            
+            <button class="email-apply-btn">Learn more</button>
+          </div>
+        </div>
+       
+      </div>
+
+    </div>
+    <div class="container  justify-content-center"  id="all-technical" >
+      <div class="email-marketing-section">
+        <div class="email-marketing-parent">
+           <div class="email-marketing-child">
+            <h1>Senior Developer </h1>
+            <p>
+              We require a senior developer demonstrating strong skills and Experience in Java Webstack and Node.js 
+            </p>
+          
+            <button class="email-apply-btn">Learn more</button>
+          </div> 
+        </div>
+        
+       
+      </div>
+
+    </div>
+    <div class="container  justify-content-center"  id="all-operational">
+      <div class="email-marketing-section">
+        <div class="email-marketing-parent">
+         
+        </div>
+       
+      </div>
+
+    </div>
+
+
+   
+
+
+
+   
+
+
+
+
+      
     </div>
 <div class="blue-border">
 
@@ -264,17 +277,17 @@
       </div>
   </div>
   <!-- footer bottom part -->
-  <div class="footer-bottom">
+  <div class="footer-bottom"> 
       <div class="container">
           <div class="footer-bottom-in">
-            <div class="">
-              <a class="footer-copyright-custom">© 2020-2023 KYYTE. All rights reserved.</a>
-            </div>
+              <div class=""><a href="index.html" class="footer-copyright-custom">© 2020-2023 KYYTE. All rights
+                      reserved.</a>
+              </div>
               <div class="footer-copyright">
                   <p> <a href="privacy.html" class="footer-privacy-text"  target="_blank">Privacy Policy</a></p>
               </div>
               <div class="footer-copyright">
-                <p>5865 North Point Parkway, Suite 100, Alpharetta, GA 30022</p>
+                  <p>5865 North Point Pkwy,Suite 100, Alpharetta, GA 30022</p>
               </div>
           </div>
       </div>
@@ -348,6 +361,40 @@
           scrollTop: 0
         }, 500);
       });
+    </script>
+
+    <script>
+      function onClickAll(){
+        document.getElementById("all-section").style.display="block";
+        document.getElementById("all-technical").style.display="none";
+      document.getElementById("all-functional").style.display="none";
+      document.getElementById("all-operational").style.display="none";
+
+      
+
+      }
+     function onClickFunctional(){
+      document.getElementById("all-section").style.display="none"
+      document.getElementById("all-technical").style.display="none";
+      document.getElementById("all-functional").style.display="block";
+      document.getElementById("all-operational").style.display="none";
+     }
+     function onClickOperational(){
+      document.getElementById("all-section").style.display="none"
+      document.getElementById("all-technical").style.display="none";
+      document.getElementById("all-functional").style.display="none";
+      document.getElementById("all-operational").style.display="block";
+
+     }
+     function onClickTechnical(){
+      document.getElementById("all-section").style.display="none"
+      document.getElementById("all-technical").style.display="block";
+      document.getElementById("all-functional").style.display="none";
+      document.getElementById("all-operational").style.display="none";
+
+     }
+
+    
     </script>
 
 

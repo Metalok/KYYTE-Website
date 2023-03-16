@@ -161,7 +161,7 @@
 
 
 
-<body id="bg" class="footer-fixed">
+<body id="body-section" class="footer-fixed">
 	<div class="page-wraper extra-ppading-in-service" >
 		<div id="loading-area">
 			<div class="parent-loader">
@@ -271,7 +271,7 @@
 									</p>
 								</div>
 								<div class="split-text">
-									<a href="#" class="btn-link text-white link-line" onclick="learn_more1()"> LEARN MORE
+									<a class="btn-link text-white link-line" onclick="learn_more1()"> LEARN MORE
 										<i class="fa fa-long-arrow-right"></i></a>
 								</div>
 							</div>
@@ -299,7 +299,7 @@
 									</p>
 								</div>
 								<div class="split-text">
-									<a href="#" class="btn-link text-white link-line" onclick="learn_more2()">LEARN MORE
+									<a class="btn-link text-white link-line" onclick="learn_more2()">LEARN MORE
 										<i class="fa fa-long-arrow-right"></i></a>
 								</div>
 							</div>
@@ -314,7 +314,7 @@
 					</div>
 					<div class="col-xl-12 row col-lg-12 col-md-12 col-12 split-box" id="project3" data-start="opacity:0;"
 						data-top="opacity:1;">
-						<div class="col-xl-6 col-lg-12 p-lr0 theme-bg">
+						<div class="col-xl-6 col-lg-12 p-lr0 theme-bg" >
 							<div class="split-content">
 								<div class="split-text">
 									<h2 class="title" data-start="letter-spacing: -50px; opacity:0;"
@@ -322,12 +322,12 @@
 										IMPLEMENTATION SERVICES
 									</h2>
 									<p class="description services-description">
-										Through ideation & innovation powered by meticulous research, Kyyte offers
+										Through ideation and innovation powered by meticulous research, Kyyte offers
 										insights to businesses embracing
 										contemporary and next gen technologies</p>
 								</div>
 								<div class="split-text">
-									<a href="#" class="btn-link text-white link-line" onclick="learn_more3()"> LEARN MORE
+									<a class="btn-link text-white link-line" onclick="learn_more3()"> LEARN MORE
 										<i class="fa fa-long-arrow-right"></i></a>
 								</div>
 							</div>
@@ -342,7 +342,8 @@
 					</div>
 					<div class="col-xl-12 col-lg-12 col-md-12 col-12 row split-box" id="project7">
 						<div class="col-xl-6 col-lg-12 p-lr0 theme-bg" data-anchor-target="#project7"
-							data-bottom-top="background:hsl(41, 100%, 57%);" >
+							data-bottom-top="background:hsl(41, 100%, 57%);"
+							data-top-bottom="background:hsl(41, 100%, 16%);" >
 							<div class="split-content">
 								<div class="split-text">
 									<h2 class="title" data-start="letter-spacing: -50px; opacity:0;"
@@ -357,7 +358,7 @@
 									</p>
 								</div>
 								<div class="split-text">
-									<a href="#" class="btn-link text-white link-line" onclick="learn_more4()"> LEARN MORE
+									<a class="btn-link text-white link-line" onclick="learn_more4()"> LEARN MORE
 										<i class="fa fa-long-arrow-right"></i></a>
 								</div>
 							</div>
@@ -388,7 +389,7 @@
 									</p>
 								</div>
 								<div class="split-text">
-									<a href="#" class="btn-link text-white link-line" onclick="learn_more5()"> LEARN MORE
+									<a class="btn-link text-white link-line" onclick="learn_more5()"> LEARN MORE
 										<i class="fa fa-long-arrow-right"></i></a>
 								</div>
 							</div>
@@ -511,50 +512,56 @@
 
 
 
-		function learn_more1(){
-
-		}
-
+		 
 
 
 
 		function learn_more1() {
-        document.getElementById("service1").style.display = "block";
+      document.getElementById("service1").style.display = "block";
+      document.getElementById("body-section").style.overflow = "hidden";
+    //   document.getElementById("body-section").style.top ="-68vh";
       }
       function service_close1() {
         document.getElementById("service1").style.display = "none";
+        document.getElementById("body-section").style.overflow = "auto";
+        document.getElementById("body-section").style.top = "0px";
       }
-
       function learn_more2() {
         document.getElementById("service2").style.display = "block";
+        document.getElementById("body-section").style.overflow = "hidden";
       }
       function service_close2() {
         document.getElementById("service2").style.display = "none";
+        document.getElementById("body-section").style.overflow = "auto";
+        // document.getElementById("body-section").style.top = "0px";
       }
-
       function learn_more3() {
         document.getElementById("service3").style.display = "block";
+        document.getElementById("body-section").style.overflow = "hidden";
       }
       function service_close3() {
         document.getElementById("service3").style.display = "none";
+        document.getElementById("body-section").style.overflow = "auto";
+        // document.getElementById("body-section").style.top = "0px";
       }
-
       function learn_more4() {
         document.getElementById("service4").style.display = "block";
+        document.getElementById("body-section").style.overflow = "hidden";
       }
       function service_close4() {
         document.getElementById("service4").style.display = "none";
+        document.getElementById("body-section").style.overflow = "auto";
+        // document.getElementById("body-section").style.top = "0px";
       }
-
       function learn_more5() {
         document.getElementById("service5").style.display = "block";
+        document.getElementById("body-section").style.overflow = "hidden";
       }
       function service_close5() {
         document.getElementById("service5").style.display = "none";
+        document.getElementById("body-section").style.overflow = "auto";
+        // document.getElementById("body-section").style.top = "0px";
       }
-
-
-
 
 
 

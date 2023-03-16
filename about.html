@@ -44,7 +44,7 @@
   <title></title>
 </head>
 
-<body id="bg" class="footer-fixed">
+<body id="body-section" class="footer-fixed">
   <!-- POPUP  -->
 
 
@@ -222,7 +222,7 @@
              culture across the organization’s programs and offices. Nikki advises the leadership team on a full range of
               people management and provides active, intentional leadership that drives effective employee communications. 
               She has 15 years of experience in sales and service, training and development. Previously, Nikki was an acting 
-              HR Manager & Sr Benefits Specialist for Sevatec, where she worked for 9 years. She attended Strayer University where 
+              HR Manager and Sr Benefits Specialist for Sevatec, where she worked for 9 years. She attended Strayer University where 
               she studied Computer Information Systems, is a Society for Human Resources Management Member,
              and received her SHRM-CP Certification in 2017.
           </p>
@@ -302,7 +302,7 @@
             culture across the organization’s programs and offices. Nikki advises the leadership team on a full range 
             of people management and provides active, intentional leadership that drives effective employee communications.
              She has 15 years of experience in sales and service, training and development. Previously, Nikki was an acting HR
-              Manager & Sr Benefits Specialist for Sevatec, where she worked for 9 years. She attended Strayer University where she
+              Manager and Sr Benefits Specialist for Sevatec, where she worked for 9 years. She attended Strayer University where she
                studied Computer Information Systems, is a Society for Human Resources Management Member, 
             and received her SHRM-CP Certification in 2017.
           </p>
@@ -361,10 +361,10 @@
           <p>
             Raj Manickam is a seasoned IT professional with 37 years of Industrial, Consulting and IT experience out of
             which around 22 years in SAP specialized in SAP’s Industry specific solutions like IS-Media, IS-Beverage,
-            and IS-AFS, including new dimensional SAP products like SAP IBP, SAP Hybris & SAP Ariba. Has overseas
+            and IS-AFS, including new dimensional SAP products like SAP IBP, SAP Hybris and SAP Ariba. Has overseas
             experience in working for global organization in areas of Logistics, Supply chain, International Procurement
-            & Sourcing, Manufacturing, Plant maintenance and Analytics. Has experience in Industry verticals like High
-            Tech, Apparel & Footwear, Beverages, Sports & Entertainment, Automotive, Energy and Media.
+            and Sourcing, Manufacturing, Plant maintenance and Analytics. Has experience in Industry verticals like High
+            Tech, Apparel and Footwear, Beverages, Sports and Entertainment, Automotive, Energy and Media.
           </p>
         </div>
       </div>
@@ -449,9 +449,9 @@
             management and leadership experience in all facets of service delivery, business development, marketing,
             finance, sales and operational management. Prior to co-founding CirrusLabs, Naeem held leadership positions
             at ING DIRECT Bank as Head of Technology Services and at Capital One Bank as Head of Market Research. Naeem
-            is a National Advisory Committee Emeritus Member at the George Washington University School of Engineering &
+            is a National Advisory Committee Emeritus Member at the George Washington University School of Engineering and
             Applied Sciences. He has a Bachelor’s degree in Electrical Engineering from Bangalore University, a Master’s
-            degree in Telecommunication & Computers from George Washington University, a Certificate in AI Strategy from
+            degree in Telecommunication and Computers from George Washington University, a Certificate in AI Strategy from
             MIT and has an MBA from The University of Chicago Booth School of Business.
           </p>
         </div>
@@ -473,8 +473,8 @@
                 src="./images/banner/linkdein.png" alt="" style="width:30px;margin-top:8px;margin-left:20px" /></a>
           </div>
           <p>
-            Santosh Jayaram is the Head of Sales & Marketing of CirrusLabs. Throughout his 25-year tenure working with
-            technology companies, he has built a reputation for growing businesses through developing strategies &
+            Santosh Jayaram is the Head of Sales and Marketing of CirrusLabs. Throughout his 25-year tenure working with
+            technology companies, he has built a reputation for growing businesses through developing strategies and
             bringing these ideas to life. He has managed both private and government clients for enterprise services
             delivering enormous business value. With a strong background in sales, strategy, portfolio, enterprise
             architecture, product, budget/finance and policy, he has managed numerous client accounts such as Capital
@@ -725,7 +725,7 @@
                 <div class="team-box text-white dlab-media dlab-overlay-primary dlab-img-overlay1"
                   onclick="robin_pop()">
                   <div class="thumb">
-                    <img src="./images/banner/ceo-img.png" alt="" />
+                    <img src="./images/banner/ceo-about.png" alt="" />
                   </div>
                   <div class="team-info">
                     <h4 class="name">ROBERT SAINI</h4>
@@ -1114,151 +1114,96 @@
   <!-- CUSTOM FUCTIONS  -->
   <script src="js/dz.carousel.js"></script>
 
-  <script>
-    //  let popup_remove='popup-remove'
-
-    function robin_pop() {
-    
-
-      document.getElementById("pop-open").style.display = "block";
-    }
-
-    function pop_close1() {
-      document.getElementById("pop-open").style.display = "none";
-    }
-
-
-    function popup2() {
-  
-
-      document.getElementById("pop-open2").style.display = "block";
-    }
-
-    function pop_close2() {
-      document.getElementById("pop-open2").style.display = "none";
-    }
-
-
-    function popup3() {
-  
-
-  document.getElementById("pop-open3").style.display = "block";
+<script>
+//  let popup_remove='popup-remove'
+function robin_pop() {
+  document.getElementById("pop-open").style.display = "block";
+  document.getElementById("body-section").style.overflow = "hidden";
+  // document.getElementById("body-section").style.top = "-133vh";
+  // document.getElementById("body-section").style.width = "100%"
 }
-
+function pop_close1() {
+  document.getElementById("pop-open").style.display = "none";
+  document.getElementById("body-section").style.overflow = "auto";
+  document.getElementById("body-section").style.top = "0px";
+}
+function popup2() {
+  document.getElementById("pop-open2").style.display = "block";
+  document.getElementById("body-section").style.overflow = "hidden";
+}
+function pop_close2() {
+  document.getElementById("pop-open2").style.display = "none";
+  document.getElementById("body-section").style.overflow = "auto";
+}
+function popup3() {
+  document.getElementById("pop-open3").style.display = "block";
+  document.getElementById("body-section").style.overflow = "hidden";
+}
 function pop_close3() {
   document.getElementById("pop-open3").style.display = "none";
+  document.getElementById("body-section").style.overflow = "auto";
 }
-
-
-
-
 function popup4() {
-  
-
   document.getElementById("pop-open4").style.display = "block";
+  document.getElementById("body-section").style.overflow = "hidden";
 }
-
 function pop_close4() {
   document.getElementById("pop-open4").style.display = "none";
+  document.getElementById("body-section").style.overflow = "auto";
 }
-
-
-
-
-
 function popup5() {
-  
-
   document.getElementById("pop-open5").style.display = "block";
+  document.getElementById("body-section").style.overflow = "hidden";
 }
-
 function pop_close5() {
   document.getElementById("pop-open5").style.display = "none";
+  document.getElementById("body-section").style.overflow = "auto";
 }
-
-
-
-
 function popup6() {
-  
-
   document.getElementById("pop-open6").style.display = "block";
+  document.getElementById("body-section").style.overflow = "hidden";
   console.log('hello')
 }
-
-
 function pop_close6() {
   document.getElementById("pop-open6").style.display = "none";
+  document.getElementById("body-section").style.overflow = "auto";
 }
-
-
 function popup7() {
-  
-
   document.getElementById("pop-open7").style.display = "block";
+  document.getElementById("body-section").style.overflow = "hidden";
   console.log('hello')
 }
-
-
 function pop_close7() {
   document.getElementById("pop-open7").style.display = "none";
+  document.getElementById("body-section").style.overflow = "auto";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function popup10() {
-  
-
   document.getElementById("pop-open10").style.display = "block";
+  document.getElementById("body-section").style.overflow = "hidden";
   console.log('hello')
 }
-
-
 function pop_close10() {
   document.getElementById("pop-open10").style.display = "none";
+  document.getElementById("body-section").style.overflow = "auto";
 }
-
-
 function popup11() {
-  
-
   document.getElementById("pop-open11").style.display = "block";
+  document.getElementById("body-section").style.overflow = "hidden";
   console.log('hello')
 }
-
-
 function pop_close11() {
   document.getElementById("pop-open11").style.display = "none";
+  document.getElementById("body-section").style.overflow = "auto";
 }
-
-
-
 function popup12() {
-  
-
   document.getElementById("pop-open12").style.display = "block";
+  document.getElementById("body-section").style.overflow = "hidden";
   console.log('hello')
 }
-
-
 function pop_close12() {
   document.getElementById("pop-open12").style.display = "none";
+  document.getElementById("body-section").style.overflow = "auto";
 }
-
-
-
-
 
   </script>
 </body>
