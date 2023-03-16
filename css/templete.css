@@ -889,8 +889,10 @@
   padding: 15px 25px;
   width: 100%;
   opacity: 0;
-  transition: all 0.5s;
-  z-index: 99;
+  transition: all 0.5s; 
+  cursor: pointer;
+  z-index: 10;
+
 }
 .team-box:hover .team-info {
   opacity: 1;
@@ -2047,7 +2049,7 @@ content: "";
   }
   .site-footer .social-link {
     text-align: center;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     margin-bottom: 0px;
   }
   .site-footer .social-link li a i {
@@ -2197,9 +2199,9 @@ content: "";
     margin-right: 10px;
     margin-left: 10px;
   }
-  .site-footer .social-link {
+  /* .site-footer .social-link {
     margin-top: 20px;
-  }
+  } */
   .page-banner .intro-title {
     font-size: 75px;
     line-height: 80px;

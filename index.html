@@ -152,7 +152,7 @@
         font-family: "DIN Condensed Bold";
         font-style: normal;
         font-weight: 700;
-        font-size: 7vw;
+        font-size: 52px !important;
         
         width:30% ! important;
         line-height: 110%;
@@ -163,7 +163,7 @@
         color: #f99400;
         position: absolute;
         top: 55%;
-        left: 29% ! important;
+        left: 7% ! important;
 
 
         /* margin-top:10% ! important; */
@@ -206,7 +206,7 @@
   </style>
 </head>
 
-<body>
+<body id="body-section">
   <!-- services  popup -->
 
 
@@ -380,7 +380,7 @@
       <!-- loader animation end here  -->
     </div>
   </header>
-  <div class="page-content bg-white">
+  <div class="page-content p-0 container-fluid">
     <!-- contact area -->
 
     <!-- Split Slider -->
@@ -412,24 +412,11 @@
                   <h1 class="digital-heading"> Digital  Transformation Simplified</h1>
                 </div>
                 <div class="col-lg-6  col-sm-12 col-12 col-md-6 col-xl-6 digital-section-subdiv-2 ">
-                  <img src="./images/banner/bg-kyyte-animation-svg.svg" alt="digital-kyyte" />
+                  <img src="./images/banner/bg-kyyte-animation-svg.svg" alt="digital-kyyte"  />
                   
                   <div class="digital-img-section">
                     <!-- <img src="./images/banner/bg-kyyte-animation-svg.svg" alt="" />  -->
                              <div class="">
-                              <div id="animation-container10" class="loader-back">
-                                <script>
-                                  var animation = bodymovin.loadAnimation({
-                                    container: document.getElementById('animation-container10'),
-                                    path: './images/loade-custom/topload.json',
-                                    render: 'svg',
-                                    loop: true,
-                                    autoplay: true,
-                                    name: 'demo animation'
-                                  });
-                                </script>
-                               
-                              </div>
                               <div id="animation-container15" class="loader-top">
                                 <script>
                                   var animation = bodymovin.loadAnimation({
@@ -443,15 +430,23 @@
                                 </script>
                                 
                               </div>
+                              <div id="animation-container10" class="loader-back">
+                                <script>
+                                  var animation = bodymovin.loadAnimation({
+                                    container: document.getElementById('animation-container10'),
+                                    path: './images/loade-custom/topload.json',
+                                    render: 'svg',
+                                    loop: true,
+                                    autoplay: true,
+                                    name: 'demo animation'
+                                  });
+                                </script>
+                               
+                              </div>
+                              
                             </div> 
-                                 
 
-                  
-                  
-                  
-                  
                           </div>
-
                 </div>
 
           </div>
@@ -468,8 +463,8 @@
             <img src="./images/banner/circuit-img.svg" class="about-circuit-img" alt="" />
             <img src="./images/banner/circuit-img.svg" class="about-circuit-img2" alt="" />
             <div class="about-content-section">
-              <h1 class="about-haeding">ABOUT US</h1>
-              <p class="about-para pt-0">
+              <h1 class="about-haeding pb-3">ABOUT US</h1>
+              <p class="about-para ">
                 An outcome-focused, customer centric, and innovation driven
                 company that amplifies untapped technology investments by
                 providing process optimization, deep industry expertise, and
@@ -482,7 +477,7 @@
             <div class="why-kyyte-parent">
               <div class="why-kyyte-child1">
                 <h1 class="why-kyyte-header">WHY KYYTE?</h1>
-                <p class="why-kyyte-para">
+                <p class="why-kyyte-para ">
                   Kyyte is designed to add value to your businesses by
                   interfacing digital transformation, innovation and
                   customer-focused business approach to facilitate the growth
@@ -498,16 +493,16 @@
                   </p>
                 </div>
                 <div class="why-kyyte-sub">
-                  <p>
+                  <p class="ourservices-extra-equal-space">
                     Agile, industry focused,<br />
                     speed-to-value
                   </p>
                 </div>
                 <div class="why-kyyte-sub">
-                  <p>Pragmatic, personal, responsive</p>
+                  <p class="ourservices-extra-equal-space">Pragmatic, personal, responsive</p>
                 </div>
                 <div class="why-kyyte-sub">
-                  <p>Steeped in a client serving mindset</p>
+                  <p class="ourservices-extra-equal-space">Steeped in a client serving mindset</p>
                 </div>
               </div>
             </div>
@@ -984,7 +979,7 @@
                     <p> <a href="privacy.html" class="footer-privacy-text"  target="_blank">Privacy Policy</a></p>
                 </div>
                 <div class="footer-copyright">
-                    <p>5865 North Point Pkwy,Suite 100, Alpharetta, GA 30022</p>
+                    <p>5865 North Point Parkway, Suite 100, Alpharetta, GA 30022</p>
                 </div>
             </div>
         </div>
@@ -1017,43 +1012,58 @@
       }
     };
 
-    // services  popup
+    // services  popup start 15-03-23
 
     function services1() {
-      document.getElementById("service1").style.display = "block";
-    }
-    function service_close1() {
-      document.getElementById("service1").style.display = "none";
-    }
+        document.getElementById("service1").style.display = "block";
+        document.getElementById("body-section").style.overflow = "hidden";
+      }
+      function service_close1() {
+        document.getElementById("service1").style.display = "none";
+        document.getElementById("body-section").style.overflow = "auto";
+        document.getElementById("body-section").style.top = "0px";
+      }
 
-    function services2() {
-      document.getElementById("service2").style.display = "block";
-    }
-    function service_close2() {
-      document.getElementById("service2").style.display = "none";
-    }
+      function services2() {
+        document.getElementById("service2").style.display = "block";
+        document.getElementById("body-section").style.overflow = "hidden";
+      }
+      function service_close2() {
+        document.getElementById("service2").style.display = "none";
+        document.getElementById("body-section").style.overflow = "auto";
+        document.getElementById("body-section").style.top = "0px";
+      }
 
-    function services3() {
-      document.getElementById("service3").style.display = "block";
-    }
-    function service_close3() {
-      document.getElementById("service3").style.display = "none";
-    }
+      function services3() {
+        document.getElementById("service3").style.display = "block";
+        document.getElementById("body-section").style.overflow = "hidden";
+      }
+      function service_close3() {
+        document.getElementById("service3").style.display = "none";
+        document.getElementById("body-section").style.overflow = "auto";
+        document.getElementById("body-section").style.top = "0px";
+      }
 
-    function services4() {
-      document.getElementById("service4").style.display = "block";
-    }
-    function service_close4() {
-      document.getElementById("service4").style.display = "none";
-    }
+      function services4() {
+        document.getElementById("service4").style.display = "block";
+        document.getElementById("body-section").style.overflow = "hidden";
+      }
+      function service_close4() {
+        document.getElementById("service4").style.display = "none";
+        document.getElementById("body-section").style.overflow = "auto";
+        document.getElementById("body-section").style.top = "0px";
+      }
 
-    function services5() {
-      document.getElementById("service5").style.display = "block";
-    }
-    function service_close5() {
-      document.getElementById("service5").style.display = "none";
-    }
-
+      function services5() {
+        document.getElementById("service5").style.display = "block";
+        document.getElementById("body-section").style.overflow = "hidden";
+      
+      }
+      function service_close5() {
+        document.getElementById("service5").style.display = "none";
+        document.getElementById("body-section").style.overflow = "auto";
+        document.getElementById("body-section").style.top = "0px";
+      }
       // services popup end
   </script>
 

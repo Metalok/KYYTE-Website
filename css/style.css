@@ -11563,9 +11563,9 @@ footer.footer-white .footer-bottom a {
 .section-full {
     position: relative;
 }
-.section-full:last-child {
+/* .section-full:last-child {
     margin-bottom: -50px;
-}
+} */
 /*= Section Head Part =*/
 
 .section-head {
