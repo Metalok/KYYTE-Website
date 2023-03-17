@@ -145,7 +145,7 @@
             DROP YOUR SUGGESTIONS
           </h3>
 
-          <form class="form" onsubmit="return validateForm(this)">
+          <form class="form" onsubmit="return validateForm(this)" method="post" action="php/contact.php">
             <div class="form-group">
               <label for="fullname" class="input-label">Full Name</label>
               <input type="text" name="fullname" class="input-field" placeholder="Your Name">
@@ -157,7 +157,7 @@
             </div>
             <div class="form-group">
               <label for="email" class="input-label">Email</label>
-              <input type="email" name="email" class="input-field" placeholder="something@website.com">
+              <input type="email" name="email" class="input-field" placeholder="example@gmail.com">
               <span class="input-check">
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
