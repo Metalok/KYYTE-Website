@@ -2067,6 +2067,7 @@ content: "";
   .site-footer .social-link li a {
     font-size: 25px;
     line-height: 25px;
+    text-decoration: none;
   }
   .page-banner .intro-title {
     font-size: 120px;

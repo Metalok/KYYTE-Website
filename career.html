@@ -89,7 +89,7 @@
         <a href="contact.html">CONTACT US</a>
         <!-- loader animation start here  -->
         <div class="parent-loader">
-        <div  id="animation-container"class="loader-class">
+        <div  id="animation-container"class="loader-class" style="position:relative; top:5px;">
           <script>
               var animation=bodymovin.loadAnimation({
                   container:document.getElementById('animation-container'),
@@ -139,10 +139,10 @@
     <div class="container">
       <div class="career-section2">
         <div class="career-menu">
-          <h1 onclick="onClickAll()">ALL</h1>
-          <h1 onclick="onClickFunctional()">FUNCTIONAL</h1>
-          <h1 onclick="onClickTechnical()">TECHNICAL</h1>
-          <h1 onclick="onClickOperational()">OPERATIONAL</h1>
+          <h1 id="all-header" onclick="onClickAll()">ALL</h1>
+          <h1 id="functional-header" onclick="onClickFunctional()">FUNCTIONAL</h1>
+          <h1 id="technical-header" onclick="onClickTechnical()">TECHNICAL</h1>
+          <h1 id="operational-header" onclick="onClickOperational()">OPERATIONAL</h1>
           <!-- <h1>SUPPORT</h1> -->
         </div>
       </div>
@@ -154,7 +154,7 @@
 
 
 
-    <div class="container justify-content-center"  id="all-section">
+    <div class="container justify-content-center"  id="all-section" >
       <div class="email-marketing-section">
         <div class="email-marketing-parent">
           <div class="email-marketing-child">
@@ -163,7 +163,7 @@
               We require a senior developer demonstrating strong skills and Experience in Java Webstack and Node.js 
             </p>
           
-            <button class="email-apply-btn">Learn more</button>
+            <a  href="job-description-page.html"  class="email-apply-btn">Learn more</a>
           </div>
         </div>
         <div class="email-marketing-parent">
@@ -174,7 +174,7 @@
               and strong integration knowledge of using OData Rest API’s. 
             </p>
             
-            <button class="email-apply-btn">Learn more</button>
+            <a  href="job-description-page.html"  class="email-apply-btn">Learn more</a>
           </div>
         </div>
        
@@ -183,7 +183,7 @@
     </div>
 
 
-    <div class="container  justify-content-center"  id="all-functional">
+    <div class="container  justify-content-center"  id="all-functional" style="display: none;">
       <div class="email-marketing-section">
        
        
@@ -195,14 +195,14 @@
               and strong integration knowledge of using OData Rest API’s. 
             </p>
             
-            <button class="email-apply-btn">Learn more</button>
+            <a  href="job-description-page.html"  class="email-apply-btn">Learn more</a>
           </div>
         </div>
        
       </div>
 
     </div>
-    <div class="container  justify-content-center"  id="all-technical" >
+    <div class="container  justify-content-center"  id="all-technical" style="display: none;">
       <div class="email-marketing-section">
         <div class="email-marketing-parent">
            <div class="email-marketing-child">
@@ -211,7 +211,7 @@
               We require a senior developer demonstrating strong skills and Experience in Java Webstack and Node.js 
             </p>
           
-            <button class="email-apply-btn">Learn more</button>
+            <a  href="job-description-page.html"  class="email-apply-btn">Learn more</a>
           </div> 
         </div>
         
@@ -219,11 +219,12 @@
       </div>
 
     </div>
-    <div class="container  justify-content-center"  id="all-operational">
+    <div class="container  justify-content-center"  id="all-operational" style="display: none;">
       <div class="email-marketing-section">
-        <div class="email-marketing-parent">
-         
-        </div>
+        <div class="email-marketing-child text-center">
+          <h1 class="title">Currently no openings
+
+          </h1>
        
       </div>
 
@@ -363,40 +364,63 @@
       });
     </script>
 
-    <script>
-      function onClickAll(){
-        document.getElementById("all-section").style.display="block";
-        document.getElementById("all-technical").style.display="none";
-      document.getElementById("all-functional").style.display="none";
-      document.getElementById("all-operational").style.display="none";
-
-      
-
-      }
-     function onClickFunctional(){
-      document.getElementById("all-section").style.display="none"
-      document.getElementById("all-technical").style.display="none";
-      document.getElementById("all-functional").style.display="block";
-      document.getElementById("all-operational").style.display="none";
-     }
-     function onClickOperational(){
-      document.getElementById("all-section").style.display="none"
-      document.getElementById("all-technical").style.display="none";
-      document.getElementById("all-functional").style.display="none";
-      document.getElementById("all-operational").style.display="block";
-
-     }
-     function onClickTechnical(){
-      document.getElementById("all-section").style.display="none"
-      document.getElementById("all-technical").style.display="block";
-      document.getElementById("all-functional").style.display="none";
-      document.getElementById("all-operational").style.display="none";
-
-     }
-
-    
-    </script>
-
-
+<script>
+  function onClickAll(){
+    document.getElementById("all-section").style.display="block";
+    document.getElementById("all-technical").style.display="none";
+  document.getElementById("all-functional").style.display="none";
+  document.getElementById("all-operational").style.display="none";
+  document.getElementById("operational-header").style.opacity = "0.8"
+  document.getElementById("technical-header").style.opacity = "0.8"
+  document.getElementById("all-header").style.opacity = "1"
+  document.getElementById("functional-header").style.opacity = "0.8"
+  document.getElementById("all-header").style.borderBottom = "2px solid black"
+  document.getElementById("functional-header").style.borderBottom = "none"
+  document.getElementById("technical-header").style.borderBottom = "none"
+  document.getElementById("operational-header").style.borderBottom = "none"
+  }
+ function onClickFunctional(){
+  document.getElementById("all-section").style.display="none"
+  document.getElementById("all-technical").style.display="none";
+  document.getElementById("all-functional").style.display="block";
+  document.getElementById("all-operational").style.display="none";
+  document.getElementById("operational-header").style.opacity = "0.8"
+  document.getElementById("technical-header").style.opacity = "0.8"
+  document.getElementById("all-header").style.opacity = "0.8"
+  document.getElementById("functional-header").style.opacity = "1"
+  document.getElementById("functional-header").style.borderBottom = "2px solid black"
+  document.getElementById("all-header").style.borderBottom = "none"
+  document.getElementById("technical-header").style.borderBottom = "none"
+  document.getElementById("operational-header").style.borderBottom = "none"
+ }
+ function onClickTechnical(){
+  document.getElementById("all-section").style.display="none"
+  document.getElementById("all-technical").style.display="block";
+  document.getElementById("all-functional").style.display="none";
+  document.getElementById("all-operational").style.display="none";
+  document.getElementById("operational-header").style.opacity = "0.8"
+  document.getElementById("technical-header").style.opacity = "1"
+  document.getElementById("all-header").style.opacity = "0.8"
+  document.getElementById("functional-header").style.opacity = "0.8"
+  document.getElementById("technical-header").style.borderBottom = "2px solid black"
+  document.getElementById("functional-header").style.borderBottom = "none"
+  document.getElementById("all-header").style.borderBottom = "none"
+  document.getElementById("operational-header").style.borderBottom = "none"
+ }
+ function onClickOperational(){
+  document.getElementById("all-section").style.display="none"
+  document.getElementById("all-technical").style.display="none";
+  document.getElementById("all-functional").style.display="none";
+  document.getElementById("all-operational").style.display="block";
+  document.getElementById("operational-header").style.opacity = "1";
+  document.getElementById("functional-header").style.opacity = "0.8"
+  document.getElementById("technical-header").style.opacity = "0.8"
+  document.getElementById("all-header").style.opacity = "0.8"
+  document.getElementById("operational-header").style.borderBottom = "2px solid black"
+  document.getElementById("functional-header").style.borderBottom = "none"
+  document.getElementById("all-header").style.borderBottom = "none"
+  document.getElementById("technical-header").style.borderBottom = "none"
+ }
+</script>
   </body>
 </html>
