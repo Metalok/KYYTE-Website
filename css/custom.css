@@ -123,11 +123,9 @@
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
-  line-height: 80px;
+  line-height: 130%;
   /* identical to box height, or 167% */
-
   text-transform: uppercase;
-
   color: #000000;
 }
 
@@ -731,4 +729,28 @@ color: #FFFFFF;
   }
   .about-heading{
     font-size: 30px;
+  }
+
+  .footer-title1{
+    font-family: 'DIN Condensed Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 85px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .footer-title2{
+    font-size: 50px;
+    font-family: 'DIN Condensed Bold';
+  }
+  @media(max-width:768px){
+    .footer-title1{
+      font-size: 60px;
+      line-height: 120%;
+    }
+    .footer-title2{
+      font-size: 40px;
+      line-height: 35%;
+    }
   }
