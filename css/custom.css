@@ -629,7 +629,11 @@ color: #FFFFFF;
     }
   }
   
-
+  @media(max-height:480px){
+    .partner-contact-us-button{
+          top:166px;
+    }
+  }
 
 
   /* new added 13-3-23 */
