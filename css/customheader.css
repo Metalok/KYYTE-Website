@@ -21,8 +21,6 @@
  background-size: cover;
   background-repeat: no-repeat;
   background-position:  bottom center;
-  
-  
 }
 
 /* The navigation menu links */
@@ -36,15 +34,13 @@
   font-family: "DIN Condensed Bold";
   font-weight: 700;
 }
-
-
 /* When you mouse over the navigation links, change their color */
 
 .offcanvas a:focus {
   color: #f1f1f1;
 }
 .sidenav-custom a:hover{
-    
+    color: #000;
 }
 /* Position and style the close button (top right corner) */
 .sidenav-custom .closebtn {
