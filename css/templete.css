@@ -288,7 +288,8 @@
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 30px;
-  background-image: url(../images/overlay/pt1.png);
+  background-color: #f2f2f2;
+  /* background-image: url(../images/overlay/pt1.png); */
   padding: 10px 10px 8px 10px;
 }
 .pt-title .ti-arrow-down {
@@ -1802,11 +1803,11 @@ content: "";
   .title-stroke {
     display: none;
   }
-  .split-box-area.row.spno,
+  /* .split-box-area.row.spno,
   .spno {
     margin-left: 20px;
     margin-right: 20px;
-  }
+  } new remove in 20-03-23*/
   .discover-btn i {
     top: -30px;
     left: 14px;
@@ -2148,10 +2149,10 @@ content: "";
   .page-banner .video-box .content-box .social-list ul li a {
     margin-left: 15px;
   }
-  .split-box-area.row.spno {
+  /* .split-box-area.row.spno {
     margin-left: 8px;
     margin-right: 8px;
-  }
+  } new remove 20-03-23*/
   .site-footer .widget.widget_about .footer-title br {
     display: none;
   }
@@ -2168,7 +2169,7 @@ content: "";
     line-height: 24px;
   }
   .team-box .team-info {
-    padding: 10px 15px;
+    padding: 0px 15px;
   }
   .team-box .team-info .name {
     font-size: 18px;

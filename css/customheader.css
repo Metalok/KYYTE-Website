@@ -112,12 +112,15 @@
 
 @media screen and (min-width: 1020px) and (max-width:1430px){
   .nav-section-custom,.nav-section-custom-active {
-    height: 7vh;
+    height: 10vh !important;
   }
 }
 @media screen and (min-width: 1440px) and (max-width:1480px){
   .nav-section-custom,.nav-section-custom-active {
-    height: 5vh !important;
+    height: 7vh !important;
+  }
+  .career-heading-section h1{
+    margin-top: 120px;
   }
 }
 

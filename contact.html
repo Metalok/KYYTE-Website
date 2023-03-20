@@ -145,6 +145,7 @@
             DROP YOUR SUGGESTIONS
           </h3>
 
+          <!-- <form class="form" onsubmit="sendEmail(); reset(); return false; "> -->
           <form class="form" onsubmit="return validateForm(this)">
             <div class="form-group">
               <label for="fullname" class="input-label">Full Name</label>
@@ -450,6 +451,26 @@
   <!-- SORTCODE FUCTIONS  -->
   <!-- form validation -->
   <script src="js/form.js"></script>
+
+
+  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail(){
+      Email.send({
+      Host : "smtp.gmail.com",
+      Username : "mohanachary5886@gmail.com",
+      Password : "mohanachary",
+      To : 'mohan@metalok.io',
+      From : "you@isp.com",
+      Subject : "This is the kyyte test mail subject",
+      Body : "And this is the body"
+      }).then(
+        message => alert(message)
+      );
+    }
+    
+  </script> -->
+
 </body>
 
 </html>
