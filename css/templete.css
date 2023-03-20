@@ -407,7 +407,8 @@
   font-weight: 600;
 }
 .split-box .split-thumb {
-  width: 100%;
+  /* width: 100%; */
+  width: 96%;
   height: 100%;
   display: flex;
   overflow: hidden;

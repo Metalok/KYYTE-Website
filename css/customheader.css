@@ -110,6 +110,11 @@
 
 }
 
+@media screen and (min-width: 768px) and (max-width: 768px){
+  .nav-section-custom, .nav-section-custom-active {
+      height: 10vh !important;
+  }
+}
 @media screen and (min-width: 1020px) and (max-width:1430px){
   .nav-section-custom,.nav-section-custom-active {
     height: 10vh !important;
