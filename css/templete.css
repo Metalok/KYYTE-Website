@@ -1036,6 +1036,13 @@
   font-size: 28px;
   line-height: 28px;
 }
+.project-carousel .owl-nav .owl-next:hover,
+.project-carousel .owl-nav .owl-prev:hover {
+  color: #f99400;
+}
+
+
+
 .bg-gray {
   background: #f5f5f5;
 }
@@ -2499,8 +2506,23 @@ content: "";
   .industrial-height{
     height: 1720px;
   }
-
 }
+@media (min-width: 1080px) and (max-width: 1080px) {
+  .dunctional-domains-heading{
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1920px) {
+  .dunctional-domains-heading{
+    margin-top: 75px;
+  }
+  .industries-heading{
+    padding-top: 11%;
+  }
+}
+
+
 .ind-img{
   width: 96px !important;
   height: 80px !important;
