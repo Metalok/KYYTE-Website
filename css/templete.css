@@ -2065,7 +2065,7 @@ content: "";
   }
   .site-footer .social-link {
     text-align: center;
-    /* margin-top: 30px; */
+    /* padding-top: 30px; */
     margin-bottom: 0px;
   }
   .site-footer .social-link li a i {
@@ -2412,7 +2412,7 @@ content: "";
 @media (max-width: 768px) {
   .industries-heading-ship {
     font-size: 40px;
-    padding-top: 20px;
+    padding-top: 40px;
   }
 }
 
@@ -2511,6 +2511,9 @@ content: "";
   .dunctional-domains-heading{
     margin-top: 0px;
     margin-bottom: 40px;
+  }
+  .industries-heading-ship {
+    padding-top: 0px;
   }
 }
 @media (min-width: 1440px) and (max-width: 1920px) {

@@ -128,7 +128,7 @@
 }
 @media screen and (min-width: 1440px) and (max-width:1480px){
   .nav-section-custom,.nav-section-custom-active {
-    height: 7vh !important;
+    height: 6vh !important;
   }
   .career-heading-section h1{
     margin-top: 120px;
