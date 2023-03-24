@@ -406,29 +406,6 @@
             <!-- vidya code start here  -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-
             <div class="container-fluid">
               <div class="row container-elements">
 
@@ -438,14 +415,26 @@
                 </div>
 
 
-                <div class="col-lg-6  col-sm-12 col-12 col-md-6 col-xl-6 digital-section-subdiv-2 ">
-                  <!-- <img src="./images/banner/bg-animate-svg.svg" alt="digital-kyyte"  /> -->
+                <div class="col-lg-6  col-sm-12 col-12 col-md-6 col-xl-6 digital-section-subdiv-2 kyyte-animate ">
+                  <!-- <img src="./images/banner/bg-animate-svg.svg" alt="digital-kyyte"  /> --> 
+                  <!-- <img src="./images/banner/Asset.png" alt="home-page" class="home-page-img"/> -->
+                  <!-- <img src="./images/banner/final-kyyte.gif" alt="home-page" class="home-page-img"/> -->
 
-
-
-
-                  <img src="./images/banner/final-kite_1.gif" alt="home-page" class="home-page-img"/>
+                  <div id="animation-kyyte" class="home-page-img" >
+                    <script>
+                      var animation = bodymovin.loadAnimation({
+                        container: document.getElementById("animation-kyyte"),
+                        path: "./images/animate/data.json",
+                        render: "svg",
+                        loop: true,
+                        autoplay: true,
+                        name: "demo animation",
+                      });
+                    </script>
+                  </div>
                   
+
+
                   <!-- <div class="digital-img-section">
                              <div class="">
                               <div id="animation-container15" class="loader-top">
@@ -734,11 +723,9 @@
 
               <div class="col-lg-4  col-md-4 text-center  mx-auto  domain-center-img" style="position:relative;left:-14px">
                 <img class="git-center" src="./images/banner/center-3d.gif" alt="" />
-      
-                
-                  <img class="png-center" src="./images/banner/industrial-3d.png" alt="">
-              
-              </div>
+                <img class="png-center" src="./images/banner/industrial-3d.png" alt="">
+              </div> 
+
       
         <div class="col-lg-4 col-6 col-md-4 px-0 " style="margin: auto;">
           <img src="./images/banner/icons/home-functional-img.svg" alt="functiona-img" class="industrial-padding-home"  style="margin: auto;"/>

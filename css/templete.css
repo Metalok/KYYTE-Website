@@ -412,6 +412,7 @@
   height: 100%;
   display: flex;
   overflow: hidden;
+  /* margin: auto; */
 }
 .split-box .split-thumb img {
   object-fit: cover;
@@ -1972,6 +1973,11 @@ content: "";
   }
   .split-box-area .split-item .title {
     font-size: 24px;
+    margin-left: 5%;   /* new added 24-03*/
+    line-height: 120%; /* new added 24-03*/
+  }
+  .business-out{
+    margin-bottom: 50px; /* new added 24-03*/
   }
   .fixed-body {
     overflow: hidden;
