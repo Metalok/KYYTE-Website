@@ -2071,7 +2071,7 @@ content: "";
   }
   .site-footer .social-link {
     text-align: center;
-    /* padding-top: 30px; */
+    padding-top: 30px;
     margin-bottom: 0px;
   }
   .site-footer .social-link li a i {
@@ -2536,4 +2536,9 @@ content: "";
   width: 96px !important;
   height: 80px !important;
   margin: auto;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .background-red-ser{
+    background-color: #f3a80a !important;
+  }
 }

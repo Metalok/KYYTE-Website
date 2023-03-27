@@ -54,6 +54,7 @@
         margin-left: 0px;
         margin-right: 0px;
       }
+
     }
 
     @media (min-width:320px) and (max-width: 767px) {
@@ -69,7 +70,7 @@
 
         color: #f99400 !important;
         position: absolute;
-        top: 90% !important;
+        /* top: 90% !important; */
         left: 9%;
         text-align:center;
   /* margin-top:50px !important;
@@ -85,7 +86,7 @@
         text-align: center ! important;
       }
 
-    }
+    } 
     
     @media (min-width: 768px) and (max-width:2000px){
       .container-elements{
@@ -122,26 +123,19 @@
 
       }
       
-      .container-elements h1 { 
-        
-  font-family: "DIN Condensed Bold" !important;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 6vw;
-  line-height: 110%;
-  text-transform: uppercase;
-  
-
-  color: #f99400 !important;
-  position: absolute;
-  /* top: 67% !important;
-  left: 9%; */
-  
-  
-  transform: translateY(-64%);
-
-    }
-
+      .container-elements h1 {  
+        font-family: "DIN Condensed Bold" !important;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 6vw;
+        line-height: 110%;
+        text-transform: uppercase; 
+        color: #f99400 !important;
+        position: absolute;
+        /* top: 67% !important;
+        left: 9%; */ 
+        transform: translateY(-64%);
+      }
     }
 
   
@@ -155,7 +149,7 @@
         font-weight: 700;
         font-size: 52px !important;
         
-        width:30% ! important;
+        /* width:30% ! important; */
         line-height: 110%;
         /* text-transform: uppercase; */
         text-align: center ! important;
@@ -178,20 +172,14 @@
       .digital-heading {
         text-align: left ! important;
         top:75% ! important;
-        /* margin-top:30% ! important; */
-
-
-
+        /* margin-top:30% ! important; */ 
       }
-
     }
 
     .digital-section {
       display:flex;
       flex-direction:row;
-      align-items:center;
-      
-    
+      align-items:center; 
     }
 
     @media (max-width:800px) {
@@ -201,8 +189,57 @@
 
     }
 
-
-
+    @media (max-width:767px){
+  
+      .digital-section-subdiv-1{
+        width:40% !important; 
+      }
+      .text-img-container{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        padding-top:10% !important;
+      }
+      .digital-section-subdiv-1{
+        padding-bottom:30% !important;
+      }
+      .home-page-img{ 
+        /* height:200% !important; */
+        /* width:fit-content; */
+        max-width:110% !important;
+        /* max-width:0% ! important; */ 
+      }  
+    }
+    .home-page-img{   
+      background-image: url('./images/animate/lines.gif');
+      background-size: cover;
+      background-repeat: no-repeat;
+    } 
+    @media (min-width:376px) and (max-width: 440px) {
+      .home-page-img{
+        margin-top: -10%;
+      }
+      .digital-heading{
+        top: 30% !important;
+      }
+    }  
+    @media (min-width:450px) and (max-width: 490px) {
+      .home-page-img{
+        margin-top: -30%;
+      }
+      .digital-heading{
+        top: -5% !important;
+      }
+    }
+    @media (min-width:630px) and (max-width: 760px) {
+      .home-page-img{
+        margin-top: -56%;
+      }
+      .digital-heading{
+        top: 65% !important;
+        text-align: center;
+      }
+    }
 
   </style>
 </head>
@@ -410,17 +447,17 @@
               <div class="row container-elements">
 
 
-                <div class="col-lg-6 col-12 col-sm-12 col-md-6 col-xl-6 digital-section-subdiv-1">
+                <div class="col-lg-6 col-12 col-sm-12 col-md-6 col-xl-6 col-6 digital-section-subdiv-1">
                   <h1 class="digital-heading"> Digital  Transformation Simplified</h1>
                 </div>
 
 
-                <div class="col-lg-6  col-sm-12 col-12 col-md-6 col-xl-6 digital-section-subdiv-2 kyyte-animate ">
+                <div class="col-lg-6  col-sm-12 col-12 col-md-6 col-xl-6 col-6 digital-section-subdiv-2 kyyte-animate ">
                   <!-- <img src="./images/banner/bg-animate-svg.svg" alt="digital-kyyte"  /> --> 
                   <!-- <img src="./images/banner/Asset.png" alt="home-page" class="home-page-img"/> -->
                   <!-- <img src="./images/banner/final-kyyte.gif" alt="home-page" class="home-page-img"/> -->
 
-                  <div id="animation-kyyte" class="home-page-img" >
+                  <div id="animation-kyyte" class="home-page-img">
                     <script>
                       var animation = bodymovin.loadAnimation({
                         container: document.getElementById("animation-kyyte"),
@@ -724,6 +761,19 @@
               <div class="col-lg-4  col-md-4 text-center  mx-auto  domain-center-img" style="position:relative;left:-14px">
                 <img class="git-center" src="./images/banner/center-3d.gif" alt="" />
                 <img class="png-center" src="./images/banner/industrial-3d.png" alt="">
+                <!-- <div id="animation-neon-light" >
+                  <script>
+                    var animation = bodymovin.loadAnimation({
+                      container: document.getElementById("animation-neon-light"),
+                      path: "./images/animate/neon-light.json",
+                      render: "svg",
+                      loop: true,
+                      autoplay: true,
+                      name: "demo animation",
+                    });
+                  </script>
+                </div> -->
+
               </div> 
 
       
