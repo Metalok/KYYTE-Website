@@ -326,11 +326,14 @@ text-transform: uppercase;
   transform: rotate(90deg);
 }
 
-@media (max-width: 800px) {
-  .functional-heading {
-    font-size: 12vw;
-  }
+  
 
+
+
+  @media (max-width: 800px) {
+    .functional-heading {
+      font-size: 12vw;
+  } 
 
   .function-icons div h3 {
 

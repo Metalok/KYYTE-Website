@@ -1737,6 +1737,7 @@ content: "";
   }
   .services-box {
     padding: 100px 50px;
+    height: auto;
   }
   .services-box .title {
     font-size: 36px;
@@ -2537,8 +2538,8 @@ content: "";
   height: 80px !important;
   margin: auto;
 }
-@media (min-width: 320px) and (max-width: 1090px) {
+/* @media (min-width: 320px) and (max-width: 1090px) {
   .background-red-ser{
     background-color: #f3a80a !important;
   }
-}
+} */
