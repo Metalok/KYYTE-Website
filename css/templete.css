@@ -413,9 +413,12 @@
   display: flex;
   overflow: hidden;
   /* margin: auto; */
+  /* border: 1px solid black; */
+  /* margin: auto; */
 }
 .split-box .split-thumb img {
   object-fit: cover;
+  margin: auto;
 }
 .split-box-area .split-item .title {
   display: none;
@@ -2538,8 +2541,15 @@ content: "";
   height: 80px !important;
   margin: auto;
 }
-/* @media (min-width: 320px) and (max-width: 1090px) {
-  .background-red-ser{
-    background-color: #f3a80a !important;
+
+/* for box image popup change css 28-03-23 */
+@media (min-width: 320px) and (max-width: 1025px) {
+  .split-box .split-thumb {
+    margin: auto;
+    /* border-radius: 10px; */
+    /* margin-top: 5%; */
   }
-} */
+  .split-box-area .split-item .title {
+    margin-left: 5%; 
+  }
+}

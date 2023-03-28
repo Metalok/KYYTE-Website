@@ -649,28 +649,28 @@ color: #FFFFFF;
   /* new added 13-3-23 */
   @media (min-width: 320px)and (max-width: 790px) {
     .contact-us-button {
-      position: absolute;
-      height: 44px;
-      width: 150px;
-    }
-   .industrial-contact .contact-us-button{
-      height: 44px;
-      width: 150px;
-      top:53%;
-    }
-  }
-  @media (min-width: 1080px)and (max-width: 1440px) {
+        position: absolute;
+        height: 44px;
+        width: 150px;
+      }
     .industrial-contact .contact-us-button{
-      top:47%;
+        height: 44px;
+        width: 150px;
+        top:53%; 
+      }
     }
-  }
-  @media screen and (min-width: 1020px) and (max-width: 1430px){
-  .nav-section-custom, .nav-section-custom-active {
-      height: 6vh;
-  }
-  /* .site-footer .social-link {
-    margin-top: 25px;
-  } */
+    @media (min-width: 1080px)and (max-width: 1440px) {
+      .industrial-contact .contact-us-button{
+        top:47%;
+      }
+    }
+    @media screen and (min-width: 1020px) and (max-width: 1430px){
+    .nav-section-custom, .nav-section-custom-active {
+        height: 6vh;
+    }
+    .site-footer .social-link {
+      margin-top: 30px !important; 
+    }
 
   }
 
@@ -773,4 +773,14 @@ color: #FFFFFF;
     .site-footer .social-link {
       margin-top: 30px !important;
     }
+  }
+
+  .career-sending-text{
+    font-family: "poppins";
+    font-style: normal;
+    font-size:13px;
+    line-height:30%;
+    text-align:center;
+    font-weight: 400;
+    color:green;
   }
