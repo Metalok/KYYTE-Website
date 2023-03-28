@@ -354,3 +354,9 @@ text-transform: uppercase;
 }
 
 
+@media(max-width:1220px){
+  .filter-thumb2,.filter-thumb4{
+    display: none;
+  } 
+}
+
