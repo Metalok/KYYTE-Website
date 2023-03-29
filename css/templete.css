@@ -2078,6 +2078,9 @@ content: "";
     /* padding-top: 30px; */
     margin-bottom: 0px;
   }
+  .index-footer{
+    padding-top: 1rem !important;
+  }
   .site-footer .social-link li a i {
     display: block;
     color: #fcfbfb;
@@ -2553,3 +2556,9 @@ content: "";
     margin-left: 5%; 
   }
 }
+/* @media screen and (min-width: 990px) and (max-width:1090px){
+
+.dlab-bnr-inr.no-bg-bnr {
+  padding: 250px  0px 40px 10px;
+}
+} */

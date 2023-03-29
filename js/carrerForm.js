@@ -25,27 +25,28 @@ function validEmail(email) {
 // Form Validation Check
  function validateForm(form) {
 	console.log("formFullnameLength....", form.fullname.value.trim().length)
-	var nameValidateDigits = /^(?=[a-z]*[a-z])[a-z]{6,}$/ 
-		 var onlyDigits = /^[a-zA-Z]+$/;
-		 const validateDigits = form.fullname.value.match(onlyDigits)
-	const validateName = form.fullname.value.match(nameValidateDigits)
-	if (form.fullname.value.trim() === ""){
-		setError(form.fullname, "Fullname cannot be blank");
-		return false
+    var phoneno = /^\d{10}$/; 
+    const phoneNbrValidate = form.phoneNumber.value.match(phoneno)
+   
+    var nameValidateDigits = /^(?=[a-z]*[a-z])[a-z]{6,}$/ 
+    var onlyDigits = /^[a-zA-Z]+$/;
+    const validateDigits = form.fullname.value.match(onlyDigits)
+const validateName = form.fullname.value.match(nameValidateDigits)
+if (form.fullname.value.trim() === ""){
+   setError(form.fullname, "Fullname cannot be blank");
+   return false
 
-	}
-	if (validateDigits == null){
-		setError(form.fullname, "Enter only characters");
-		return false
-	}
-	
-	 if  (validateName == null) {
-		setError(form.fullname, "Enter valid Fullname and contains minimum 6 characters");
-		return false;
-	} 
+}
+if (validateDigits == null){
+   setError(form.fullname, "Enter only characters");
+   return false
+}
 
-	
-	else {
+if  (validateName == null) {
+   setError(form.fullname, "Enter valid Fullname and contains minimum 6 characters");
+   return false;
+} 
+else {
 		setSuccess(form.fullname);
 	}
 
@@ -59,12 +60,26 @@ function validEmail(email) {
 		setSuccess(form.email);
 	}
 
-	if (form.message.value.trim() === "") {
-		setError(form.message, "Message cannot be blank");
+	
+	if(phoneNbrValidate == null){
+		setError(form.phoneNumber, "Enter minimum 10 digit phone number")
 		return false;
-	} else {
-		setSuccess(form.message);
 	}
+	else{
+		setSuccess(form.phoneNumber)
+	}
+
+	if (form.uploadFile.value === ""){
+		setError(form.uploadFile, "upload file canot be empty")
+		return false
+
+	}
+	else{
+		setSuccess(form.uploadFile)
+	}
+
+	
+
 
 	return true;
 

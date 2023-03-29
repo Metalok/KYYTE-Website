@@ -87,6 +87,7 @@
   padding: 0px 6%;
   height: 10vh;
   background-color:#e7f2ff8f !important;
+  /* background-color:#1661be !important; */
   z-index: 12;
   position: fixed;
   width: 100%;
@@ -106,6 +107,7 @@
   padding: 0px 6%;
   height: 10vh;
   background-color:#e7f2ff8f !important;
+  /* background-color:#1661be !important; */
   z-index: 10;
   position: fixed;
   width: 100%;
@@ -113,14 +115,31 @@
 
 }
 
+@media screen and (min-width: 710px) and (max-width: 760px){
+  .nav-section-custom, .nav-section-custom-active {
+      height: 7vh;
+  }
+  
+}
 @media screen and (min-width: 768px) and (max-width: 768px){
   .nav-section-custom, .nav-section-custom-active {
-      height: 10vh !important;
+      height: 17vh !important;
   }
 }
-@media screen and (min-width: 1020px) and (max-width:1430px){
+@media screen and (min-width: 990px) and (max-width:1090px){
   .nav-section-custom,.nav-section-custom-active {
-    height: 8vh !important;
+    height: 9vh !important;
+  }
+  .digital-section{
+    margin-top: 12% !important;
+  }
+  /* .digital-section{
+    padding-top: 10%;
+  } */
+}
+@media screen and (min-width: 1091px) and (max-width:1430px){
+  .nav-section-custom,.nav-section-custom-active {
+    height: 11vh !important;
   }
   .industries-heading{
     padding-top: 11%;
