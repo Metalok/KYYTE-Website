@@ -242,8 +242,9 @@
   line-height: 123px;
   text-transform: uppercase;
   color: #1661be;
-  opacity: 0.2;
+  opacity: 0.3;
   font-family: "DIN Condensed Bold";
+  margin-left: 32px;
 }
 .footer-copyright-custom{
     text-decoration: none;

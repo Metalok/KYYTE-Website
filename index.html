@@ -201,7 +201,7 @@
       }  
     }
     .home-page-img{   
-      /* background-image: url('./images/animate/line-3.gif'); */
+      /* background-image: url('./images/animate/animate.gif'); */
       background-size: cover;
       background-repeat: no-repeat;
     } 
@@ -247,7 +247,14 @@
         margin-left: 6%;
       }
     }
-    
+    /* new added 30-03-23 */
+    .home-image-2{ 
+      /* background-image: url('./images/animate/animate.gif'); */
+      background-size: cover;
+      background-repeat: no-repeat;
+      /* height: 600px; */
+      width: 100%;
+    }
 
   </style>
 </head>
@@ -463,13 +470,15 @@
                 <div class="col-lg-6  col-sm-12 col-12 col-md-6 col-xl-6 col-6 digital-section-subdiv-2 kyyte-animate ">
                   <!-- <img src="./images/banner/bg-animate-svg.svg" alt="digital-kyyte"  /> --> 
                   <!-- <img src="./images/banner/Asset.png" alt="home-page" class="home-page-img"/> -->
-                  <!-- <img src="./images/animate/animation-28-03.gif" alt="home-page" class="home-page-img"/> -->
+                  <!-- <img src="./images/animate/animate.gif" alt="home-page" class="home-image-2"/> -->
 
+
+                  <!-- <div class="home-image-2"> </div> -->
                   <div id="animation-kyyte" class="home-page-img">
                     <script>
                       var animation = bodymovin.loadAnimation({
                         container: document.getElementById("animation-kyyte"),
-                        path: "./images/animate/data.json",
+                        path: "./images/animate/new-data-01.json",
                         render: "svg",
                         loop: true,
                         autoplay: true,
@@ -477,6 +486,7 @@
                       });
                     </script>
                   </div>
+                  
                   
 
 
@@ -622,10 +632,10 @@
             <div class="row m-lr0 services-box-area">
               <div class="col-lg-4 col-md-4 wow fadeInLeft index-hover-section-3 innovation-bg-custom1" data-wow-delay="1s"
                 data-wow-duration="2s">
-                <div class="services-box">
+                <div class="services-box index-service">
                   <div class="services-text">
                     <div class="number number-size">01</div>
-                    <h2 class="title">Next Gen innovation</h2>
+                    <h2 class="title"> Next Gen innovation</h2>
                     <p class="description">
                       Kyyte is laser focused on bringing pragmatic,
                       fit-for-purpose innovation for its clients that drive

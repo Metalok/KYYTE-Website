@@ -1739,7 +1739,8 @@ content: "";
   }
   .services-box {
     padding: 100px 50px;
-    height: auto;
+    height: 695px;
+    /* height: auto; */
   }
   .services-box .title {
     font-size: 36px;
@@ -2565,6 +2566,7 @@ content: "";
 }
 } */
 
+
 @media (min-width: 1080px) and (max-width: 1080px) {
   .dlab-bnr-inr.no-bg-bnr{
     padding: 200px 0px 40px 10px;
@@ -2579,6 +2581,20 @@ content: "";
     max-width: 600px;
     margin-top: 1%;
   }
+   
 }
- 
+/* new added 30-03-23 */
+/* @media (min-width:320px) and (max-width: 320px) { */
+  .index-footer{
+    /* margin-left: -30px; */
+  }
+/* } */
+@media (min-width: 1022px) and (max-width: 1070px) {
+  .services-box{
+    height: 550px !important; 
+  } 
+}
+.service-head{
+  color: #232320;
+} 
 
