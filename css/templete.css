@@ -2584,11 +2584,9 @@ content: "";
    
 }
 /* new added 30-03-23 */
-/* @media (min-width:320px) and (max-width: 320px) { */
   .index-footer{
-    /* margin-left: -30px; */
+    margin-left: -30px;
   }
-/* } */
 @media (min-width: 1022px) and (max-width: 1070px) {
   .services-box{
     height: 550px !important; 
@@ -2597,4 +2595,11 @@ content: "";
 .service-head{
   color: #232320;
 } 
+
+@media screen and (min-width: 991px) and (max-width:991px){
+  .digital-transform{
+    padding-top: 13% !important;
+  }
+}
+
 

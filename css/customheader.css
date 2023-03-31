@@ -49,6 +49,7 @@
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  z-index: 100;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -128,12 +129,9 @@
   .nav-section-custom,.nav-section-custom-active {
     height: 9vh !important;
   }
-  .digital-section{
-    margin-top: 12% !important;
-  }
   /* .digital-section{
-    padding-top: 10%;
-  } */
+    margin-top: 12% !important;
+  }  */
 }
 @media screen and (min-width: 1091px) and (max-width:1430px){
   .nav-section-custom,.nav-section-custom-active {
@@ -151,6 +149,7 @@
     margin-top: 120px ;
   }
 }
+
 
 
 .logo-section-custom img {
