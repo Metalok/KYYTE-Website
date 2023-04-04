@@ -1,29 +1,15 @@
 
 // const messageEl = document.getElementById("message");
-<<<<<<< HEAD
 const form = document.querySelector('#form');
-=======
->>>>>>> e5f79b9793b3fe726a98abe1f819db551223ce12
 const email = document.querySelector("#email");
 const fullNameEl = document.getElementById("fullname")
 const phoneNbrEl = document.getElementById("phoneNumber");
 const fileInput = document.querySelector('#uploadFile');
 
 const encodedEmail = encodeURIComponent(email);
-<<<<<<< HEAD
-=======
-const form = document.querySelector('#form');
 
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
->>>>>>> e5f79b9793b3fe726a98abe1f819db551223ce12
 
-  const file = fileInput.files[0];
-
-  const url = `https://ew3watr9je.execute-api.ap-southeast-2.amazonaws.com/prod/metalok-testbucket/${encodedEmail}.pdf`;
-
-<<<<<<< HEAD
 
 
 // Set Error Message
@@ -148,8 +134,6 @@ form.addEventListener('submit', (event) => {
 
   const url = `https://ew3watr9je.execute-api.ap-southeast-2.amazonaws.com/prod/metalok-testbucket/${encodedEmail}.pdf`;
 
-=======
->>>>>>> e5f79b9793b3fe726a98abe1f819db551223ce12
   fetch(url, {
     method: 'PUT',
     headers: {
@@ -164,14 +148,9 @@ form.addEventListener('submit', (event) => {
       console.log(`https://metalok-testbucket.s3.ap-south-1.amazonaws.com/${encodedEmail}.pdf`);
     })
 
-<<<<<<< HEAD
   if (validateForm(form)) {
 
 
-=======
-
-  if (fullNameEl.value !== "" && fullNameEl.value.trim().length >= 6 && email.value !== "" && phoneNbrEl.value !== "" && fileInput.value !== "") {
->>>>>>> e5f79b9793b3fe726a98abe1f819db551223ce12
 
 
 
@@ -196,7 +175,6 @@ form.addEventListener('submit', (event) => {
       fullNameEl.value = "",
       email.value = "",
       phoneNbrEl.value = "",
-<<<<<<< HEAD
       fileInput.value = "",
 
 
@@ -213,33 +191,13 @@ form.addEventListener('submit', (event) => {
 
       document.getElementById("fa-check-circle4").style.display = "none"
 
-=======
-      fileInput.value = ""
-
-
-    )
-
-    setTimeout(() => {
-      fullNameEl.style.border = "1px solid rgba(0, 0, 0, 0.2)",
-        email.style.border = "1px solid rgba(0, 0, 0, 0.2)",
-        phoneNbrEl.style.border = "1px solid rgba(0, 0, 0, 0.2)"
-        document.getElementById("fa-check-circle1").style.display = "none",
-        document.getElementById("fa-check-circle2").style.display = "none"
-
-        document.getElementById("fa-check-circle3").style.display = "none"
-
-        document.getElementById("fa-check-circle4").style.display = "none"
->>>>>>> e5f79b9793b3fe726a98abe1f819db551223ce12
 
 
 
 
     }, 5000)
-<<<<<<< HEAD
 
 
-=======
->>>>>>> e5f79b9793b3fe726a98abe1f819db551223ce12
       .catch(error => alert(error))
 
 
