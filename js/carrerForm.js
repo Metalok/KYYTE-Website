@@ -28,7 +28,11 @@ function validateForm(form) {
 	var phoneno = /^\d{10}$/;
 	const phoneNbrValidate = form.phoneNumber.value.match(phoneno)
 
+<<<<<<< HEAD
 	var nameValidateDigits = /^(?=[a-zA-Z\s]*[a-zA-Z\s])[a-zA-Z\s]{6,}$/
+=======
+	var nameValidateDigits = /^(?=[a-z\s]*[a-z\s])[a-z\s]{6,}$/
+>>>>>>> e5f79b9793b3fe726a98abe1f819db551223ce12
 	var onlyDigits = /^[a-zA-Z\s]+$/;
 	const validateDigits = form.fullname.value.match(onlyDigits)
 	const validateName = form.fullname.value.match(nameValidateDigits)
