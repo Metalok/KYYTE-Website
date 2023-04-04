@@ -18,35 +18,35 @@ function setSuccess(input) {
 
 // Check Valid Email
 function validEmail(email) {
-	const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,3}))$/;
 	return re.test(String(email).toLowerCase());
 }
 
 // Form Validation Check
- function validateForm(form) {
+function validateForm(form) {
 	console.log("formFullnameLength....", form.fullname.value.trim().length)
-    var phoneno = /^\d{10}$/; 
-    const phoneNbrValidate = form.phoneNumber.value.match(phoneno)
-   
-    var nameValidateDigits = /^(?=[a-z]*[a-z])[a-z]{6,}$/ 
-    var onlyDigits = /^[a-zA-Z]+$/;
-    const validateDigits = form.fullname.value.match(onlyDigits)
-const validateName = form.fullname.value.match(nameValidateDigits)
-if (form.fullname.value.trim() === ""){
-   setError(form.fullname, "Fullname cannot be blank");
-   return false
+	var phoneno = /^\d{10}$/;
+	const phoneNbrValidate = form.phoneNumber.value.match(phoneno)
 
-}
-if (validateDigits == null){
-   setError(form.fullname, "Enter only characters");
-   return false
-}
+	var nameValidateDigits = /^(?=[a-z\s]*[a-z\s])[a-z\s]{6,}$/
+	var onlyDigits = /^[a-zA-Z\s]+$/;
+	const validateDigits = form.fullname.value.match(onlyDigits)
+	const validateName = form.fullname.value.match(nameValidateDigits)
+	if (form.fullname.value.trim() === "") {
+		setError(form.fullname, "Fullname cannot be blank");
+		return false
 
-if  (validateName == null) {
-   setError(form.fullname, "Enter valid Fullname and contains minimum 6 characters");
-   return false;
-} 
-else {
+	}
+	if (validateDigits == null) {
+		setError(form.fullname, "Enter only characters");
+		return false
+	}
+
+	if (validateName == null) {
+		setError(form.fullname, "Enter valid Fullname which contains minimum 6 characters");
+		return false;
+	}
+	else {
 		setSuccess(form.fullname);
 	}
 
@@ -60,25 +60,26 @@ else {
 		setSuccess(form.email);
 	}
 
-	
-	if(phoneNbrValidate == null){
+
+	if (phoneNbrValidate == null) {
 		setError(form.phoneNumber, "Enter minimum 10 digit phone number")
 		return false;
 	}
-	else{
+	else {
 		setSuccess(form.phoneNumber)
 	}
 
-	if (form.uploadFile.value === ""){
+	if (form.uploadFile.value === "") {
 		setError(form.uploadFile, "upload file canot be empty")
 		return false
 
 	}
-	else{
+	else {
 		setSuccess(form.uploadFile)
 	}
 
-	
+
+
 
 
 	return true;

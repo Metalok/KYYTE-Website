@@ -147,17 +147,18 @@
     <div class="container">
       <div class="row sp60">
         <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 content-inner-2 bg-white after-right">
-          <h3 class="drop-heading" data-wow-delay="1.5s" data-wow-duration="2s">
-            DROP YOUR SUGGESTIONS
-          </h3>
+          <!-- <h3 class="drop-heading" data-wow-delay="1.5s" data-wow-duration="2s">
+            
+          </h3> -->
 
          <!-- <form class="form" onsubmit="sendEmail(); reset(); return false; "> -->
           <form class="form" id="form" onsubmit="return validateForm(this)">
+            <!-- <input type="file" /> -->
             <div class="form-group">
               <label for="fullname" class="input-label">Full Name</label>
               <input type="text" name="fullname" id="fullname" class="input-field" placeholder="Your Name">
               <span class="input-check">
-                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-check-circle"  id="facheck-circle1"></i>
                 <i class="fas fa-exclamation-circle"></i>
               </span>
               <small class="input-alert"></small>
@@ -166,7 +167,7 @@
               <label for="email" class="input-label">Email</label>
               <input type="email" name="email" id="email" class="input-field" placeholder="example@gmail.com">
               <span class="input-check">
-                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-check-circle" id="facheck-circle2"></i>
                 <i class="fas fa-exclamation-circle"></i>
               </span>
               <small class="input-alert"></small>
@@ -175,7 +176,7 @@
               <label for="message" class="input-label">Message</label>
               <textarea name="message" id="message" class="input-field" rows="3" placeholder="Type Messages Here"></textarea>
               <span class="input-check">
-                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-check-circle"  id="facheck-circle3"></i>
                 <i class="fas fa-exclamation-circle"></i>
               </span>
               <small class="input-alert"></small>
@@ -183,13 +184,12 @@
             <div style="display:none" id="career-submit-status">
 
            
-            <h1 class="career-sending-text">Thank you, Your application has been  submitted successfully</h1>
+            <h1 class="career-sending-text">Thank you for contacting us</h1>
           </div>
             <div class="form-group">
               <input type="submit" class="input-submit" id="input-submit" value="Submit">
             </div>
           </form>
-
 
 
         </div>

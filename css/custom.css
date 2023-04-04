@@ -189,7 +189,7 @@
   visibility: hidden;
 }
  .form-group .input-alert {
-  position: absolute;
+  /* position: absolute; */
   display: block;
   font-family: inherit;
   font-size: 0.875rem;
