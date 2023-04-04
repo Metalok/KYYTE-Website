@@ -45,28 +45,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"  ></script>
   </head>
   <body id="body-section">
-
-<!-- 
-    <div id="loading-area">
-      <div class="parent-loader">
-        <div  id="animation-cont" class="loader-position">
-          <script>
-              var animation=bodymovin.loadAnimation({
-                  container:document.getElementById('animation-cont'),
-                  path:'./images/loade-custom/loader.json',
-                  render:'svg',
-                  loop:true,
-                  autoplay:true,
-                  name:'demo animation'
-              });
-          </script>
-              </div>
-            </div>
-          </div> -->
     <header class="nav-section-custom">
       <div class="logo-section-custom">
         <a href="index.html"> <img src="./images/icon/logo.png" alt="" /></a>
-        <!-- <h1>FILMABLE</h1> -->
       </div>
       <div class="links">
         <ul class="menu-links"></ul>
@@ -104,7 +85,7 @@
       </div>
   
     </header>
-    <!----------------------------------------------------------------------------------------------------------------------- section 1   -->
+    <!-------------------------------------------------------------------- section 1   -->
     <div class="career-page-section">
       <div class="container">
         <img
@@ -200,7 +181,7 @@
               <label for="fullname" class="input-label">Full Name</label>
               <input type="text" name="fullname"  id="fullname" class="input-field" placeholder="Your Name">
               <span class="input-check">
-                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-check-circle" id="fa-check-circle1"></i>
                 <i class="fas fa-exclamation-circle"></i>
               </span>
               <small class="input-alert"></small>
@@ -209,7 +190,7 @@
               <label for="email" class="input-label">Email</label>
               <input type="email" name="email" id="email" class="input-field" placeholder="Something@website.com" >
               <span class="input-check">
-                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-check-circle" id="fa-check-circle2"></i>
                 <i class="fas fa-exclamation-circle"></i>
               </span>
               <small class="input-alert"></small>
@@ -220,42 +201,35 @@
             <div class="form-group" >
                 <label for="phoneNumber" class="input-label" >Phone no</label>
                 <input type="number" name="phoneNumber"  id="phoneNumber" class="input-field" placeholder="Enter your phone number" maxlength=10>
-                <span class="input-check">
+                <span class="input-check" id="fa-check-circle3">
                   <i class="fas fa-check-circle"></i>
                   <i class="fas fa-exclamation-circle"></i>
                 </span>
                 <small class="input-alert"></small>
-              </div>
-
-
-
+              </div> 
 
             <div class="form-group">
               <label for="uploadFile" class="input-label">Attachment</label>
               <input type="file" id="uploadFile" name="uploadFile"/>
               <span class="input-check">
-                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-check-circle" id="fa-check-circle4"></i>
                 <i class="fas fa-exclamation-circle"></i>
               </span>
               <small class="input-alert"></small>
-
             </div>
             <div class="form-group">
               <input type="submit" class="input-submit-career" value="Submit">
             </div>
-        </form>
-
+          </form>
           </div>
-            
 					</div>
 				</div>
 			</div>
 			<!-- Our Services End -->
-      
     </div>
-<div class="blue-border">
+    <div class="blue-border">
 
-</div>
+    </div>
 
 <footer class="site-footer ">
   <!-- footer top part -->
@@ -359,7 +333,7 @@
     <script src="plugins/lightgallery/js/lightgallery-all.min.js"></script>
 
 
-    <script src="./js/carrerForm.js"></script>
+    <!-- <script src="./js/carrerForm.js"></script> -->
     <script src="./sampleEmail.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
   

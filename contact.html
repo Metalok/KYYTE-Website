@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,34 +11,16 @@
   <meta property="og:description" content="Industry - Factory & Industrial HTML Template" />
   <meta property="og:image" content="" />
   <meta name="format-detection" content="telephone=no" />
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script> 
-</meta>
-
-
-
+</meta> 
   <!-- FAVICONS ICON -->
   <link rel="icon" href="./images/banner/kyyte-search-icon.png" />
-
   <!-- PAGE TITLE HERE -->
   <title>Kyyte</title>
-
   <!-- MOBILE SPECIFIC -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!--[if lt IE 9]>
-      <script src="js/html5shiv.min.js"></script>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
-
-  <!-- STYLESHEETS -->
-
-	
-
-
-
-
+  
   <link rel="stylesheet" type="text/css" href="css/test.css" />
   <link rel="stylesheet" type="text/css" href="css/customheader.css" />
   <link rel="stylesheet" type="text/css" href="css/custom.css" />
@@ -52,8 +33,6 @@
 </head>
 
 <body id="bg" class="footer-fixed">
-
-
   <div id="loading-area">
     <div class="parent-loader">
       <div id="animation-container1" class="loader-position">
@@ -70,22 +49,7 @@
       </div>
     </div>
   </div>
-  <!-- <div class="" id="animation-cont" style="width:80%;height:20%">
-    <script>
-        var animation=bodymovin.loadAnimation({
-            container:document.getElementById('animation-cont'),
-            path:'./images/loade-custom/loader.json',
-            render:'svg',
-            loop:true,
-            autoplay:true,
-            name:'demo animation custom'
-        });
-    </script>
-        </div> -->
-
-  <!-- header END -->
-
-
+  
   <header class="nav-section-custom">
     <div class="logo-section-custom">
       <a href="index.html"> <img src="./images/icon/logo.png" alt="" /></a>
@@ -147,17 +111,16 @@
     <div class="container">
       <div class="row sp60">
         <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 content-inner-2 bg-white after-right">
-          <h3 class="drop-heading" data-wow-delay="1.5s" data-wow-duration="2s">
-            DROP YOUR SUGGESTIONS
-          </h3>
+          
 
          <!-- <form class="form" onsubmit="sendEmail(); reset(); return false; "> -->
           <form class="form" id="form" onsubmit="return validateForm(this)">
+            <!-- <input type="file" /> -->
             <div class="form-group">
               <label for="fullname" class="input-label">Full Name</label>
-              <input type="text" name="fullname" id="fullname" class="input-field" placeholder="Your Name">
+              <input type="text" name="fullname" id="fullname" class="input-field " placeholder="Your Name">
               <span class="input-check">
-                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-check-circle"  id="facheck-circle1"></i>
                 <i class="fas fa-exclamation-circle"></i>
               </span>
               <small class="input-alert"></small>
@@ -166,7 +129,7 @@
               <label for="email" class="input-label">Email</label>
               <input type="email" name="email" id="email" class="input-field" placeholder="example@gmail.com">
               <span class="input-check">
-                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-check-circle" id="facheck-circle2"></i>
                 <i class="fas fa-exclamation-circle"></i>
               </span>
               <small class="input-alert"></small>
@@ -175,7 +138,7 @@
               <label for="message" class="input-label">Message</label>
               <textarea name="message" id="message" class="input-field" rows="3" placeholder="Type Messages Here"></textarea>
               <span class="input-check">
-                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-check-circle"  id="facheck-circle3"></i>
                 <i class="fas fa-exclamation-circle"></i>
               </span>
               <small class="input-alert"></small>
@@ -183,7 +146,7 @@
             <div style="display:none" id="career-submit-status">
 
            
-            <h1 class="career-sending-text">Thank you, Your application has been  submitted successfully</h1>
+            <h1 class="career-sending-text">Thank you for contacting us</h1>
           </div>
             <div class="form-group">
               <input type="submit" class="input-submit" id="input-submit" value="Submit">
@@ -332,21 +295,14 @@
     <div class="footer-bg-custom">
       <div class="container">
         <div class="row pt-5">
-          <div class="col-md-6">
-            <!-- <div class="widget widget_about">
-              <h2 class="footer-title footer-phone-color footer-extra-custom-font">PHONE</h2>
-              <h2 class="footer-title">80943556634</h2>
-            </div> -->
+          <div class="col-md-6"> 
             <div class="widget widget_about">
               <h2 class="footer-title1">EMAIL</h2>
               <h2 class="footer-title2">INFO@KYYTE.IO</h2>
             </div>
           </div>
-          <div class="col-md-6">
-            <!-- <div class="widget widget_about">
-              <h2 class="footer-title footer-extra-custom-font">EMAIL</h2>
-              <h2 class="footer-title">INFO@KYYTE.IO</h2>
-            </div> -->
+          <div class="col-md-6"> 
+
           </div>
           
 
@@ -371,13 +327,7 @@
                 <a href="contact.html"> <span>CONTACT US</span></a>
               </li>
             </ul>
-          </div>
-
-
-
-
-
-
+          </div> 
         </div>
       </div>
     </div>
@@ -430,11 +380,6 @@
 
       }
     };
-
-
-  </script>
-
-  
   </script>
 
   <script src="js/jquery.min.js"></script>
@@ -462,11 +407,9 @@
   <script src="js/dz.carousel.js"></script>
   <!-- SORTCODE FUCTIONS  -->
   <!-- form validation -->
-  <script src="js/form.js"></script>
-
+  <!-- <script src="js/form.js"></script> -->
   <script src="./contact-email-sending.js"></script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
 
 </body>
-
 </html>
