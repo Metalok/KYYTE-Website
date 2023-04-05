@@ -44,7 +44,7 @@ function setSuccess(input) {
 // Check Valid Email
 function validEmail(email) {
     // const re = /^(([^<>()\[\]\\\d.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z0-9]+\.)+[a-zA-Z]{2,3}))$/;
-    const re = /^[a-zA-Z]([a-zA-Z0-9._%+-]+)@([a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
+    const re = /^[a-zA-Z]([a-zA-Z0-9._%+-]+)@([a-zA-Z0-9.]+\.[a-zA-Z]{2,})$/;
     return re.test(String(email).toLowerCase());
 }
 
@@ -83,7 +83,7 @@ function validateForm(form) {
         setError(form.email, "Email cannot be blank");
         return false;
     } else if (!validEmail(form.email.value.trim())) {
-        setError(form.email, "Email is not valid");
+        setError(form.email, "Enter valid email address");
         return false;
     } else {
         setSuccess(form.email);
