@@ -114,9 +114,9 @@ form.addEventListener('submit', (e) => {
     if (validateForm(form)) {
 
         Email.send({
-            SecureToken: "40309061-44c7-478a-ab4f-8e6373f0bc98",
-            To: 'vidyavathi@metalok.io',
-            From: "kyyte@metalok.io",
+            SecureToken: "2b9447bf-264f-4765-bc13-474d1200ce32",
+            To: 'info@kyyte.io',
+            From: "kyyte@kyyte.io",
             Subject: "Demo Subject For Kyyte Contact Form",
             Body: "this is a body",
 

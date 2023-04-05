@@ -63,7 +63,8 @@ function validEmail(email) {
 // Form Validation Check
 function validateForm(form) {
   console.log("formFullnameLength....", form.fullname.value.trim().length)
-  var phoneno = /^([0-9\s()-+]*){10,}$/;
+  // var phoneno = /^\d{10}$/; 
+  var phoneno = /^([0-9\s()/-/+]*){10,}$/;
   const phoneNbrValidate = form.phoneNumber.value.match(phoneno)
 
   var nameValidateDigits = /^(?=[a-zA-Z\s]*[a-zA-Z\s])[a-zA-Z\s]{6,}$/
@@ -111,6 +112,7 @@ function validateForm(form) {
     setSuccess(form.phoneNumber)
   }
 
+
   if (form.uploadFile.value === "") {
     setError(form.uploadFile, "upload file canot be empty")
     return false
@@ -152,16 +154,11 @@ form.addEventListener('submit', (event) => {
 
   if (validateForm(form)) {
 
-
-
-
-
     Email.send({
 
-      SecureToken: "40309061-44c7-478a-ab4f-8e6373f0bc98",
-
-      To: 'vidyavathi@metalok.io',
-      From: "kyyte@metalok.io",
+      SecureToken: "2b9447bf-264f-4765-bc13-474d1200ce32",
+      To: 'hr@kyyte.io',
+      From: "kyyte@kyyte.io",
       Subject: "Demo Subject For Kyyte Contact Form",
       Body: "",
       Attachments: [
@@ -188,10 +185,8 @@ form.addEventListener('submit', (event) => {
         phoneNbrEl.style.border = "1px solid rgba(0, 0, 0, 0.2)",
         document.getElementById("fa-check-circle1").style.display = "none",
         document.getElementById("fa-check-circle2").style.display = "none"
-
-      document.getElementById("fa-check-circle3").style.display = "none"
-
-      document.getElementById("fa-check-circle4").style.display = "none"
+        document.getElementById("fa-check-circle3").style.display = "none"
+        document.getElementById("fa-check-circle4").style.display = "none"
 
 
 
@@ -202,8 +197,8 @@ form.addEventListener('submit', (event) => {
 
       .catch(error => alert(error))
 
-      
- 
+
+
   }
 
 
