@@ -64,8 +64,9 @@ function validEmail(email) {
 function validateForm(form) {
   console.log("formFullnameLength....", form.fullname.value.trim().length)
   // var phoneno = /^\d{10}$/; 
-  var phoneno = /^([0-9\s()/-/+]*){10,}$/;
-  const phoneNbrValidate = form.phoneNumber.value.match(phoneno)
+  // var phoneno = /^([0-9\s()/-/+]*){10,}$/;
+  var phoneno = /^([0-9\s\-\+()]+){10,}$/;
+    const phoneNbrValidate = form.phoneNumber.value.match(phoneno)
 
   var nameValidateDigits = /^(?=[a-zA-Z\s]*[a-zA-Z\s])[a-zA-Z\s]{6,}$/
   var onlyDigits = /^[a-zA-Z\s]+$/;
