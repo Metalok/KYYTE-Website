@@ -53,18 +53,20 @@ function setSuccess(input) {
 
 // Check Valid Email
 function validEmail(email) {
-  // const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,3}))$/;
-  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,3}))$/;
+  const re = /^[a-zA-Z]([a-zA-Z0-9._%+-]+)@([a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
+
   return re.test(String(email).toLowerCase());
 }
 
 // Form Validation Check
 function validateForm(form) {
   console.log("formFullnameLength....", form.fullname.value.trim().length)
-  var phoneno = /^\d{10}$/;
+  var phoneno = /^\d{10,}$/;
   const phoneNbrValidate = form.phoneNumber.value.match(phoneno)
 
-  var nameValidateDigits = /^(?=[a-z\s]*[a-z\s])[a-z\s]{6,}$/
+  // var nameValidateDigits = /^(?=[a-zA-Z\s]*[a-zA-Z\s])[a-zA-Z\s]{6,}$/
+  var nameValidateDigits = /^(?=[a-zA-Z\s]*[a-zA-Z\s])[a-zA-Z\s]{6,}$/
+  
   var onlyDigits = /^[a-zA-Z\s]+$/;
   const validateDigits = form.fullname.value.match(onlyDigits)
   const validateName = form.fullname.value.match(nameValidateDigits)
