@@ -44,7 +44,13 @@ function setSuccess(input) {
 // Check Valid Email
 function validEmail(email) {
     // const re = /^(([^<>()\[\]\\\d.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z0-9]+\.)+[a-zA-Z]{2,3}))$/;
-    const re = /^[a-zA-Z]([a-zA-Z0-9._%+-]+)@([a-zA-Z0-9.]+\.[a-zA-Z]{2,})$/;
+    // const re = /^[a-zA-Z]([a-zA-Z0-9._%+-]+)@([a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/
+    // const re = /^[a-zA-Z]([a-zA-Z0-9._%+-]+)@([a-zA-Z0-9.\-\_]+\.[a-zA-Z]{2,})$/
+    const re = /^[a-zA-Z]([a-zA-Z0-9._%+-]+)@([^\-\_][a-zA-Z0-9.-]+[^\-\_]\.[a-zA-Z]{2,})$/
+
+
+
+
     return re.test(String(email).toLowerCase());
 }
 
@@ -83,7 +89,7 @@ function validateForm(form) {
         setError(form.email, "Email cannot be blank");
         return false;
     } else if (!validEmail(form.email.value.trim())) {
-        setError(form.email, "Enter valid email address");
+        setError(form.email, "Email is not valid");
         return false;
     } else {
         setSuccess(form.email);
@@ -108,9 +114,9 @@ form.addEventListener('submit', (e) => {
     if (validateForm(form)) {
 
         Email.send({
-            SecureToken: "bc9c0a17-dbd1-49d3-80f1-c56e429d32b2",
+            SecureToken: "40309061-44c7-478a-ab4f-8e6373f0bc98",
             To: 'vidyavathi@metalok.io',
-            From: "deviumadevi@gmail.com",
+            From: "kyyte@metalok.io",
             Subject: "Demo Subject For Kyyte Contact Form",
             Body: "this is a body",
 
