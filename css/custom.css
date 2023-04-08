@@ -785,3 +785,10 @@ color: #FFFFFF;
     font-weight: 400;
     color:green;
   }
+
+  @media(max-width:768px){
+    .ser-img-1{
+      transform:scale(1.5);
+    }
+  }
+
