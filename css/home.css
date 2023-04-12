@@ -297,10 +297,7 @@
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
-  /* min-height: 100vh; */
-  /* margin-top: -90px !important; */
-  /* padding-top:-60px !important; */ 
+  justify-content: center; 
   /* height: 350px; */
   height: auto;
   padding-bottom: 80px;
