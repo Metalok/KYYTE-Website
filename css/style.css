@@ -7519,7 +7519,7 @@ a,
 .site-button-link.yellow:hover,
 .site-button-link.yellow:active,
 .site-button-link.yellow:focus {
-    color: ##d4af19;
+    color: #d4af19;
 }
 /* purple */
 
@@ -9637,7 +9637,7 @@ ul[class*="list-"]{
 .testimonial-9 .testimonial-position,
 .testimonial-10 .testimonial-position{
 	text-transform:uppercase;
-	color:#888q;
+	color:#888;
 	font-size:12px;
 	font-style: inherit;
 }
@@ -10212,7 +10212,7 @@ ul[class*="list-"]{
 .overlay-primary-middle:after,
 .overlay-primary-dark:after,
 .overlay-primary:after {
-    background: ;
+    background:  ;
 }
 .overlay-black-light:after {
     opacity: 0.3;
