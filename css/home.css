@@ -756,7 +756,8 @@ box-shadow: 0px 3.35441px 16.7721px rgba(0, 0, 0, 0.1); */
   font-style: normal;
   font-weight: 700;
   font-size: 52px;
-  line-height: 27px;
+  line-height: 120%;
+  /* line-height: 27px; */
   /* identical to box height, or 52% */
 
   text-align: center;
